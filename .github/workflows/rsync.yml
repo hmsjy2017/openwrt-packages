@@ -2,8 +2,7 @@
 
 on:
   schedule:
-    - cron: 0 14 * * * 
-
+    - cron: 0 6 * * * 
 jobs:
 
   build:
@@ -13,7 +12,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: rsync
-        run: |
+        env:
+          TZ: Asia/Shanghai
+        run:
           rsync -avrt rsync://op.supes.top/packages /home/runner/work/openwrt-packages/openwrt-packages
 
       - name: commit
