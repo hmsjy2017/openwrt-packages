@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -z "${IPKG_INSTROOT}" ];then
+	/etc/init.d/bypass disable
+	/etc/init.d/bypass stop
+fi
+exit 0
