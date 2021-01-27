@@ -1,12 +1,8 @@
 #name: rsync
 
 on:
-  push:
-    branches: [ main ]
-
-  workflow_dispatch:
-  #schedule:
-  #  - cron: 0 18 * * *
+  schedule:
+    - cron: 0 6 * * * 
 
 jobs:
 
