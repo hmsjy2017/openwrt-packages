@@ -1,0 +1,6 @@
+[ -n "${IPKG_INSTROOT}" ] || {
+	(. /etc/uci-defaults/luci-app-dockerman) && rm -f /etc/uci-defaults/luci-app-dockerman
+	rm -f /tmp/luci-indexcache
+	rm -rf /tmp/luci-modulecache/
+	exit 0
+}

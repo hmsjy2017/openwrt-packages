@@ -689,14 +689,14 @@ Description:  LuCI Support for ipset feature of dnsmasq-full.
 
 Package: luci-app-dockerman
 Version: v0.5.13
-Depends: libc, luci-compat, ttyd
+Depends: libc, luci-compat, luci-lib-docker, docker, dockerd, ttyd
 License: AGPL-3.0
 Section: luci
 Architecture: all
 Installed-Size: 44032
 Filename: luci-app-dockerman_v0.5.13_all.ipk
-Size: 45039
-SHA256sum: c98a5d4fd31f8192f4e56a8f69d65d4dda18f53c662738ae6e79a3d36779c359
+Size: 44926
+SHA256sum: fdb67a5185ed7e18cc44a9dba426499e5701bb165b0374cf0ca8fad0dbb040f7
 Description:  LuCI luci-app-dockerman app
 
 Package: luci-app-eqos
