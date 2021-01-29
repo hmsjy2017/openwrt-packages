@@ -846,15 +846,15 @@ SHA256sum: e25d58f2bc0cf9aca011d6a6f20a1aab31e534b0e00f45076dbf727cec2f3c79
 Description:  LuCI support for iptvhelper
 
 Package: luci-app-jd-dailybonus
-Version: 1.0.0-20210120
-Depends: libc, node, wget, wget-ssl, lua, luasocket, lua-cjson, lua-md5, luasec
+Version: 1.0.3
+Depends: libc, node, wget, lua, libuci-lua
 Section: luci
 Architecture: all
-Installed-Size: 1111148
-Filename: luci-app-jd-dailybonus_1.0.0-20210120_all.ipk
-Size: 1111005
-SHA256sum: 216da0f17c3416d80f0bf1e6b815b74b4c157922b716f0825017c4ca09f0669d
-Description:  Luci for JD dailybonus Script 
+Installed-Size: 1069859
+Filename: luci-app-jd-dailybonus_1.0.3_all.ipk
+Size: 1070164
+SHA256sum: efaba0a99371bf8e06c64efdcb38372bfc8c9e834c987670abf5c3d2dd6cad53
+Description:  Luci for JD dailybonus Script
 
 Package: luci-app-kcptun
 Version: 1.5.2
