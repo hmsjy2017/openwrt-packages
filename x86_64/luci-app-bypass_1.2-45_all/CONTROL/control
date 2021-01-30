@@ -1,0 +1,10 @@
+Package: luci-app-bypass
+Version: 1.2-47
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, unzip, lua-maxminddb, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-local, shadowsocksr-libev-alt, shadowsocksr-libev-ssr-local, simple-obfs, xray, trojan-plus, trojan-go, redsocks2, microsocks
+Source: feeds/custom/luci-app-bypass
+SourceName: luci-app-bypass
+Section: luci
+SourceDateEpoch: 1611907094
+Architecture: all
+Installed-Size: 2500522
+Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface

@@ -538,6 +538,28 @@ Size: 2331209
 SHA256sum: 8e86f795b2312bade37d9799de72904392f2dbaf8c7df5133898d417f44da30c
 Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
 
+Package: luci-app-bypass
+Version: 1.2-46
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, unzip, lua-maxminddb, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-local, shadowsocksr-libev-alt, shadowsocksr-libev-ssr-local, simple-obfs, xray, trojan-plus, trojan-go, redsocks2, microsocks
+Section: luci
+Architecture: all
+Installed-Size: 2500522
+Filename: luci-app-bypass_1.2-46_all.ipk
+Size: 2331563
+SHA256sum: 453ddf09a53268eb5ad749f78ce9900b069b8de8e1e585ae199e25b742383496
+Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-app-bypass
+Version: 1.2-47
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, unzip, lua-maxminddb, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-local, shadowsocksr-libev-alt, shadowsocksr-libev-ssr-local, simple-obfs, xray, trojan-plus, trojan-go, redsocks2, microsocks
+Section: luci
+Architecture: all
+Installed-Size: 2500522
+Filename: luci-app-bypass_1.2-47_all.ipk
+Size: 2331728
+SHA256sum: c098e92c718b77945d590fcb26a0053b99a3757b108db4a93d3710a87e61c6a8
+Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
+
 Package: luci-app-chinadns
 Version: 2.0.1
 Depends: libc, ChinaDNS, curl

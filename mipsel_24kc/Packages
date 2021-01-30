@@ -1,38 +1,3 @@
-Package: ChinaDNS
-Version: 2.0.1-1
-Depends: libc
-License: GPLv3
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 24336
-Filename: ChinaDNS_2.0.1-1_mipsel_24kc.ipk
-Size: 24681
-SHA256sum: 7262fb8b2e506a05f9ace80d6ae4e97451f1d74328d373c3f19999938dd63bdb
-Description:  Protect yourself against DNS poisoning in China.
-
-Package: UnblockNeteaseMusic-Go
-Version: 0.2.7-1
-Depends: libc
-Section: multimedia
-Architecture: mipsel_24kc
-Installed-Size: 1541301
-Filename: UnblockNeteaseMusic-Go_0.2.7-1_mipsel_24kc.ipk
-Size: 1542368
-SHA256sum: 94bbeb604182e191275e91559157d85ebda58fa18fe0ea3bf220f5c0e0c027bc
-Description:  Revive Netease Cloud Music (Golang)
-
-Package: UnblockNeteaseMusic
-Version: 0.25.3-5
-Depends: libc, node, libopenssl1.1
-License: MIT
-Section: multimedia
-Architecture: all
-Installed-Size: 35767
-Filename: UnblockNeteaseMusic_0.25.3-5_all.ipk
-Size: 36635
-SHA256sum: 14f4bd05dd5d76153a99ed3d2058a4141f1f04afe2c0fd0527ced99f24acb11c
-Description:  Revive Netease Cloud Music (NodeJS)
-
 Package: amule
 Version: 2.3.2-4
 Depends: libc, libpng, libpthread, libncurses6, libreadline8, libwxbase, libupnp, libbfd, libcryptopp
@@ -125,6 +90,18 @@ Filename: brook_20210101-1_mipsel_24kc.ipk
 Size: 3764435
 SHA256sum: af9284e7760546f88888c52a145c4255251162aa355a1bf6930421c7cf18f16c
 Description:  Brook is a cross-platform proxy software
+
+Package: ChinaDNS
+Version: 2.0.1-1
+Depends: libc
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 24336
+Filename: ChinaDNS_2.0.1-1_mipsel_24kc.ipk
+Size: 24681
+SHA256sum: 7262fb8b2e506a05f9ace80d6ae4e97451f1d74328d373c3f19999938dd63bdb
+Description:  Protect yourself against DNS poisoning in China.
 
 Package: chinadns-ng
 Version: 1.0-beta.23-1
@@ -274,6 +251,17 @@ Size: 1348674
 SHA256sum: 9e8798bae17d4792753dce630451ee0b7de0cbbb8b9e6d6922610e88726d83b2
 Description:  A simple WebDav server written in Golang.
 
+Package: ipt2socks
+Version: 1.1.3-1
+Depends: libc
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 32321
+Filename: ipt2socks_1.1.3-1_mipsel_24kc.ipk
+Size: 32980
+SHA256sum: 662c6f1aec166945a183db33ac9e7f51187e38b0a14a9d1186d3579e6f3f0da8
+Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+
 Package: ipt2socks-alt
 Version: 1.0.2-1
 Depends: libc, libpthread, libuv1
@@ -285,17 +273,6 @@ Filename: ipt2socks-alt_1.0.2-1_mipsel_24kc.ipk
 Size: 21844
 SHA256sum: 04ea92095be76451d6d11a12fc46c6ea7bfc5108d6e8d74675f2d45aae3c4c6d
 Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
-
-Package: ipt2socks
-Version: 1.1.3-1
-Depends: libc
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 32321
-Filename: ipt2socks_1.1.3-1_mipsel_24kc.ipk
-Size: 32980
-SHA256sum: 662c6f1aec166945a183db33ac9e7f51187e38b0a14a9d1186d3579e6f3f0da8
-Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
 
 Package: iptvhelper
 Version: 0.1.1-1
@@ -526,6 +503,28 @@ Installed-Size: 2500522
 Filename: luci-app-bypass_1.2-45_all.ipk
 Size: 2331593
 SHA256sum: 27b63a7c52c757dc40f3de6f6862fcaefdd3dc5c38a578f980e34569794937aa
+Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-app-bypass
+Version: 1.2-46
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, unzip, lua-maxminddb, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-local, shadowsocksr-libev-alt, shadowsocksr-libev-ssr-local, simple-obfs, xray, trojan-plus, trojan-go, redsocks2, microsocks
+Section: luci
+Architecture: all
+Installed-Size: 2500522
+Filename: luci-app-bypass_1.2-46_all.ipk
+Size: 2331563
+SHA256sum: 453ddf09a53268eb5ad749f78ce9900b069b8de8e1e585ae199e25b742383496
+Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-app-bypass
+Version: 1.2-47
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, unzip, lua-maxminddb, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-local, shadowsocksr-libev-alt, shadowsocksr-libev-ssr-local, simple-obfs, xray, trojan-plus, trojan-go, redsocks2, microsocks
+Section: luci
+Architecture: all
+Installed-Size: 2500522
+Filename: luci-app-bypass_1.2-47_all.ipk
+Size: 2331728
+SHA256sum: c098e92c718b77945d590fcb26a0053b99a3757b108db4a93d3710a87e61c6a8
 Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-chinadns
@@ -1428,17 +1427,6 @@ Size: 8144
 SHA256sum: 711feffdf56a039b8bffabfc1c7bc652568f904f57f4fb72dac96fec97637de6
 Description:  LuCI support for Unblock NeteaseCloudMusic
 
-Package: luci-app-usb-printer
-Version: 1.0
-Depends: libc, p910nd, kmod-usb-printer
-Section: luci
-Architecture: all
-Installed-Size: 3479
-Filename: luci-app-usb-printer_1.0_all.ipk
-Size: 4325
-SHA256sum: dcb14998cfcf8188116bade22ab8fbb44cb50a4b29d1524ac585355a4870c8c7
-Description:  USB Printer Share via TCP/IP
-
 Package: luci-app-usb3disable
 Version: 1.0
 Depends: libc
@@ -1449,6 +1437,17 @@ Filename: luci-app-usb3disable_1.0_all.ipk
 Size: 2078
 SHA256sum: 8ae616160ccb73b0d2ba771976429e171b8ae05f6f0c3bae6e3d9f431505eb00
 Description:  LuCI support disable usb3
+
+Package: luci-app-usb-printer
+Version: 1.0
+Depends: libc, p910nd, kmod-usb-printer
+Section: luci
+Architecture: all
+Installed-Size: 3479
+Filename: luci-app-usb-printer_1.0_all.ipk
+Size: 4325
+SHA256sum: dcb14998cfcf8188116bade22ab8fbb44cb50a4b29d1524ac585355a4870c8c7
+Description:  USB Printer Share via TCP/IP
 
 Package: luci-app-uugamebooster
 Version: 1.0
@@ -2403,17 +2402,6 @@ Size: 1364
 SHA256sum: e6a060ef778acbdc1e4b773cca5f8817f1c66f10dd24a9ad025f43b3f5052199
 Description:  Translation for luci-app-unblockmusic - 简体中文 (Chinese Simplified)
 
-Package: luci-i18n-usb-printer-zh-cn
-Version: git-21.029.28694-99f3896
-Depends: libc, luci-app-usb-printer
-Section: luci
-Architecture: all
-Installed-Size: 946
-Filename: luci-i18n-usb-printer-zh-cn_git-21.029.28694-99f3896_all.ipk
-Size: 1800
-SHA256sum: dd4df29b129b4db8ae64dc4ccc811a4349437c5e9338ce1008658981547afd86
-Description:  Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
-
 Package: luci-i18n-usb3disable-zh-cn
 Version: git-21.029.28694-99f3896
 Depends: libc, luci-app-usb3disable
@@ -2424,6 +2412,17 @@ Filename: luci-i18n-usb3disable-zh-cn_git-21.029.28694-99f3896_all.ipk
 Size: 1385
 SHA256sum: de828e56a84e03f50ba2b4dfbcf362baef1a4245c0cf14d6a006f014ffab8c19
 Description:  Translation for luci-app-usb3disable - 简体中文 (Chinese Simplified)
+
+Package: luci-i18n-usb-printer-zh-cn
+Version: git-21.029.28694-99f3896
+Depends: libc, luci-app-usb-printer
+Section: luci
+Architecture: all
+Installed-Size: 946
+Filename: luci-i18n-usb-printer-zh-cn_git-21.029.28694-99f3896_all.ipk
+Size: 1800
+SHA256sum: dd4df29b129b4db8ae64dc4ccc811a4349437c5e9338ce1008658981547afd86
+Description:  Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-uugamebooster-zh-cn
 Version: git-21.029.28694-99f3896
@@ -2712,17 +2711,6 @@ Description:  netdata is a highly optimized Linux daemon providing real-time per
  If you want to use Python plugins install python3, python3-yaml and
  python3-urllib3
 
-Package: netkeeper-interception
-Version: 0.2-1
-Depends: libc, ppp, rp-pppoe-server
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 3524
-Filename: netkeeper-interception_0.2-1_mipsel_24kc.ipk
-Size: 4310
-SHA256sum: 8ff02d28e6d8fccce84eb0856e704bef3de8b2cf2cfc7bf407c1e88a686cc17a
-Description:  Netkeeper Account Dump Plugin
-
 Package: netkeeper
 Version: 3-2
 Depends: libc, ppp-mod-pppoe
@@ -2733,6 +2721,17 @@ Filename: netkeeper_3-2_mipsel_24kc.ipk
 Size: 7988
 SHA256sum: d5d46a5500054aae0d11378b50682934aba479521d789cd8b48e6fff005febd8
 Description:  Netkeeper
+
+Package: netkeeper-interception
+Version: 0.2-1
+Depends: libc, ppp, rp-pppoe-server
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 3524
+Filename: netkeeper-interception_0.2-1_mipsel_24kc.ipk
+Size: 4310
+SHA256sum: 8ff02d28e6d8fccce84eb0856e704bef3de8b2cf2cfc7bf407c1e88a686cc17a
+Description:  Netkeeper Account Dump Plugin
 
 Package: ngrokc
 Version: 1.54-1
@@ -2894,6 +2893,20 @@ Size: 116323
 SHA256sum: 37798df08c051edefa541806302ff75a464883489eb1ac776f66d86fcea9ff32
 Description:  ps3netsrv allows you to stream games and ISOs over the network to your CFW PlayStation(R) 3 system.
  This may be useful if you have a modified PS3, and your router has storage options.
+
+Package: python3
+Version: 3.9.1-1
+Depends: libc, python3-light, python3-unittest, python3-ncurses, python3-ctypes, python3-pydoc, python3-decimal, python3-multiprocessing, python3-urllib, python3-gdbm, python3-xml, python3-sqlite3, python3-logging, python3-distutils, python3-email, python3-openssl, python3-cgi, python3-cgitb, python3-dbm, python3-codecs, python3-lzma, python3-asyncio
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 212
+Filename: python3_3.9.1-1_mipsel_24kc.ipk
+Size: 1230
+SHA256sum: aa7f0eac57468aa13ec81fc025d4d756abed6a18c84b5c4dd78d8bbe294547f7
+Description:  This package contains the (almost) full Python install.
+ It's python3-light + all other packages.
 
 Package: python3-asyncio
 Version: 3.9.1-1
@@ -3236,20 +3249,6 @@ Size: 222137
 SHA256sum: e1c018f00f8d0b026ec33fa96a4ccb7dae495e842d2b4fc0f29c9ce73378a0ae
 Description:  Python 3.9 xml libs
 
-Package: python3
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-unittest, python3-ncurses, python3-ctypes, python3-pydoc, python3-decimal, python3-multiprocessing, python3-urllib, python3-gdbm, python3-xml, python3-sqlite3, python3-logging, python3-distutils, python3-email, python3-openssl, python3-cgi, python3-cgitb, python3-dbm, python3-codecs, python3-lzma, python3-asyncio
-License: Python/2.0
-Section: lang
-CPE-ID: cpe:/a:python:python
-Architecture: mipsel_24kc
-Installed-Size: 212
-Filename: python3_3.9.1-1_mipsel_24kc.ipk
-Size: 1230
-SHA256sum: aa7f0eac57468aa13ec81fc025d4d756abed6a18c84b5c4dd78d8bbe294547f7
-Description:  This package contains the (almost) full Python install.
- It's python3-light + all other packages.
-
 Package: qBittorrent-Enhanced-Edition
 Version: 4.3.3.10-1
 Depends: libc
@@ -3264,6 +3263,27 @@ Description:  qBittorrent is a bittorrent client programmed in C++ / Qt that use
  It aims to be a good alternative to all other bittorrent clients out
  there. qBittorrent is fast, stable and provides unicode support as
  well as many features.
+
+Package: rclone
+Version: 1.53.0-1
+Depends: libc
+License: GPLv3
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 10267476
+Filename: rclone_1.53.0-1_mipsel_24kc.ipk
+Size: 10232554
+SHA256sum: db2644e159742fd3ae7a357ceadb89e9d24ee3ccfdf8fefce630db7542c42e88
+Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
+ Cloud storage providers:
+ 1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
+ Backblaze B2, Box, Ceph, C14, DigitalOcean Spaces, Dreamhost, Dropbox, FTP, 
+ Google Cloud Storage, Google Drive, Google Photos, HTTP, Hubic, Jottacloud, 
+ IBM COS S3, Koofr, Memset Memstore, Mega, Microsoft Azure Blob Storage, 
+ Microsoft OneDrive, Minio, Nextcloud, OVH, OpenDrive, Openstack Swift, 
+ Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
+ Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
+ Yandex Disk, The local root/usr/binystem.
 
 Package: rclone-ng
 Version: 0.5.0-1
@@ -3288,27 +3308,6 @@ Filename: rclone-webui-react_0.1.0-1_all.ipk
 Size: 4364407
 SHA256sum: 601b37c10918b4ed7a7a02f10f907123abf64c38829a86878425fb634f95bfa2
 Description:  A full fledged UI for the rclone cloud sync tool.
-
-Package: rclone
-Version: 1.53.0-1
-Depends: libc
-License: GPLv3
-Section: utils
-Architecture: mipsel_24kc
-Installed-Size: 10267476
-Filename: rclone_1.53.0-1_mipsel_24kc.ipk
-Size: 10232554
-SHA256sum: db2644e159742fd3ae7a357ceadb89e9d24ee3ccfdf8fefce630db7542c42e88
-Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
- Cloud storage providers:
- 1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
- Backblaze B2, Box, Ceph, C14, DigitalOcean Spaces, Dreamhost, Dropbox, FTP, 
- Google Cloud Storage, Google Drive, Google Photos, HTTP, Hubic, Jottacloud, 
- IBM COS S3, Koofr, Memset Memstore, Mega, Microsoft Azure Blob Storage, 
- Microsoft OneDrive, Minio, Nextcloud, OVH, OpenDrive, Openstack Swift, 
- Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
- Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
- Yandex Disk, The local root/usr/binystem.
 
 Package: redsocks2
 Version: 0.67-4
@@ -3433,6 +3432,18 @@ Description:  SmartDNS is a local DNS server which accepts DNS query requests fr
  gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
  Unlike dnsmasq's all-servers, smartdns returns the fastest IP. 
 
+Package: subconverter
+Version: 0.6.4-3
+Depends: libc, libpthread, libstdcpp6, libevent2-7, libyaml-cpp0.6, libpcre2, libcurl4, zlib
+License: GPL-3.0
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 1073177
+Filename: subconverter_0.6.4-3_mipsel_24kc.ipk
+Size: 1073720
+SHA256sum: a6123b1e8e718a920be2d61e77c9c71c82da6ce4eb2e89635fbbcc5da72a38b2
+Description:  Utility to convert between various proxy subscription formats.
+
 Package: sub-web
 Version: 1.0.0-6
 Depends: libc, subconverter
@@ -3445,18 +3456,6 @@ Size: 966159
 SHA256sum: a0b0683b565fab49914fc6c9816de2543a872c841fe988bf22a5c3a7f6e1db69
 Description:  Based on vue-cli and subconverter, for generating proxy subscription
  url automatically.
-
-Package: subconverter
-Version: 0.6.4-3
-Depends: libc, libpthread, libstdcpp6, libevent2-7, libyaml-cpp0.6, libpcre2, libcurl4, zlib
-License: GPL-3.0
-Section: utils
-Architecture: mipsel_24kc
-Installed-Size: 1073177
-Filename: subconverter_0.6.4-3_mipsel_24kc.ipk
-Size: 1073720
-SHA256sum: a6123b1e8e718a920be2d61e77c9c71c82da6ce4eb2e89635fbbcc5da72a38b2
-Description:  Utility to convert between various proxy subscription formats.
 
 Package: swap-zram-writeback
 Version: 1.0-6
@@ -3531,6 +3530,18 @@ SHA256sum: 46df7e824c2a6aac986c37ca5bbfd64aad401d7de9705c645c59aa898da5489c
 Description:  A Lightweight High-Performance Port Mapping/Forwarding Utility
  using epoll/libev, supports IPv4 and IPv6 for both TCP and UDP.
 
+Package: trojan
+Version: 1.16.0-1
+Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+License: GPL-3.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 262169
+Filename: trojan_1.16.0-1_mipsel_24kc.ipk
+Size: 262134
+SHA256sum: d276d65f3ead7c827735be48bb16d1d4a6aff585073512574de9ec2823946f30
+Description:  An unidentifiable mechanism that helps you bypass GFW
+
 Package: trojan-go
 Version: 0.8.2-2
 Depends: libc
@@ -3554,18 +3565,6 @@ Size: 357033
 SHA256sum: 0fc1181838bdb949b54847bbf12c9030b2445b0899746bf1955635e9591aa2d8
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
-Package: trojan
-Version: 1.16.0-1
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
-License: GPL-3.0
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 262169
-Filename: trojan_1.16.0-1_mipsel_24kc.ipk
-Size: 262134
-SHA256sum: d276d65f3ead7c827735be48bb16d1d4a6aff585073512574de9ec2823946f30
-Description:  An unidentifiable mechanism that helps you bypass GFW
-
 Package: udp2raw-tunnel
 Version: 20200818.0-1
 Depends: libc, libstdcpp6, libpthread, librt
@@ -3578,6 +3577,29 @@ Size: 133773
 SHA256sum: aac27ecc935974a30882f06376e6cff0ccddfcbae131d34929e3707fa7460f28
 Description:  udp2raw-tunnel is a tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic by using Raw Socket.
 
+Package: UnblockNeteaseMusic
+Version: 0.25.3-5
+Depends: libc, node, libopenssl1.1
+License: MIT
+Section: multimedia
+Architecture: all
+Installed-Size: 35767
+Filename: UnblockNeteaseMusic_0.25.3-5_all.ipk
+Size: 36635
+SHA256sum: 14f4bd05dd5d76153a99ed3d2058a4141f1f04afe2c0fd0527ced99f24acb11c
+Description:  Revive Netease Cloud Music (NodeJS)
+
+Package: UnblockNeteaseMusic-Go
+Version: 0.2.7-1
+Depends: libc
+Section: multimedia
+Architecture: mipsel_24kc
+Installed-Size: 1541301
+Filename: UnblockNeteaseMusic-Go_0.2.7-1_mipsel_24kc.ipk
+Size: 1542368
+SHA256sum: 94bbeb604182e191275e91559157d85ebda58fa18fe0ea3bf220f5c0e0c027bc
+Description:  Revive Netease Cloud Music (Golang)
+
 Package: uugamebooster
 Version: v2.7.2-2
 Depends: libc, kmod-tun
@@ -3588,18 +3610,6 @@ Filename: uugamebooster_v2.7.2-2_mipsel_24kc.ipk
 Size: 1465389
 SHA256sum: f1a0d95c093a0c430152159c3233dd440ebe60285fee62ac0db0d89ff7ba07df
 Description:  NetEase's UU Game Booster Accelerates Triple-A Gameplay and Market
-
-Package: v2ray-plugin
-Version: 1.8.0-1
-Depends: libc, ca-bundle
-License: MIT
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 2486257
-Filename: v2ray-plugin_1.8.0-1_mipsel_24kc.ipk
-Size: 2487543
-SHA256sum: 18e5c97c36da0db60b197bc17f593131e52c58450cab3219211871d64394460e
-Description:  Yet another SIP003 plugin for shadowsocks, based on v2ray
 
 Package: v2ray
 Version: 4.34.0-1
@@ -3615,6 +3625,18 @@ Description:  Project V is a set of network tools that help you to build your ow
  It secures your network connections and thus protects your privacy.
  
  This package contains v2ray, v2ctl, geoip.dat and geosite.dat.
+
+Package: v2ray-plugin
+Version: 1.8.0-1
+Depends: libc, ca-bundle
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 2486257
+Filename: v2ray-plugin_1.8.0-1_mipsel_24kc.ipk
+Size: 2487543
+SHA256sum: 18e5c97c36da0db60b197bc17f593131e52c58450cab3219211871d64394460e
+Description:  Yet another SIP003 plugin for shadowsocks, based on v2ray
 
 Package: verysync
 Version: v2.4.2-1
