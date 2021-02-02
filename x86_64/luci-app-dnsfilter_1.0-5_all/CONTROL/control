@@ -1,0 +1,12 @@
+Package: luci-app-dnsfilter
+Version: 1.0-5
+Depends: libc, curl, dnsmasq-full, ipset
+Source: feeds/custom/luci-app-dnsfilter
+SourceName: luci-app-dnsfilter
+License: GPLv2
+Section: LuCI
+SourceDateEpoch: 1612128542
+Maintainer: small_5 GaryPang
+Architecture: all
+Installed-Size: 9386
+Description:  Luci Support for DNSFilter.

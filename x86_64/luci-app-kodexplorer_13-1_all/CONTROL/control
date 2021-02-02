@@ -1,0 +1,10 @@
+Package: luci-app-kodexplorer
+Version: 13-1
+Depends: libc, nginx-ssl, nginx-util, zoneinfo-asia, php7, php7-fpm, php7-mod-curl, php7-mod-gd, php7-mod-iconv, php7-mod-json, php7-mod-mbstring, php7-mod-opcache, php7-mod-session, php7-mod-zip, php7-mod-sqlite3, php7-mod-pdo, php7-mod-pdo-sqlite, php7-mod-pdo-mysql
+Source: feeds/custom/luci-app-kodexplorer
+SourceName: luci-app-kodexplorer
+Section: luci
+SourceDateEpoch: 1600160179
+Architecture: all
+Installed-Size: 7575
+Description:  LuCI support for KodExplorer

@@ -1,0 +1,4 @@
+/etc/config/dnsfilter
+/etc/dnsfilter/ip.list
+/etc/dnsfilter/white.list
+/etc/dnsfilter/black.list

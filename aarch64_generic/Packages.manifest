@@ -1188,8 +1188,8 @@ SourceDateEpoch: 1600160179
 Architecture: all
 Installed-Size: 7575
 Filename: luci-app-kodexplorer_13-1_all.ipk
-Size: 8563
-SHA256sum: 6f41d8703a4c3f3d7e3613d5d1fd376491f18495262b2e0604be4f1306c48f65
+Size: 8513
+SHA256sum: fe1de926096ad45a546ebb41778e7cc791d7bfa998aacedaa65217b11d6d4997
 Description:  LuCI support for KodExplorer
 
 Package: luci-app-koolproxyR
