@@ -230,6 +230,36 @@ Size: 4834
 SHA256sum: 28e26afbeacf203c598a110899519f88958411422e420d4acae7ede64394ce7d
 Description:  Default Settings
 
+Package: default-settings
+Version: git-21.036.20029-3c76d05
+Depends: libc, luci-base
+Source: feeds/custom/default-settings
+SourceName: default-settings
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1612503229
+Architecture: all
+Installed-Size: 5002
+Filename: default-settings_git-21.036.20029-3c76d05_all.ipk
+Size: 5800
+SHA256sum: 463e013159b190cb84c4e0f5963b670f1ed26732cd2e64e6ecf74fc10617d42f
+Description:  Default Settings
+
+Package: default-settings
+Version: git-21.037.20029-3c76d05
+Depends: libc, luci-base
+Source: feeds/custom/default-settings
+SourceName: default-settings
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1612503229
+Architecture: all
+Installed-Size: 5002
+Filename: default-settings_git-21.037.20029-3c76d05_all.ipk
+Size: 5722
+SHA256sum: d637fe4856b449dc8b55a3fb7ec4a2d07db7c9e6ce900677a28dd7b5dc76a4b6
+Description:  Default Settings
+
 Package: dns2socks
 Version: 2.1-1
 Depends: libc, libpthread
@@ -739,6 +769,20 @@ Installed-Size: 2500522
 Filename: luci-app-bypass_1.2-47_all.ipk
 Size: 2331728
 SHA256sum: c098e92c718b77945d590fcb26a0053b99a3757b108db4a93d3710a87e61c6a8
+Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-app-bypass
+Version: 1.2-48
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, unzip, lua-maxminddb, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, simple-obfs, xray-core, trojan-plus, trojan-go, redsocks2, microsocks
+Source: feeds/custom/luci-app-bypass
+SourceName: luci-app-bypass
+Section: luci
+SourceDateEpoch: 1612517581
+Architecture: all
+Installed-Size: 2500548
+Filename: luci-app-bypass_1.2-48_all.ipk
+Size: 2331295
+SHA256sum: 8ef3aa5b581f1e7aa108851d0a98da1bcaaf315d1b376b865977c32ab7c2a1e4
 Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-chinadns
@@ -1623,12 +1667,12 @@ Depends: libc, iputils-arping, curl
 Source: feeds/custom/luci-app-serverchan
 SourceName: luci-app-serverchan
 Section: luci
-SourceDateEpoch: 1611364224
+SourceDateEpoch: 1612503229
 Architecture: all
-Installed-Size: 19512
+Installed-Size: 19602
 Filename: luci-app-serverchan_1.80-8_all.ipk
-Size: 20303
-SHA256sum: 9cfb2e95c212a27067e96e5701dfb980c7f2bf4fd05ca848318adb2f01361269
+Size: 20346
+SHA256sum: aaabd209b8f15961c0f3bdcabe4e054ffb0cd27ad110e289d882584e4995afbb
 Description:  LuCI support for serverchan
 
 Package: luci-app-serverchand
