@@ -1,0 +1,11 @@
+Package: default-settings
+Version: git-21.037.23897-26d1640
+Depends: libc, luci-base
+Source: feeds/custom/default-settings
+SourceName: default-settings
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1612593497
+Architecture: all
+Installed-Size: 4987
+Description:  Default Settings

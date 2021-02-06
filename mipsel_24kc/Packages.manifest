@@ -1,34 +1,3 @@
-Package: UnblockNeteaseMusic-Go
-Version: 0.2.7-2
-Depends: libc
-Source: feeds/custom/UnblockNeteaseMusic-Go
-SourceName: UnblockNeteaseMusic-Go
-License: GPL-3.0
-Section: multimedia
-SourceDateEpoch: 1612532905
-Maintainer: Silvan <cnsilvan@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 1541573
-Filename: UnblockNeteaseMusic-Go_0.2.7-2_mipsel_24kc.ipk
-Size: 1542669
-SHA256sum: 9ede454a7d007a72b69dd640292ff32ffc9b7e651e109a7b735a63e0f1147f70
-Description:  Revive Netease Cloud Music (Golang)
-
-Package: UnblockNeteaseMusic
-Version: 0.25.3-6
-Depends: libc, node, libopenssl1.1
-Source: feeds/custom/UnblockNeteaseMusic
-SourceName: UnblockNeteaseMusic
-License: MIT
-Section: multimedia
-SourceDateEpoch: 1612532905
-Architecture: all
-Installed-Size: 35762
-Filename: UnblockNeteaseMusic_0.25.3-6_all.ipk
-Size: 36634
-SHA256sum: 6a9a7faad691da813d0873705769923e2fe74bdec9ebf38d871446b9c9364f74
-Description:  Revive Netease Cloud Music (NodeJS)
-
 Package: amule
 Version: 2.3.2-5
 Depends: libc, libpng, libpthread, libncurses6, libreadline8, libwxbase, libupnp, libbfd, libcryptopp
@@ -244,6 +213,21 @@ Size: 5777
 SHA256sum: fc3a75ee687ea81cb38729f8a3a25fdebc3dde0526811c13cce26f6c39dd065e
 Description:  Default Settings
 
+Package: default-settings
+Version: git-21.037.49705-477bf13
+Depends: libc, luci-base
+Source: feeds/custom/default-settings
+SourceName: default-settings
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1612532905
+Architecture: all
+Installed-Size: 4976
+Filename: default-settings_git-21.037.49705-477bf13_all.ipk
+Size: 5676
+SHA256sum: b4bf8cfaf52ca5f2361d0c48b0176cced3f47a648e176c578ded34f50cd85d64
+Description:  Default Settings
+
 Package: dns2socks
 Version: 2.1-1
 Depends: libc, libpthread
@@ -349,6 +333,20 @@ Size: 1348389
 SHA256sum: 98fcb201dfa87da711164f6012177caa424df400c8c461878410d2260507e37f
 Description:  A simple WebDav server written in Golang.
 
+Package: ipt2socks
+Version: 1.1.3-2
+Depends: libc
+Source: feeds/custom/ipt2socks
+SourceName: ipt2socks
+Section: net
+SourceDateEpoch: 1612532905
+Architecture: mipsel_24kc
+Installed-Size: 32319
+Filename: ipt2socks_1.1.3-2_mipsel_24kc.ipk
+Size: 32998
+SHA256sum: 9cf66f32c290ab157c8b4446e06c85e5bd02f6df824761ac2f2ead33a5372457
+Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+
 Package: ipt2socks-alt
 Version: 1.0.2-1
 Depends: libc, libpthread, libuv1
@@ -363,20 +361,6 @@ Filename: ipt2socks-alt_1.0.2-1_mipsel_24kc.ipk
 Size: 21842
 SHA256sum: a7112ece0669e95e57550ced4fe3611cc96cb2d363e8002a905b18722e17ea2b
 Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
-
-Package: ipt2socks
-Version: 1.1.3-2
-Depends: libc
-Source: feeds/custom/ipt2socks
-SourceName: ipt2socks
-Section: net
-SourceDateEpoch: 1612532905
-Architecture: mipsel_24kc
-Installed-Size: 32319
-Filename: ipt2socks_1.1.3-2_mipsel_24kc.ipk
-Size: 32998
-SHA256sum: 9cf66f32c290ab157c8b4446e06c85e5bd02f6df824761ac2f2ead33a5372457
-Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
 
 Package: iptvhelper
 Version: 0.1.1-1
@@ -673,12 +657,12 @@ Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, smartdns, core
 Source: feeds/custom/luci-app-bypass
 SourceName: luci-app-bypass
 Section: luci
-SourceDateEpoch: 1612532905
+SourceDateEpoch: 1612552764
 Architecture: all
-Installed-Size: 2500578
+Installed-Size: 2500545
 Filename: luci-app-bypass_1.2-48_all.ipk
-Size: 2331743
-SHA256sum: 35c86eaf1a55ae048f79e8d6abb8c6e6fd39260941464c2369792a17aec78a68
+Size: 2331444
+SHA256sum: 910ae457d3c2cefe39c91e82e357a98f8c2523dd10f43497c4f053a871fcba4d
 Description:  SS/SSR/V2Ray/Xray/Trojan/Trojan-Go/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-cifs
@@ -1056,17 +1040,17 @@ SHA256sum: 16eb570899b0cf8672cb754743634e86487f25eaea343833275c535399daf0ba
 Description:  LuCI support for Kcptun
 
 Package: luci-app-kodexplorer
-Version: 13-1
-Depends: libc, nginx-ssl, nginx-util, zoneinfo-asia, php7, php7-fpm, php7-mod-curl, php7-mod-gd, php7-mod-iconv, php7-mod-json, php7-mod-mbstring, php7-mod-opcache, php7-mod-session, php7-mod-zip, php7-mod-sqlite3, php7-mod-pdo, php7-mod-pdo-sqlite, php7-mod-pdo-mysql
+Version: 13
+Depends: libc, nginx, unzip, zoneinfo-asia, php7, php7-fpm, php7-mod-curl, php7-mod-gd, php7-mod-iconv, php7-mod-json, php7-mod-mbstring, php7-mod-opcache, php7-mod-session, php7-mod-zip, php7-mod-sqlite3, php7-mod-pdo, php7-mod-pdo-sqlite, php7-mod-pdo-mysql
 Source: feeds/custom/luci-app-kodexplorer
 SourceName: luci-app-kodexplorer
 Section: luci
-SourceDateEpoch: 1600160179
+SourceDateEpoch: 1612553665
 Architecture: all
-Installed-Size: 7575
-Filename: luci-app-kodexplorer_13-1_all.ipk
-Size: 8563
-SHA256sum: 6f41d8703a4c3f3d7e3613d5d1fd376491f18495262b2e0604be4f1306c48f65
+Installed-Size: 7723
+Filename: luci-app-kodexplorer_13_all.ipk
+Size: 8693
+SHA256sum: 298da31b5e7c5ec433edf3371c2e25b2256c20aaeea861947d46ed79be72a8d4
 Description:  LuCI support for KodExplorer
 
 Package: luci-app-koolproxyR
@@ -1835,20 +1819,6 @@ Size: 8152
 SHA256sum: 57863f4b1227136c24909a0be9bc764c23950326cd97004ba84b340bae463271
 Description:  LuCI support for Unblock NeteaseCloudMusic
 
-Package: luci-app-usb-printer
-Version: 1.0
-Depends: libc, p910nd, kmod-usb-printer
-Source: feeds/custom/luci-app-usb-printer
-SourceName: luci-app-usb-printer
-Section: luci
-SourceDateEpoch: 1612532905
-Architecture: all
-Installed-Size: 3486
-Filename: luci-app-usb-printer_1.0_all.ipk
-Size: 4341
-SHA256sum: 995ee9421610e64e928aa5b80a92b9b53739ac2ce09b1df7d5783b7b9d9aee60
-Description:  USB Printer Share via TCP/IP
-
 Package: luci-app-usb3disable
 Version: 1.0
 Depends: libc
@@ -1862,6 +1832,20 @@ Filename: luci-app-usb3disable_1.0_all.ipk
 Size: 2076
 SHA256sum: 4acf415e9179888fb0cc7834453e72c678f03022cc241edfafaf82f95bc4fc95
 Description:  LuCI support disable usb3
+
+Package: luci-app-usb-printer
+Version: 1.0
+Depends: libc, p910nd, kmod-usb-printer
+Source: feeds/custom/luci-app-usb-printer
+SourceName: luci-app-usb-printer
+Section: luci
+SourceDateEpoch: 1612532905
+Architecture: all
+Installed-Size: 3486
+Filename: luci-app-usb-printer_1.0_all.ipk
+Size: 4341
+SHA256sum: 995ee9421610e64e928aa5b80a92b9b53739ac2ce09b1df7d5783b7b9d9aee60
+Description:  USB Printer Share via TCP/IP
 
 Package: luci-app-uugamebooster
 Version: 1.0
@@ -3081,20 +3065,6 @@ Size: 1368
 SHA256sum: 8263450e68f3a839340adc0a689d29c7448cf3077b21f9531f7756b06bb16530
 Description:  Translation for luci-app-unblockmusic - 简体中文 (Chinese Simplified)
 
-Package: luci-i18n-usb-printer-zh-cn
-Version: git-21.036.49705-477bf13
-Depends: libc, luci-app-usb-printer
-Source: feeds/custom/luci-app-usb-printer
-SourceName: luci-i18n-usb-printer-zh-cn
-Section: luci
-SourceDateEpoch: 1612532905
-Architecture: all
-Installed-Size: 948
-Filename: luci-i18n-usb-printer-zh-cn_git-21.036.49705-477bf13_all.ipk
-Size: 1806
-SHA256sum: 0f906d6271fc23dbb93e66d924cb97a51a2b1726fad862101664a005f068d2bc
-Description:  Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
-
 Package: luci-i18n-usb3disable-zh-cn
 Version: git-21.036.49705-477bf13
 Depends: libc, luci-app-usb3disable
@@ -3108,6 +3078,20 @@ Filename: luci-i18n-usb3disable-zh-cn_git-21.036.49705-477bf13_all.ipk
 Size: 1382
 SHA256sum: b72632506ed6789f3393e753824f339a46ae857219b1d0e4c41e3d51b6462847
 Description:  Translation for luci-app-usb3disable - 简体中文 (Chinese Simplified)
+
+Package: luci-i18n-usb-printer-zh-cn
+Version: git-21.036.49705-477bf13
+Depends: libc, luci-app-usb-printer
+Source: feeds/custom/luci-app-usb-printer
+SourceName: luci-i18n-usb-printer-zh-cn
+Section: luci
+SourceDateEpoch: 1612532905
+Architecture: all
+Installed-Size: 948
+Filename: luci-i18n-usb-printer-zh-cn_git-21.036.49705-477bf13_all.ipk
+Size: 1806
+SHA256sum: 0f906d6271fc23dbb93e66d924cb97a51a2b1726fad862101664a005f068d2bc
+Description:  Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-uugamebooster-zh-cn
 Version: git-21.036.49705-477bf13
@@ -3484,20 +3468,6 @@ Description:  netdata is a highly optimized Linux daemon providing real-time per
  If you want to use Python plugins install python3, python3-yaml and
  python3-urllib3
 
-Package: netkeeper-interception
-Version: 0.2-1
-Depends: libc, ppp, rp-pppoe-server
-Source: feeds/custom/netkeeper-interception
-SourceName: netkeeper-interception
-Section: net
-SourceDateEpoch: 1612532905
-Architecture: mipsel_24kc
-Installed-Size: 3525
-Filename: netkeeper-interception_0.2-1_mipsel_24kc.ipk
-Size: 4315
-SHA256sum: 2b7ecaf828ef799ab4cf2856efd26b05fd0579304eeb17ffb42abbe6a4ac69c7
-Description:  Netkeeper Account Dump Plugin
-
 Package: netkeeper
 Version: 3-2
 Depends: libc, ppp-mod-pppoe
@@ -3511,6 +3481,20 @@ Filename: netkeeper_3-2_mipsel_24kc.ipk
 Size: 8017
 SHA256sum: eb3f2f218bb96ee7f5c455c9dd6424276bd88461a3331da572cce6b4e3bd3f42
 Description:  Netkeeper
+
+Package: netkeeper-interception
+Version: 0.2-1
+Depends: libc, ppp, rp-pppoe-server
+Source: feeds/custom/netkeeper-interception
+SourceName: netkeeper-interception
+Section: net
+SourceDateEpoch: 1612532905
+Architecture: mipsel_24kc
+Installed-Size: 3525
+Filename: netkeeper-interception_0.2-1_mipsel_24kc.ipk
+Size: 4315
+SHA256sum: 2b7ecaf828ef799ab4cf2856efd26b05fd0579304eeb17ffb42abbe6a4ac69c7
+Description:  Netkeeper Account Dump Plugin
 
 Package: ngrokc
 Version: 1.54-1
@@ -3717,496 +3701,6 @@ SHA256sum: 1bd5fa21d7a3ddde22c8a7f4478d354313da1086d23413ac19b15b68340e8830
 Description:  ps3netsrv allows you to stream games and ISOs over the network to your CFW PlayStation(R) 3 system.
  This may be useful if you have a modified PS3, and your router has storage options.
 
-Package: python3-asyncio
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-asyncio
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 144221
-Filename: python3-asyncio_3.9.1-1_mipsel_24kc.ipk
-Size: 145224
-SHA256sum: 4e79c9b4ff0de201234878411b048c4821d54085e5a400063212c75d8d57bf36
-Description:  Python 3.9 asyncio module
-
-Package: python3-base
-Version: 3.9.1-1
-Depends: libc, libpthread, zlib
-Source: feeds/packages/lang/python/python3
-SourceName: python3-base
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 1467849
-Filename: python3-base_3.9.1-1_mipsel_24kc.ipk
-Size: 1462758
-SHA256sum: 4bfa82a2e87243732310897cf09ae925094eca3ba66bc386f84089d78dcd2a9c
-Description:  This package contains only the interpreter and the bare minimum
- for the interpreter to start.
-
-Package: python3-cgi
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-email
-Source: feeds/packages/lang/python/python3
-SourceName: python3-cgi
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 12003
-Filename: python3-cgi_3.9.1-1_mipsel_24kc.ipk
-Size: 12899
-SHA256sum: 71cd372c7d9512bf1b596ade601e6b7712c358595b8b93fdda242a32cfc30d43
-Description:  Python 3.9 cgi module
-
-Package: python3-cgitb
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-cgi, python3-pydoc
-Source: feeds/packages/lang/python/python3
-SourceName: python3-cgitb
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 5516
-Filename: python3-cgitb_3.9.1-1_mipsel_24kc.ipk
-Size: 6391
-SHA256sum: d54a32e92c5443b116a78600dffa35847ac5dbfc436d0859d03cd6bf98b2abb7
-Description:  Python 3.9 cgitb module
-
-Package: python3-codecs
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-codecs
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 775300
-Filename: python3-codecs_3.9.1-1_mipsel_24kc.ipk
-Size: 748328
-SHA256sum: 62a2bf53c4bafadab7484ad3f96d1c2caed967a01ab8e2c28c4e56c9967173f0
-Description:  Python 3.9 codecs + unicode support
-
-Package: python3-ctypes
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-ctypes
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 75920
-Filename: python3-ctypes_3.9.1-1_mipsel_24kc.ipk
-Size: 76766
-SHA256sum: 3fda272ee3278f3e6529b069d02b408e0c9d2cd65443cd1b6ce0230761b66028
-Description:  Python 3.9 ctypes module
-
-Package: python3-dbm
-Version: 3.9.1-1
-Depends: libc, python3-light, libdb47
-Source: feeds/packages/lang/python/python3
-SourceName: python3-dbm
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 11116
-Filename: python3-dbm_3.9.1-1_mipsel_24kc.ipk
-Size: 12008
-SHA256sum: 8a8ef87bd8674f41021e393490f4b0d8d834bd022596894730cb13bb8dd584a4
-Description:  Python 3.9 dbm module
-
-Package: python3-decimal
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-decimal
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 109143
-Filename: python3-decimal_3.9.1-1_mipsel_24kc.ipk
-Size: 109844
-SHA256sum: 03d2eddabd2837aea038b4368e03ff776bdf7a3294a29167dba4a42eca36dc23
-Description:  Python 3.9 decimal module
-
-Package: python3-distutils
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-email
-Source: feeds/packages/lang/python/python3
-SourceName: python3-distutils
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 175763
-Filename: python3-distutils_3.9.1-1_mipsel_24kc.ipk
-Size: 176771
-SHA256sum: 7d8ca1f1c9cd81e2ca076922fc105a86c62a2b8bb0b45c201bc2eda70c262a85
-Description:  Python 3.9 distutils module
-
-Package: python3-email
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-email
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 112963
-Filename: python3-email_3.9.1-1_mipsel_24kc.ipk
-Size: 113976
-SHA256sum: 7f1cacea121267da5fe1cae977cd39ecd7a8f630813efc963986c27a84e6a600
-Description:  Python 3.9 email module
-
-Package: python3-gdbm
-Version: 3.9.1-1
-Depends: libc, python3-light, libgdbm
-Source: feeds/packages/lang/python/python3
-SourceName: python3-gdbm
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 7108
-Filename: python3-gdbm_3.9.1-1_mipsel_24kc.ipk
-Size: 7987
-SHA256sum: b522a4935198499c0701671beda8c7aa9b66177f0fb236876f701160c003dbac
-Description:  Python 3.9 gdbm module
-
-Package: python3-light
-Version: 3.9.1-1
-Depends: libc, python3-base, libffi, libbz2-1.0, libuuid1
-Source: feeds/packages/lang/python/python3
-SourceName: python3-light
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 1952067
-Filename: python3-light_3.9.1-1_mipsel_24kc.ipk
-Size: 1952806
-SHA256sum: a47ee1f0ac5fcf60501c3a3e526a9fc3166153d1e0090b4b04341647b9485f45
-Description:  This package is essentially the python3-base package plus
- a few of the rarely used (and big) libraries stripped out
- into separate packages.
-
-Package: python3-logging
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-logging
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 52011
-Filename: python3-logging_3.9.1-1_mipsel_24kc.ipk
-Size: 52990
-SHA256sum: 94cd414fa2f6dd10c3edd0ab351cdc3f58c7957f0369b755972a4b1b5f9cb6eb
-Description:  Python 3.9 logging module
-
-Package: python3-lzma
-Version: 3.9.1-1
-Depends: libc, python3-light, liblzma
-Source: feeds/packages/lang/python/python3
-SourceName: python3-lzma
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 16692
-Filename: python3-lzma_3.9.1-1_mipsel_24kc.ipk
-Size: 17572
-SHA256sum: 6feb28c373327a6b6cb04213b40ee161aaf8d263ee9897f80ccd157da4fd1d76
-Description:  Python 3.9 lzma module
-
-Package: python3-multiprocessing
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-multiprocessing
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 99536
-Filename: python3-multiprocessing_3.9.1-1_mipsel_24kc.ipk
-Size: 100568
-SHA256sum: 7f39c76bd55ee64098fd144d8e0426341aada7badc0b4dd79e27533d5bf29654
-Description:  Python 3.9 multiprocessing
-
-Package: python3-ncurses
-Version: 3.9.1-1
-Depends: libc, python3-light, libncurses6
-Source: feeds/packages/lang/python/python3
-SourceName: python3-ncurses
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 46764
-Filename: python3-ncurses_3.9.1-1_mipsel_24kc.ipk
-Size: 47369
-SHA256sum: 01cc371b1e86f6614e19a359e6cbb873ee3dc46c324234814afbd43f243816c3
-Description:  Python 3.9 ncurses module
-
-Package: python3-openssl
-Version: 3.9.1-1
-Depends: libc, python3-light, libopenssl1.1, ca-certs
-Source: feeds/packages/lang/python/python3
-SourceName: python3-openssl
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 69186
-Filename: python3-openssl_3.9.1-1_mipsel_24kc.ipk
-Size: 69317
-SHA256sum: 2136a034a0797906915a7877d9af0240ef8017e8330e8cc66b832ca39f9bcb4b
-Description:  Python 3.9 SSL module
-
-Package: python3-pip
-Version: 20.2.3-1
-Depends: libc, python3, python3-setuptools, python-pip-conf
-Source: feeds/packages/lang/python/python3
-SourceName: python3-pip
-License: MIT
-LicenseFiles: LICENSE.txt
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 1379498
-Filename: python3-pip_20.2.3-1_mipsel_24kc.ipk
-Size: 1379293
-SHA256sum: 2c5df2fbf0273e7b1978ab73df373d11d8aeb55477cf88867195b625e019b35c
-Description:  Python 3.9 pip module
-
-Package: python3-pkg-resources
-Version: 49.2.1-1
-Depends: libc, python3
-Source: feeds/packages/lang/python/python3
-SourceName: python3-pkg-resources
-License: MIT
-LicenseFiles: LICENSE
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 151078
-Filename: python3-pkg-resources_49.2.1-1_mipsel_24kc.ipk
-Size: 152078
-SHA256sum: 06c3e0ece0b37cfdb9227feb194d3ee03de4fc83eef4a0cee6df1b857569550d
-Description:  Python 3.9 pkg_resources module (part of setuptools)
-
-Package: python3-psutil
-Version: 5.8.0-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python-psutil
-SourceName: python3-psutil
-License: BSD 3-Clause
-LicenseFiles: LICENSE
-Section: lang
-SourceDateEpoch: 1612516688
-Maintainer: Jan Pavlinec <jan.pavlinec@nic.cz>
-Architecture: mipsel_24kc
-Installed-Size: 268022
-Filename: python3-psutil_5.8.0-1_mipsel_24kc.ipk
-Size: 268994
-SHA256sum: 017ac2cc58091fcaff1ab23024558b762180978df3c38a0dab20e83ac327f09e
-Description:  psutil is a cross-platform library for retrieving information
- on running processes and system utilization.
-
-Package: python3-pydoc
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-pydoc
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 191271
-Filename: python3-pydoc_3.9.1-1_mipsel_24kc.ipk
-Size: 192233
-SHA256sum: f8ef76cbfdeab0ca401188a539d4bbf13ef6d2f413fd9155f1c1d11831e106a1
-Description:  Python 3.9 pydoc module
-
-Package: python3-setuptools
-Version: 49.2.1-1
-Depends: libc, python3, python3-pkg-resources
-Source: feeds/packages/lang/python/python3
-SourceName: python3-setuptools
-License: MIT
-LicenseFiles: LICENSE
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 470281
-Filename: python3-setuptools_49.2.1-1_mipsel_24kc.ipk
-Size: 471281
-SHA256sum: 710c1e2a02e45560a9c584746416b6e0d9b050ea208553170533d4cb0264541f
-Description:  Python 3.9 setuptools module
-
-Package: python3-sqlite3
-Version: 3.9.1-1
-Depends: libc, python3-light, libsqlite3-0
-Source: feeds/packages/lang/python/python3
-SourceName: python3-sqlite3
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 28432
-Filename: python3-sqlite3_3.9.1-1_mipsel_24kc.ipk
-Size: 29298
-SHA256sum: 26b890ed7212d2f6899a7aef778663a60e118317d36c792268936600263e9e4f
-Description:  Python 3.9 sqlite3 module
-
-Package: python3-unittest
-Version: 3.9.1-1
-Depends: libc, python3-light
-Source: feeds/packages/lang/python/python3
-SourceName: python3-unittest
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 76363
-Filename: python3-unittest_3.9.1-1_mipsel_24kc.ipk
-Size: 77353
-SHA256sum: a1e62821574b8fe21a7ce14ba30deb131fde96ec71842a8c9aed71715a27daad
-Description:  Python 3.9 unittest module
-
-Package: python3-urllib
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-email
-Source: feeds/packages/lang/python/python3
-SourceName: python3-urllib
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 50690
-Filename: python3-urllib_3.9.1-1_mipsel_24kc.ipk
-Size: 51701
-SHA256sum: 37e0a10c77408e6f44aac76a30df998df6ee01926069d94fef0d98bc640b5afa
-Description:  Python 3.9 URL library module
-
-Package: python3-xml
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-urllib
-Source: feeds/packages/lang/python/python3
-SourceName: python3-xml
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 221509
-Filename: python3-xml_3.9.1-1_mipsel_24kc.ipk
-Size: 222126
-SHA256sum: c92657368ee6254ad26b1d9a0a9a969af36108c85641097a4719a6e43849d6d2
-Description:  Python 3.9 xml libs
-
-Package: python3
-Version: 3.9.1-1
-Depends: libc, python3-light, python3-unittest, python3-ncurses, python3-ctypes, python3-pydoc, python3-decimal, python3-multiprocessing, python3-urllib, python3-gdbm, python3-xml, python3-sqlite3, python3-logging, python3-distutils, python3-email, python3-openssl, python3-cgi, python3-cgitb, python3-dbm, python3-codecs, python3-lzma, python3-asyncio
-Source: feeds/packages/lang/python/python3
-SourceName: python3
-License: Python/2.0
-LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
-Section: lang
-SourceDateEpoch: 1612516688
-CPE-ID: cpe:/a:python:python
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 212
-Filename: python3_3.9.1-1_mipsel_24kc.ipk
-Size: 1225
-SHA256sum: aa6d3a7d0c1919ae19e55796563f4f54938592cfa3b8ab737321542653c9ceab
-Description:  This package contains the (almost) full Python install.
- It's python3-light + all other packages.
-
 Package: qBittorrent-Enhanced-Edition
 Version: 4.3.3.10-1
 Depends: libc
@@ -4224,6 +3718,31 @@ Description:  qBittorrent is a bittorrent client programmed in C++ / Qt that use
  It aims to be a good alternative to all other bittorrent clients out
  there. qBittorrent is fast, stable and provides unicode support as
  well as many features.
+
+Package: rclone
+Version: 1.53.0-1
+Depends: libc
+Source: feeds/custom/rclone
+SourceName: rclone
+License: GPLv3
+Section: utils
+SourceDateEpoch: 1612532905
+Maintainer: ElonH <elonhhuang@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 10267469
+Filename: rclone_1.53.0-1_mipsel_24kc.ipk
+Size: 10232410
+SHA256sum: fa476f1eace36827f5e94fd2bd2c0d4d34a9120558563b7e43f976ce5f36cb29
+Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
+ Cloud storage providers:
+ 1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
+ Backblaze B2, Box, Ceph, C14, DigitalOcean Spaces, Dreamhost, Dropbox, FTP, 
+ Google Cloud Storage, Google Drive, Google Photos, HTTP, Hubic, Jottacloud, 
+ IBM COS S3, Koofr, Memset Memstore, Mega, Microsoft Azure Blob Storage, 
+ Microsoft OneDrive, Minio, Nextcloud, OVH, OpenDrive, Openstack Swift, 
+ Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
+ Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
+ Yandex Disk, The local root/usr/binystem.
 
 Package: rclone-ng
 Version: 0.5.0-1
@@ -4256,31 +3775,6 @@ Filename: rclone-webui-react_0.1.0-1_all.ipk
 Size: 4365742
 SHA256sum: 181aa68f1b1a76ca3db672b7920ee7327e2bc9cac0a5b69a31e6dbb511f36d7f
 Description:  A full fledged UI for the rclone cloud sync tool.
-
-Package: rclone
-Version: 1.53.0-1
-Depends: libc
-Source: feeds/custom/rclone
-SourceName: rclone
-License: GPLv3
-Section: utils
-SourceDateEpoch: 1612532905
-Maintainer: ElonH <elonhhuang@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 10267469
-Filename: rclone_1.53.0-1_mipsel_24kc.ipk
-Size: 10232410
-SHA256sum: fa476f1eace36827f5e94fd2bd2c0d4d34a9120558563b7e43f976ce5f36cb29
-Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
- Cloud storage providers:
- 1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
- Backblaze B2, Box, Ceph, C14, DigitalOcean Spaces, Dreamhost, Dropbox, FTP, 
- Google Cloud Storage, Google Drive, Google Photos, HTTP, Hubic, Jottacloud, 
- IBM COS S3, Koofr, Memset Memstore, Mega, Microsoft Azure Blob Storage, 
- Microsoft OneDrive, Minio, Nextcloud, OVH, OpenDrive, Openstack Swift, 
- Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
- Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
- Yandex Disk, The local root/usr/binystem.
 
 Package: redsocks2
 Version: 0.67-4
@@ -4464,6 +3958,23 @@ Description:  SmartDNS is a local DNS server which accepts DNS query requests fr
  gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
  Unlike dnsmasq's all-servers, smartdns returns the fastest IP. 
 
+Package: subconverter
+Version: 0.6.4-3
+Depends: libc, libpthread, libstdcpp6, libevent2-7, libyaml-cpp0.6, libpcre2, libcurl4, zlib
+Source: feeds/custom/subconverter
+SourceName: subconverter
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1612532905
+Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
+Architecture: mipsel_24kc
+Installed-Size: 1072314
+Filename: subconverter_0.6.4-3_mipsel_24kc.ipk
+Size: 1072939
+SHA256sum: 38902ab37981a820f8a12c2bb5c31492c32048cde27cf028c191afbc6c40ce29
+Description:  Utility to convert between various proxy subscription formats.
+
 Package: sub-web
 Version: 1.0.0-6
 Depends: libc, subconverter
@@ -4481,23 +3992,6 @@ Size: 966170
 SHA256sum: b43f85c4f2bba6f9aa34487760c59feffa9db402579c2ec8685cad54e6eb87ba
 Description:  Based on vue-cli and subconverter, for generating proxy subscription
  url automatically.
-
-Package: subconverter
-Version: 0.6.4-3
-Depends: libc, libpthread, libstdcpp6, libevent2-7, libyaml-cpp0.6, libpcre2, libcurl4, zlib
-Source: feeds/custom/subconverter
-SourceName: subconverter
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: utils
-SourceDateEpoch: 1612532905
-Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
-Architecture: mipsel_24kc
-Installed-Size: 1072314
-Filename: subconverter_0.6.4-3_mipsel_24kc.ipk
-Size: 1072939
-SHA256sum: 38902ab37981a820f8a12c2bb5c31492c32048cde27cf028c191afbc6c40ce29
-Description:  Utility to convert between various proxy subscription formats.
 
 Package: swap-zram-writeback
 Version: 1.0-6
@@ -4591,6 +4085,22 @@ SHA256sum: 7ef621c76519a3dd7f3ffdc52fdacbb90ece790d64502798c702b66b6bd7764a
 Description:  A Lightweight High-Performance Port Mapping/Forwarding Utility
  using epoll/libev, supports IPv4 and IPv6 for both TCP and UDP.
 
+Package: trojan
+Version: 1.16.0-1
+Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+Source: feeds/custom/trojan
+SourceName: trojan
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1612532905
+Maintainer: GreaterFire
+Architecture: mipsel_24kc
+Installed-Size: 262168
+Filename: trojan_1.16.0-1_mipsel_24kc.ipk
+Size: 262136
+SHA256sum: 4faf0a9337c579b5e303de534cb574241295676c5630aae5ef1ad06db3e1f20d
+Description:  An unidentifiable mechanism that helps you bypass GFW
+
 Package: trojan-go
 Version: 0.8.2-2
 Depends: libc
@@ -4621,22 +4131,6 @@ Size: 357034
 SHA256sum: 03ec2a850201081518125e13ab0e8cb18eedc4a2f86a58026f9f05abbe20a990
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
-Package: trojan
-Version: 1.16.0-1
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
-Source: feeds/custom/trojan
-SourceName: trojan
-License: GPL-3.0
-Section: net
-SourceDateEpoch: 1612532905
-Maintainer: GreaterFire
-Architecture: mipsel_24kc
-Installed-Size: 262168
-Filename: trojan_1.16.0-1_mipsel_24kc.ipk
-Size: 262136
-SHA256sum: 4faf0a9337c579b5e303de534cb574241295676c5630aae5ef1ad06db3e1f20d
-Description:  An unidentifiable mechanism that helps you bypass GFW
-
 Package: udp2raw-tunnel
 Version: 20200818.0-1
 Depends: libc, libstdcpp6, libpthread, librt
@@ -4654,6 +4148,37 @@ Size: 133805
 SHA256sum: eb3a7107cdb44dbe5d4835d47c0cbf3559d6e2f2418e583dc966aab105a42b25
 Description:  udp2raw-tunnel is a tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic by using Raw Socket.
 
+Package: UnblockNeteaseMusic
+Version: 0.25.3-6
+Depends: libc, node, libopenssl1.1
+Source: feeds/custom/UnblockNeteaseMusic
+SourceName: UnblockNeteaseMusic
+License: MIT
+Section: multimedia
+SourceDateEpoch: 1612532905
+Architecture: all
+Installed-Size: 35762
+Filename: UnblockNeteaseMusic_0.25.3-6_all.ipk
+Size: 36634
+SHA256sum: 6a9a7faad691da813d0873705769923e2fe74bdec9ebf38d871446b9c9364f74
+Description:  Revive Netease Cloud Music (NodeJS)
+
+Package: UnblockNeteaseMusic-Go
+Version: 0.2.7-2
+Depends: libc
+Source: feeds/custom/UnblockNeteaseMusic-Go
+SourceName: UnblockNeteaseMusic-Go
+License: GPL-3.0
+Section: multimedia
+SourceDateEpoch: 1612532905
+Maintainer: Silvan <cnsilvan@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 1541573
+Filename: UnblockNeteaseMusic-Go_0.2.7-2_mipsel_24kc.ipk
+Size: 1542669
+SHA256sum: 9ede454a7d007a72b69dd640292ff32ffc9b7e651e109a7b735a63e0f1147f70
+Description:  Revive Netease Cloud Music (Golang)
+
 Package: uugamebooster
 Version: v2.7.2-2
 Depends: libc, kmod-tun
@@ -4667,23 +4192,6 @@ Filename: uugamebooster_v2.7.2-2_mipsel_24kc.ipk
 Size: 1465334
 SHA256sum: 1cb97769bc98c751fcbe97083743269e30e05ca12031f332559e38cb94d2d4f5
 Description:  NetEase's UU Game Booster Accelerates Triple-A Gameplay and Market
-
-Package: v2ray-plugin
-Version: 1.8.0-1
-Depends: libc, ca-bundle
-Source: feeds/custom/v2ray-plugin
-SourceName: v2ray-plugin
-License: MIT
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1612532905
-Maintainer: madeye <max.c.lv@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 2486174
-Filename: v2ray-plugin_1.8.0-1_mipsel_24kc.ipk
-Size: 2487460
-SHA256sum: bf8cf37870f309c2721512f973d2773958db87f0b5964a2753eb21958b4c2cf3
-Description:  Yet another SIP003 plugin for shadowsocks, based on v2ray
 
 Package: v2ray
 Version: 4.34.0-1
@@ -4704,6 +4212,23 @@ Description:  Project V is a set of network tools that help you to build your ow
  It secures your network connections and thus protects your privacy.
  
  This package contains v2ray, v2ctl, geoip.dat and geosite.dat.
+
+Package: v2ray-plugin
+Version: 1.8.0-1
+Depends: libc, ca-bundle
+Source: feeds/custom/v2ray-plugin
+SourceName: v2ray-plugin
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1612532905
+Maintainer: madeye <max.c.lv@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 2486174
+Filename: v2ray-plugin_1.8.0-1_mipsel_24kc.ipk
+Size: 2487460
+SHA256sum: bf8cf37870f309c2721512f973d2773958db87f0b5964a2753eb21958b4c2cf3
+Description:  Yet another SIP003 plugin for shadowsocks, based on v2ray
 
 Package: verysync
 Version: v2.4.2-1
