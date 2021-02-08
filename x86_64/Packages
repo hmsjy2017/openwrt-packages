@@ -203,22 +203,6 @@ Description:  filebrowser provides a file managing interface within a specified 
  It allows the creation of multiple users and each user can have its own directory.
  It can be used as a standalone app or as a middleware.
 
-Package: frpc
-Version: 0.34.3-1
-Depends: libc
-License: Apache-2.0
-Section: net
-Architecture: x86_64
-Installed-Size: 2771924
-Filename: frpc_0.34.3-1_x86_64.ipk
-Size: 2773365
-SHA256sum: c6d7f1ec52073172748f4886b89f2413a0b69fb7968660acab39c7c97a267faf
-Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
- to the internet. As of now, it supports tcp & udp, as well as http and https protocols,
- where requests can be forwarded to internal services by domain name.
- 
- This package contains the frpc.
-
 Package: gost
 Version: 2.11.1-1
 Depends: libc
