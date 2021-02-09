@@ -621,7 +621,7 @@ Description:  LuCI Support for ipset feature of dnsmasq-full.
 
 Package: luci-app-dockerman
 Version: v0.5.13
-Depends: libc, luci-compat, luci-lib-docker, docker, dockerd, ttyd
+Depends: libc, luci-compat, luci-lib-docker, ttyd
 License: AGPL-3.0
 Section: luci
 Architecture: all
