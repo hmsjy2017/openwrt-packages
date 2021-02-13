@@ -1,34 +1,3 @@
-Package: UnblockNeteaseMusic-Go
-Version: 0.2.7-2
-Depends: libc
-Source: feeds/custom/UnblockNeteaseMusic-Go
-SourceName: UnblockNeteaseMusic-Go
-License: GPL-3.0
-Section: multimedia
-SourceDateEpoch: 1612982727
-Maintainer: Silvan <cnsilvan@gmail.com>
-Architecture: x86_64
-Installed-Size: 3373
-Filename: UnblockNeteaseMusic-Go_0.2.7-2_x86_64.ipk
-Size: 4129
-SHA256sum: b6a8e1d2280fa1b81360acb3017dfbafb18a8a34e5d2d2619dc10c7e5e7d3470
-Description:  Revive Netease Cloud Music (Golang)
-
-Package: UnblockNeteaseMusic
-Version: 0.25.3-6
-Depends: libc, node, libopenssl1.1
-Source: feeds/custom/UnblockNeteaseMusic
-SourceName: UnblockNeteaseMusic
-License: MIT
-Section: multimedia
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 35770
-Filename: UnblockNeteaseMusic_0.25.3-6_all.ipk
-Size: 36634
-SHA256sum: 620e5242eb254390d259b9c3e658394f58846d1dcf2be434538315f89cb83728
-Description:  Revive Netease Cloud Music (NodeJS)
-
 Package: amule
 Version: 2.3.2-5
 Depends: libc, libpng, libpthread, libncurses6, libreadline8, libwxbase, libupnp, libbfd, libcryptopp
@@ -330,6 +299,20 @@ Size: 1874
 SHA256sum: 6d9352e7ed9fd8c58b6b304f0ff86e35540835211968c57f77055b4f6f41bcbc
 Description:  A simple WebDav server written in Golang.
 
+Package: ipt2socks
+Version: 1.1.3-2
+Depends: libc
+Source: feeds/custom/ipt2socks
+SourceName: ipt2socks
+Section: net
+SourceDateEpoch: 1612982727
+Architecture: x86_64
+Installed-Size: 36077
+Filename: ipt2socks_1.1.3-2_x86_64.ipk
+Size: 36858
+SHA256sum: 58491b98cc5f05e20cf80b387b0a9d6aad214982f2b50e67f9643e7578e71f15
+Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+
 Package: ipt2socks-alt
 Version: 1.0.2-1
 Depends: libc, libpthread, libuv
@@ -344,20 +327,6 @@ Filename: ipt2socks-alt_1.0.2-1_x86_64.ipk
 Size: 996
 SHA256sum: 2785dafa865704eb60b271340026db30c548448e886bfce14a258feea15e2c1f
 Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
-
-Package: ipt2socks
-Version: 1.1.3-2
-Depends: libc
-Source: feeds/custom/ipt2socks
-SourceName: ipt2socks
-Section: net
-SourceDateEpoch: 1612982727
-Architecture: x86_64
-Installed-Size: 36077
-Filename: ipt2socks_1.1.3-2_x86_64.ipk
-Size: 36858
-SHA256sum: 58491b98cc5f05e20cf80b387b0a9d6aad214982f2b50e67f9643e7578e71f15
-Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
 
 Package: iptvhelper
 Version: 0.1.1-1
@@ -406,6 +375,23 @@ Description:  wxBase contains most of the non-GUI classes from the wxWindows cro
  code (date/time handling, command line parsing, regular expression support)
  and wrappers for the OS objects (files, directories, sockets, threads,
  etc.) allowing you to write portable programs easily.
+
+Package: libx264
+Version: snapshot-20190324-2245-2
+Depends: libc, libpthread
+Source: feeds/custom/luci/libx264
+SourceName: libx264
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Adrian Panella <ianchi74@outlook.com>
+Architecture: x86_64
+Installed-Size: 889916
+Filename: libx264_snapshot-20190324-2245-2_x86_64.ipk
+Size: 890146
+SHA256sum: 825d921124b478b867d24809f7b27a7acab9f96bcf4aeb66d2a5bbd6c27bef75
+Description:  x264 is a free software library for encoding
+ video streams into the H.264/MPEG-4 AVC compression format.
 
 Package: lua-maxminddb
 Version: 0.2-2
@@ -631,20 +617,6 @@ Size: 10363
 SHA256sum: a46f204f59db4f1ffb0e405d1313306450e153692589876d593848d0fa6c5456
 Description:  LuCI luci-app-beardropper app
 
-Package: luci-app-brook-server
-Version: 1
-Depends: libc, brook
-Source: feeds/custom/luci-app-brook-server
-SourceName: luci-app-brook-server
-Section: luci
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 8505
-Filename: luci-app-brook-server_1_all.ipk
-Size: 9375
-SHA256sum: 63d5f06310cc0efdfc7ae1902cabad4839936631675462b655382c95c2113d22
-Description:  LuCI support for Brook Server
-
 Package: luci-app-brook
 Version: 1.0.2
 Depends: libc, ipset, ip, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, brook
@@ -661,6 +633,20 @@ Filename: luci-app-brook_1.0.2_all.ipk
 Size: 75477
 SHA256sum: 200ca497ba54c5416167571c923bdaf6f35d268f304b83248548294699a53684
 Description:  LuCI Support for Brook.
+
+Package: luci-app-brook-server
+Version: 1
+Depends: libc, brook
+Source: feeds/custom/luci-app-brook-server
+SourceName: luci-app-brook-server
+Section: luci
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 8505
+Filename: luci-app-brook-server_1_all.ipk
+Size: 9375
+SHA256sum: 63d5f06310cc0efdfc7ae1902cabad4839936631675462b655382c95c2113d22
+Description:  LuCI support for Brook Server
 
 Package: luci-app-bypass
 Version: 1.2-49
@@ -693,20 +679,6 @@ Size: 2825
 SHA256sum: 626790f238384d0789e834fa066112cc0c5bfe14655d73fbedb3b598056eb7c0
 Description:  This package contains LuCI configuration pages for wired IEEE 802.1x authentication.
 
-Package: luci-app-cifs-mount
-Version: 1
-Depends: libc, kmod-fs-cifs, kmod-nls-utf8
-Source: feeds/custom/luci-app-cifs-mount
-SourceName: luci-app-cifs-mount
-Section: luci
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 2172
-Filename: luci-app-cifs-mount_1_all.ipk
-Size: 3027
-SHA256sum: f9088051044f2ed14b0c969065dcf6a223df7220d6b0a4ed6a5515248364fdbb
-Description:  LuCI for SMB/CIFS Mount
-
 Package: luci-app-cifs
 Version: 1.0
 Depends: libc, kmod-fs-cifs, kmod-nls-utf8, kmod-nls-base, kmod-crypto-hmac, kmod-crypto-md5, kmod-crypto-misc, cifsmount
@@ -734,6 +706,20 @@ Filename: luci-app-cifsd_1_all.ipk
 Size: 2805
 SHA256sum: 73ebdda23a3d21d0913d7898a9801b7c54a4ca6f878107de0548b0f54176dac5
 Description:  Network Shares - CIFSD CIFS/SMB kernel fileserver
+
+Package: luci-app-cifs-mount
+Version: 1
+Depends: libc, kmod-fs-cifs, kmod-nls-utf8
+Source: feeds/custom/luci-app-cifs-mount
+SourceName: luci-app-cifs-mount
+Section: luci
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 2172
+Filename: luci-app-cifs-mount_1_all.ipk
+Size: 3027
+SHA256sum: f9088051044f2ed14b0c969065dcf6a223df7220d6b0a4ed6a5515248364fdbb
+Description:  LuCI for SMB/CIFS Mount
 
 Package: luci-app-compressed-memory
 Version: git-21.041.67527-444d785
@@ -2018,20 +2004,6 @@ Size: 8160
 SHA256sum: b5119d084cd819df176b37268e9523a865a3466e60e6251b4220bf3378d3e226
 Description:  LuCI support for Unblock NeteaseCloudMusic
 
-Package: luci-app-usb-printer
-Version: 1.0
-Depends: libc, p910nd, kmod-usb-printer
-Source: feeds/custom/luci-app-usb-printer
-SourceName: luci-app-usb-printer
-Section: luci
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 3477
-Filename: luci-app-usb-printer_1.0_all.ipk
-Size: 4325
-SHA256sum: 5275ad8e293df9c1aa8b2cdd3e599b302215de18c651523b0a2466d65912ecb7
-Description:  USB Printer Share via TCP/IP
-
 Package: luci-app-usb3disable
 Version: 1.0
 Depends: libc
@@ -2045,6 +2017,20 @@ Filename: luci-app-usb3disable_1.0_all.ipk
 Size: 2077
 SHA256sum: 3a0defb576ac0ce7e3e37511dcb1f36741a323e04ef08f4eacc1350a4041195b
 Description:  LuCI support disable usb3
+
+Package: luci-app-usb-printer
+Version: 1.0
+Depends: libc, p910nd, kmod-usb-printer
+Source: feeds/custom/luci-app-usb-printer
+SourceName: luci-app-usb-printer
+Section: luci
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 3477
+Filename: luci-app-usb-printer_1.0_all.ipk
+Size: 4325
+SHA256sum: 5275ad8e293df9c1aa8b2cdd3e599b302215de18c651523b0a2466d65912ecb7
+Description:  USB Printer Share via TCP/IP
 
 Package: luci-app-uugamebooster
 Version: 1.0
@@ -2453,6 +2439,20 @@ Size: 1461
 SHA256sum: 17f4f363410d5f8f09e4436331023687b4f17d5d214d1a12a4b2d75e5c0ed539
 Description:  Translation for luci-app-cd8021x - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-cifsd-zh-cn
+Version: git-21.041.67527-444d785
+Depends: libc, luci-app-cifsd
+Source: feeds/custom/luci-app-cifsd
+SourceName: luci-i18n-cifsd-zh-cn
+Section: luci
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 1281
+Filename: luci-i18n-cifsd-zh-cn_git-21.041.67527-444d785_all.ipk
+Size: 2133
+SHA256sum: 6c714914093f1ab3fbf337223f8e954f035fd172233cc54c4a4133486258ce63
+Description:  Translation for luci-app-cifsd - 简体中文 (Chinese Simplified)
+
 Package: luci-i18n-cifs-mount-zh-cn
 Version: git-21.041.67527-444d785
 Depends: libc, luci-app-cifs-mount
@@ -2480,20 +2480,6 @@ Filename: luci-i18n-cifs-zh-cn_git-21.041.67527-444d785_all.ipk
 Size: 1640
 SHA256sum: 2fd74c82bf6d476c3f06afc4a4e738b499cdbb8be3fd99fd0edd224319eb2419
 Description:  Translation for luci-app-cifs - 简体中文 (Chinese Simplified)
-
-Package: luci-i18n-cifsd-zh-cn
-Version: git-21.041.67527-444d785
-Depends: libc, luci-app-cifsd
-Source: feeds/custom/luci-app-cifsd
-SourceName: luci-i18n-cifsd-zh-cn
-Section: luci
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 1281
-Filename: luci-i18n-cifsd-zh-cn_git-21.041.67527-444d785_all.ipk
-Size: 2133
-SHA256sum: 6c714914093f1ab3fbf337223f8e954f035fd172233cc54c4a4133486258ce63
-Description:  Translation for luci-app-cifsd - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-control-timewol-zh-cn
 Version: git-21.041.67527-444d785
@@ -2598,20 +2584,6 @@ Size: 1349
 SHA256sum: d804151b085123be771974c6373bb173aefdd1dd00f0c7a26e057f80e603a5b5
 Description:  Translation for luci-app-dnsforwarder - 简体中文 (Chinese Simplified)
 
-Package: luci-i18n-docker-zh-cn
-Version: git-21.041.67527-444d785
-Depends: libc, luci-app-docker
-Source: feeds/custom/luci-app-docker
-SourceName: luci-i18n-docker-zh-cn
-Section: luci
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 905
-Filename: luci-i18n-docker-zh-cn_git-21.041.67527-444d785_all.ipk
-Size: 1760
-SHA256sum: 7209e07f5cc0599787d3c1b1c20a4d7556d2431746a4fdbcda3a833fd7fceff6
-Description:  Translation for luci-app-docker - 简体中文 (Chinese Simplified)
-
 Package: luci-i18n-dockerman-zh-cn
 Version: git-21.041.67527-444d785
 Depends: libc, luci-app-dockerman
@@ -2627,6 +2599,20 @@ Filename: luci-i18n-dockerman-zh-cn_git-21.041.67527-444d785_all.ipk
 Size: 4501
 SHA256sum: 5bcdf0753722c7ece2b24a864be16f8c611ed40223cb295da4ce11c951a78ac7
 Description:  Translation for luci-app-dockerman - 简体中文 (Chinese Simplified)
+
+Package: luci-i18n-docker-zh-cn
+Version: git-21.041.67527-444d785
+Depends: libc, luci-app-docker
+Source: feeds/custom/luci-app-docker
+SourceName: luci-i18n-docker-zh-cn
+Section: luci
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 905
+Filename: luci-i18n-docker-zh-cn_git-21.041.67527-444d785_all.ipk
+Size: 1760
+SHA256sum: 7209e07f5cc0599787d3c1b1c20a4d7556d2431746a4fdbcda3a833fd7fceff6
+Description:  Translation for luci-app-docker - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-eqos-zh-cn
 Version: git-21.041.67527-444d785
@@ -3495,20 +3481,6 @@ Size: 1366
 SHA256sum: 5d05878dda8ddd1b4e4e9efb868d25356a0ddee832dd697e687d2985a55c4f1b
 Description:  Translation for luci-app-unblockmusic - 简体中文 (Chinese Simplified)
 
-Package: luci-i18n-usb-printer-zh-cn
-Version: git-21.041.67527-444d785
-Depends: libc, luci-app-usb-printer
-Source: feeds/custom/luci-app-usb-printer
-SourceName: luci-i18n-usb-printer-zh-cn
-Section: luci
-SourceDateEpoch: 1612982727
-Architecture: all
-Installed-Size: 948
-Filename: luci-i18n-usb-printer-zh-cn_git-21.041.67527-444d785_all.ipk
-Size: 1802
-SHA256sum: 2a553a7be8fc38c64826cb67c2e3395f4819a07d06476f601f80d9b83a45cf82
-Description:  Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
-
 Package: luci-i18n-usb3disable-zh-cn
 Version: git-21.041.67527-444d785
 Depends: libc, luci-app-usb3disable
@@ -3522,6 +3494,20 @@ Filename: luci-i18n-usb3disable-zh-cn_git-21.041.67527-444d785_all.ipk
 Size: 1385
 SHA256sum: 78034d6e20f07984ae717252eb50e619ea2b31d2b6e34eb6940d162bba1a6c50
 Description:  Translation for luci-app-usb3disable - 简体中文 (Chinese Simplified)
+
+Package: luci-i18n-usb-printer-zh-cn
+Version: git-21.041.67527-444d785
+Depends: libc, luci-app-usb-printer
+Source: feeds/custom/luci-app-usb-printer
+SourceName: luci-i18n-usb-printer-zh-cn
+Section: luci
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 948
+Filename: luci-i18n-usb-printer-zh-cn_git-21.041.67527-444d785_all.ipk
+Size: 1802
+SHA256sum: 2a553a7be8fc38c64826cb67c2e3395f4819a07d06476f601f80d9b83a45cf82
+Description:  Translation for luci-app-usb-printer - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-uugamebooster-zh-cn
 Version: git-21.041.67527-444d785
@@ -3919,6 +3905,19 @@ SHA256sum: e1a326c4c5d330ec9d4d2b1660fc17e3c825595460db3b8b087e9414e08270ee
 Description:  NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
  with a powerful web management terminal.
 
+Package: open-vm-tools
+Version: devel-1a39495-1
+Depends: libc, glib2, libpthread, libtirpc
+Source: package/openwrt-vm-tools
+License: LGPL-2.1
+Section: utils
+Architecture: x86_64
+Installed-Size: 440537
+Filename: open-vm-tools_devel-1a39495-1_x86_64.ipk
+Size: 439392
+SHA256sum: a22af69b70afc1624f94b37acc057639a4ac4355c7d75fa05bde7803f9a4b8a0
+Description:  open-vm-tools
+
 Package: oscam
 Version: r11518-33e2d6-1
 Depends: libc, libopenssl1.1, libusb-1.0-0, pcscd
@@ -4016,6 +4015,24 @@ SHA256sum: bd5868050a1c7c0585ab4b178cf556456013c935d978bd30742777e6ebdd0f81
 Description:  ps3netsrv allows you to stream games and ISOs over the network to your CFW PlayStation(R) 3 system.
  This may be useful if you have a modified PS3, and your router has storage options.
 
+Package: qBittorrent
+Version: 4.3.3_v1.2.12-1
+Depends: libc
+Source: feeds/custom/qBittorrent
+SourceName: qBittorrent
+Section: net
+SourceDateEpoch: 1612982727
+Architecture: x86_64
+Installed-Size: 11689154
+Filename: qBittorrent_4.3.3_v1.2.12-1_x86_64.ipk
+Size: 11681443
+SHA256sum: 6572c27002273ed77582e3373dd59beb8db9a43a71143edd6ed7366ea61e98bc
+Description:  qBittorrent is a bittorrent client programmed in C++ / Qt that uses
+ libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
+ It aims to be a good alternative to all other bittorrent clients out
+ there. qBittorrent is fast, stable and provides unicode support as
+ well as many features.
+
 Package: qBittorrent-Enhanced-Edition
 Version: 4.3.3.10-1
 Depends: libc
@@ -4034,23 +4051,30 @@ Description:  qBittorrent is a bittorrent client programmed in C++ / Qt that use
  there. qBittorrent is fast, stable and provides unicode support as
  well as many features.
 
-Package: qBittorrent
-Version: 4.3.3_v1.2.12-1
+Package: rclone
+Version: 1.53.0-1
 Depends: libc
-Source: feeds/custom/qBittorrent
-SourceName: qBittorrent
-Section: net
+Source: feeds/custom/rclone
+SourceName: rclone
+License: GPLv3
+Section: utils
 SourceDateEpoch: 1612982727
+Maintainer: ElonH <elonhhuang@gmail.com>
 Architecture: x86_64
-Installed-Size: 11689154
-Filename: qBittorrent_4.3.3_v1.2.12-1_x86_64.ipk
-Size: 11681443
-SHA256sum: 6572c27002273ed77582e3373dd59beb8db9a43a71143edd6ed7366ea61e98bc
-Description:  qBittorrent is a bittorrent client programmed in C++ / Qt that uses
- libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
- It aims to be a good alternative to all other bittorrent clients out
- there. qBittorrent is fast, stable and provides unicode support as
- well as many features.
+Installed-Size: 12265544
+Filename: rclone_1.53.0-1_x86_64.ipk
+Size: 12220290
+SHA256sum: 1900eabfd53109015b84abe1692412ab6d481fcd397aa9a724b1a514daf5a9f9
+Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
+ Cloud storage providers:
+ 1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
+ Backblaze B2, Box, Ceph, C14, DigitalOcean Spaces, Dreamhost, Dropbox, FTP, 
+ Google Cloud Storage, Google Drive, Google Photos, HTTP, Hubic, Jottacloud, 
+ IBM COS S3, Koofr, Memset Memstore, Mega, Microsoft Azure Blob Storage, 
+ Microsoft OneDrive, Minio, Nextcloud, OVH, OpenDrive, Openstack Swift, 
+ Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
+ Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
+ Yandex Disk, The local root/usr/binystem.
 
 Package: rclone-ng
 Version: 0.5.0-1
@@ -4083,31 +4107,6 @@ Filename: rclone-webui-react_0.1.0-1_all.ipk
 Size: 4365604
 SHA256sum: 94554427c293255c37947b22a97909ccc2ee2169528e04c8c76f06d4f772fddd
 Description:  A full fledged UI for the rclone cloud sync tool.
-
-Package: rclone
-Version: 1.53.0-1
-Depends: libc
-Source: feeds/custom/rclone
-SourceName: rclone
-License: GPLv3
-Section: utils
-SourceDateEpoch: 1612982727
-Maintainer: ElonH <elonhhuang@gmail.com>
-Architecture: x86_64
-Installed-Size: 235
-Filename: rclone_1.53.0-1_x86_64.ipk
-Size: 1375
-SHA256sum: 37f174c3cefa12ea9ff10d0138e34c5f83374a8736b86d7f2b0e614eaa947d8d
-Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
- Cloud storage providers:
- 1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
- Backblaze B2, Box, Ceph, C14, DigitalOcean Spaces, Dreamhost, Dropbox, FTP, 
- Google Cloud Storage, Google Drive, Google Photos, HTTP, Hubic, Jottacloud, 
- IBM COS S3, Koofr, Memset Memstore, Mega, Microsoft Azure Blob Storage, 
- Microsoft OneDrive, Minio, Nextcloud, OVH, OpenDrive, Openstack Swift, 
- Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
- Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
- Yandex Disk, The local root/usr/binystem.
 
 Package: redsocks2
 Version: 0.67-4
@@ -4271,23 +4270,6 @@ Size: 881
 SHA256sum: 71e56dfb820f6c0db996e80a02eb9d3118f891ddf3d0b33c254cfe8e1fc78461
 Description:  shadowsocksr-libev ssr-server
 
-Package: simple-obfs-server
-Version: 0.0.5-5
-Depends: libc, libpthread, libev
-Source: feeds/custom/simple-obfs
-SourceName: simple-obfs-server
-License: GPLv3
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1612982727
-Maintainer: Jian Chang <aa65535@live.com>
-Architecture: x86_64
-Installed-Size: 138
-Filename: simple-obfs-server_0.0.5-5_x86_64.ipk
-Size: 927
-SHA256sum: 49f7488d8183589484ff2f9543da4b733f91bcb60bd5ff3d1499189141947e24
-Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
-
 Package: simple-obfs
 Version: 0.0.5-5
 Depends: libc, libpthread, libev
@@ -4303,6 +4285,23 @@ Installed-Size: 239
 Filename: simple-obfs_0.0.5-5_x86_64.ipk
 Size: 1032
 SHA256sum: 8fe3d997927cf2fb488628a430b30383df5481046c3109cc9786fbd90ebec88d
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: simple-obfs-server
+Version: 0.0.5-5
+Depends: libc, libpthread, libev
+Source: feeds/custom/simple-obfs
+SourceName: simple-obfs-server
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1612982727
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 138
+Filename: simple-obfs-server_0.0.5-5_x86_64.ipk
+Size: 927
+SHA256sum: 49f7488d8183589484ff2f9543da4b733f91bcb60bd5ff3d1499189141947e24
 Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
 Package: simple-torrent
@@ -4357,6 +4356,23 @@ Size: 17541
 SHA256sum: a35bcef32d310540deaf9137594b7fef1f01a0f2f232e5d8b3269f224c65ba9a
 Description:  sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) and RFC 1929 (Authentication for SOCKS V5), a reverse socks server and client, a netcat like tool and a socks5 relay.
 
+Package: subconverter
+Version: 0.6.4-3
+Depends: libc, libpthread, libstdcpp6, libevent2-7, libyaml-cpp, libpcre2, libcurl, zlib
+Source: feeds/custom/subconverter
+SourceName: subconverter
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1612982727
+Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
+Architecture: x86_64
+Installed-Size: 436177
+Filename: subconverter_0.6.4-3_x86_64.ipk
+Size: 436900
+SHA256sum: 801f376e3de9ffbebd4e906f018a9ee0857f44ffa3a0a842d678cf86496fe2d0
+Description:  Utility to convert between various proxy subscription formats.
+
 Package: sub-web
 Version: 1.0.0-6
 Depends: libc, subconverter
@@ -4374,23 +4390,6 @@ Size: 966170
 SHA256sum: 15f019e0f43e3c95624cda290327cf65d1cffef46d4039d4ed5f5a66de9fb31a
 Description:  Based on vue-cli and subconverter, for generating proxy subscription
  url automatically.
-
-Package: subconverter
-Version: 0.6.4-3
-Depends: libc, libpthread, libstdcpp6, libevent2-7, libyaml-cpp, libpcre2, libcurl, zlib
-Source: feeds/custom/subconverter
-SourceName: subconverter
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: utils
-SourceDateEpoch: 1612982727
-Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
-Architecture: x86_64
-Installed-Size: 436177
-Filename: subconverter_0.6.4-3_x86_64.ipk
-Size: 436900
-SHA256sum: 801f376e3de9ffbebd4e906f018a9ee0857f44ffa3a0a842d678cf86496fe2d0
-Description:  Utility to convert between various proxy subscription formats.
 
 Package: swap-zram-writeback
 Version: 1.0-6
@@ -4484,6 +4483,22 @@ SHA256sum: 7a12859b50d9254ec7e83f9c42ae00b5a9d6fb9e8491416f93ec11d79009b4ff
 Description:  A Lightweight High-Performance Port Mapping/Forwarding Utility
  using epoll/libev, supports IPv4 and IPv6 for both TCP and UDP.
 
+Package: trojan
+Version: 1.16.0-1
+Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+Source: feeds/custom/trojan
+SourceName: trojan
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1612982727
+Maintainer: GreaterFire
+Architecture: x86_64
+Installed-Size: 237
+Filename: trojan_1.16.0-1_x86_64.ipk
+Size: 1031
+SHA256sum: 5f261f641f2a1ceb0923a3f1744446e29d2fe5b3f9746294c267e8de81611f67
+Description:  An unidentifiable mechanism that helps you bypass GFW
+
 Package: trojan-go
 Version: 0.8.2-2
 Depends: libc
@@ -4514,22 +4529,6 @@ Size: 1077
 SHA256sum: bc33c2455f60a8471fc8468623ae1d0c9f134c2339a713bfce639213b555e339
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
-Package: trojan
-Version: 1.16.0-1
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
-Source: feeds/custom/trojan
-SourceName: trojan
-License: GPL-3.0
-Section: net
-SourceDateEpoch: 1612982727
-Maintainer: GreaterFire
-Architecture: x86_64
-Installed-Size: 237
-Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 1031
-SHA256sum: 5f261f641f2a1ceb0923a3f1744446e29d2fe5b3f9746294c267e8de81611f67
-Description:  An unidentifiable mechanism that helps you bypass GFW
-
 Package: udp2raw-tunnel
 Version: 20200818.0-1
 Depends: libc, libstdcpp6, libpthread, librt
@@ -4546,6 +4545,37 @@ Filename: udp2raw-tunnel_20200818.0-1_x86_64.ipk
 Size: 131504
 SHA256sum: 2d3f68b2748eb8d3fcf37ceca84c5be90e5dec76e662fa9b439a2ad66b679caf
 Description:  udp2raw-tunnel is a tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic by using Raw Socket.
+
+Package: UnblockNeteaseMusic
+Version: 0.25.3-6
+Depends: libc, node, libopenssl1.1
+Source: feeds/custom/UnblockNeteaseMusic
+SourceName: UnblockNeteaseMusic
+License: MIT
+Section: multimedia
+SourceDateEpoch: 1612982727
+Architecture: all
+Installed-Size: 35770
+Filename: UnblockNeteaseMusic_0.25.3-6_all.ipk
+Size: 36634
+SHA256sum: 620e5242eb254390d259b9c3e658394f58846d1dcf2be434538315f89cb83728
+Description:  Revive Netease Cloud Music (NodeJS)
+
+Package: UnblockNeteaseMusic-Go
+Version: 0.2.7-2
+Depends: libc
+Source: feeds/custom/UnblockNeteaseMusic-Go
+SourceName: UnblockNeteaseMusic-Go
+License: GPL-3.0
+Section: multimedia
+SourceDateEpoch: 1612982727
+Maintainer: Silvan <cnsilvan@gmail.com>
+Architecture: x86_64
+Installed-Size: 3373
+Filename: UnblockNeteaseMusic-Go_0.2.7-2_x86_64.ipk
+Size: 4129
+SHA256sum: b6a8e1d2280fa1b81360acb3017dfbafb18a8a34e5d2d2619dc10c7e5e7d3470
+Description:  Revive Netease Cloud Music (Golang)
 
 Package: uugamebooster
 Version: v2.7.2-2
