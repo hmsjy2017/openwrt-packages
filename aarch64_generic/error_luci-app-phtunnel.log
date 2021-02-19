@@ -1,88 +1,9 @@
-ignoring type redefinition of 'FEED_packages' from 'bool' to 'tristate'
-ignoring type redefinition of 'FEED_luci' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_base-files' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libc' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libgcc' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libpthread' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_librt' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_opkg' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_uci' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_arm-trusted-firmware-rockchip' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libwolfssl' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libblkid' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libblobmsg-json' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libjson-c' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libnl-tiny' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libsmartcols' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libubox' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libuci' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libuclient' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libustream-wolfssl' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libuuid' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ar' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_bg' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_bn_BD' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ca' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_cs' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_de' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_el' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_en' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_es' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_fi' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_fr' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_he' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_hi' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_hu' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_it' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ja' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ko' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_mr' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ms' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_nb_NO' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_nl' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_pl' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_pt' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_pt_BR' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ro' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_ru' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_sk' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_sv' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_tr' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_uk' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_vi' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_zh_Hans' from 'bool' to 'tristate'
-ignoring type redefinition of 'LUCI_LANG_zh_Hant' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_ppp' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_ppp-mod-pppoe' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_uclient-fetch' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_uboot-envtools' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_partx-utils' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_jshn' from 'bool' to 'tristate'
-ignoring type redefinition of 'PACKAGE_libjson-script' from 'bool' to 'tristate'
-defaults for choice values not supported
-defaults for choice values not supported
-defaults for choice values not supported
-defaults for choice values not supported
-defaults for choice values not supported
-defaults for choice values not supported
-defaults for choice values not supported
-defaults for choice values not supported
-Config-build.in:7913:error: recursive dependency detected!
-Config-build.in:7913:	symbol PACKAGE_kmod-ppp is selected by PACKAGE_ppp
-Config-build.in:10193:	symbol PACKAGE_ppp is selected by PACKAGE_luci-app-pptp-server
-tmp/.config-package.in:40963:	symbol PACKAGE_luci-app-pptp-server depends on PACKAGE_kmod-ppp
-For a resolution refer to Documentation/kbuild/kconfig-language.rst
-subsection "Kconfig recursive dependency limitations"
-
-#
-# No change to .config
-#
 make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
-time: package/feeds/base/lua/host-compile#0.31#0.11#0.37
+time: package/feeds/base/lua/host-compile#0.26#0.13#0.35
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
 Makefile:737: WARNING: skipping libgomp -- package has no install section
 echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
@@ -90,18 +11,18 @@ echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/sta
 echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
 echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
-time: package/toolchain/compile#0.28#0.09#0.34
+time: package/toolchain/compile#0.27#0.08#0.32
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libjson-c'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.json-c-0.15-nodoc.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "json-c-0.15-nodoc.tar.gz" "99bca4f944b8ced8ae0bbc6310d6a3528ca715e69541793a1ef51f8c5b4b0878" "" "https://s3.amazonaws.com/json-c_releases/releases/"    '
 echo "libjson-c" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libjson-c.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libjson-c'
-time: package/feeds/base/libjson-c/compile#0.32#0.11#0.37
+time: package/feeds/base/libjson-c/compile#0.28#0.09#0.33
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
-time: package/feeds/base/lua/compile#0.32#0.12#0.38
+time: package/feeds/base/lua/compile#0.29#0.09#0.34
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libubox'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libubox-2020-12-12-35787769.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libubox-2020-12-12-35787769.tar.xz" "97dc4eba01cf2c5d6a6d0db3747e0cdc0d95cb87e51b3115272e7d3e69a8b255" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf libubox-2020-12-12-35787769 && [ \! -d libubox-2020-12-12-35787769 ] && git clone  https://git.openwrt.org/project/libubox.git libubox-2020-12-12-35787769 && (cd libubox-2020-12-12-35787769 && git checkout 357877693ca363b12e6e7e14d345639b2440cd07 ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd libubox-2020-12-12-35787769 && git log -1 --format='\''@%ct'\''` && rm -rf libubox-2020-12-12-35787769/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c libubox-2020-12-12-35787769 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2020-12-12-35787769.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2020-12-12-35787769.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf libubox-2020-12-12-35787769;  )    '
@@ -110,138 +31,72 @@ echo "libblobmsg-json" >> /home/runner/work/packages-compile/packages-compile/op
 echo "jshn" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libubox.default.install
 echo "libjson-script" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libubox.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libubox'
-time: package/feeds/base/libubox/compile#0.35#0.10#0.39
+time: package/feeds/base/libubox/compile#0.31#0.12#0.38
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/mbedtls'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.mbedtls-2.16.9.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "mbedtls-2.16.9.tar.gz" "fc17ff7d8c11d08f23ae2800a18269408ad2c24ea6bb8b9363e41a01c2425697" "" "https://codeload.github.com/ARMmbed/mbedtls/tar.gz/v2.16.9?"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/mbedtls'
-time: package/feeds/base/mbedtls/compile#0.27#0.14#0.35
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
-mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.linux-firmware-20201118.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "linux-firmware-20201118.tar.xz" "863d5a31da725b856a917280d1e3014929b3bc3d4e6e5faecf530c13afb7e2b9" "" "@KERNEL/linux/kernel/firmware"    '
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
-time: package/feeds/base/linux-firmware/compile#1.18#0.69#1.45
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
-mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.2.13.0.0.a.13.14.arm.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "2.13.0.0.a.13.14.arm" "7fffaceb008b9beb5a1da4744c9a6d31c8d9eff54e3461cba925785f2ae1648d" "" "https://daemonizer.de/prism54/prism54-fw//stlc4560"    '
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
-time: package/feeds/base/prism54-firmware/compile#0.29#0.10#0.35
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
-echo "kernel" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-WARNING: kmod-crypto-hw-geode is not available in the kernel config - generating empty package
-WARNING: kmod-crypto-hw-hifn-795x is not available in the kernel config - generating empty package
-WARNING: kmod-crypto-hw-padlock is not available in the kernel config - generating empty package
-WARNING: kmod-crypto-hw-talitos is not available in the kernel config - generating empty package
-WARNING: kmod-crypto-pcompress is not available in the kernel config - generating empty package
-WARNING: kmod-crypto-wq is not available in the kernel config - generating empty package
-WARNING: kmod-hwmon-ads1015 is not available in the kernel config - generating empty package
-WARNING: kmod-hwmon-sch5627 is not available in the kernel config - generating empty package
-WARNING: kmod-i2c-algo-pca is not available in the kernel config - generating empty package
-WARNING: kmod-i2c-algo-pcf is not available in the kernel config - generating empty package
-WARNING: kmod-i2c-pxa is not available in the kernel config - generating empty package
-WARNING: kmod-i2c-smbus is not available in the kernel config - generating empty package
-echo "kmod-lib-crc-ccitt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-WARNING: kmod-dm9000 is not available in the kernel config - generating empty package
-echo "kmod-nf-reject" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-nf-reject6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-nf-ipt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-nf-ipt6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-ipt-core" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-nf-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-WARNING: kmod-nf-conntrack6 is not available in the kernel config - generating empty package
-echo "kmod-nf-conntrack6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-nf-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-nf-flow" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-ipt-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-ipt-offload" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-ipt-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-WARNING: kmod-ipt-ulog is not available in the kernel config - generating empty package
-echo "kmod-ip6tables" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-WARNING: kmod-nft-nat6 is not available in the kernel config - generating empty package
-WARNING: kmod-isdn4linux is not available in the kernel config - generating empty package
-echo "kmod-slhc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-ppp" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-pppox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-echo "kmod-pppoe" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
-WARNING: kmod-bpf-test is not available in the kernel config - generating empty package
-WARNING: kmod-gpio-dev is not available in the kernel config - generating empty package
-WARNING: kmod-parport-pc is not available in the kernel config - generating empty package
-WARNING: kmod-softdog is not available in the kernel config - generating empty package
-WARNING: kmod-rtc-pt7c4338 is not available in the kernel config - generating empty package
-WARNING: kmod-w83627hf-wdt is not available in the kernel config - generating empty package
-WARNING: kmod-itco-wdt is not available in the kernel config - generating empty package
-WARNING: kmod-it87-wdt is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-core is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-realtek is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-cmedia is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-analog is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-idt is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-si3054 is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-cirrus is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-ca0110 is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-ca0132 is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-conexant is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-via is not available in the kernel config - generating empty package
-WARNING: kmod-sound-hda-codec-hdmi is not available in the kernel config - generating empty package
-WARNING: kmod-fb-cfb-fillrect is not available in the kernel config - generating empty package
-WARNING: kmod-fb-cfb-copyarea is not available in the kernel config - generating empty package
-WARNING: kmod-fb-cfb-imgblt is not available in the kernel config - generating empty package
-WARNING: kmod-drm-ttm is not available in the kernel config - generating empty package
-WARNING: kmod-drm-kms-helper is not available in the kernel config - generating empty package
-WARNING: kmod-w1-slave-ds2760 is not available in the kernel config - generating empty package
-WARNING: kmod-net-prism54 is not available in the kernel config - generating empty package
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
-time: package/kernel/linux/compile#1.79#0.19#1.97
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/kernel/cryptodev-linux'
-mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.cryptodev-linux-1.11.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "cryptodev-linux-1.11.tar.gz" "d71fd8dafc40147586f5bc6acca8fce5088d9c576d1142fe5aeb7b0813186a11" "" "https://codeload.github.com/cryptodev-linux/cryptodev-linux/tar.gz/cryptodev-linux-1.11?"    '
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/kernel/cryptodev-linux'
-time: package/feeds/base/cryptodev-linux/compile#0.25#0.11#0.32
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
-mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.openssl-1.1.1i.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "openssl-1.1.1i.tar.gz" "e8be6a35fe41d10603c3cc635e93289ed00bf34b79671a3a4de64fcee00d5242" "" "http://ftp.fi.muni.cz/pub/openssl/source/" "http://ftp.linux.hr/pub/openssl/source/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/" "http://www.openssl.org/source/" "http://www.openssl.org/source/old/1.1.1/"    '
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
-time: package/feeds/base/openssl/compile#0.35#0.13#0.40
+time: package/feeds/base/mbedtls/compile#0.25#0.10#0.46
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/gettext'
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/gettext'
-time: package/feeds/base/gettext/compile#0.27#0.11#0.33
+time: package/feeds/base/gettext/compile#0.25#0.10#0.31
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libiconv'
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libiconv'
-time: package/feeds/base/libiconv/compile#0.27#0.09#0.32
+time: package/feeds/base/libiconv/compile#0.23#0.11#0.30
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libtool'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libtool-2.4.6.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libtool-2.4.6.tar.xz" "7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f" "" "@GNU/libtool"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libtool'
-time: package/feeds/base/libtool/compile#0.26#0.09#0.31
+time: package/feeds/base/libtool/compile#0.23#0.08#0.28
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/wolfssl'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.wolfssl-4.6.0-stable.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "wolfssl-4.6.0-stable.tar.gz" "053aefbb02d0b06b27c5e2df6875b4b587318755b7db9d6aa8d72206b310a848" "" "https://github.com/wolfSSL/wolfssl/archive/v4.6.0-stable"    '
 echo "libwolfssl" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/wolfssl.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/wolfssl'
-time: package/feeds/base/wolfssl/compile#0.34#0.14#0.41
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/ustream-ssl'
-mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.ustream-ssl-2020-12-10-68d09243.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "ustream-ssl-2020-12-10-68d09243.tar.xz" "a620090dee08c0624d167c10e9e45d54aa2b953a1f356eff7325a8fe53c622e6" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf ustream-ssl-2020-12-10-68d09243 && [ \! -d ustream-ssl-2020-12-10-68d09243 ] && git clone  https://git.openwrt.org/project/ustream-ssl.git ustream-ssl-2020-12-10-68d09243 && (cd ustream-ssl-2020-12-10-68d09243 && git checkout 68d09243b6fd4473004b27ff6483352e76e6af1a ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd ustream-ssl-2020-12-10-68d09243 && git log -1 --format='\''@%ct'\''` && rm -rf ustream-ssl-2020-12-10-68d09243/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c ustream-ssl-2020-12-10-68d09243 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ustream-ssl-2020-12-10-68d09243.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ustream-ssl-2020-12-10-68d09243.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf ustream-ssl-2020-12-10-68d09243;  )    '
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/ustream-ssl'
-time: package/feeds/base/ustream-ssl/mbedtls/compile#0.25#0.11#0.32
+time: package/feeds/base/wolfssl/compile#0.31#0.11#0.37
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/ustream-ssl'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.ustream-ssl-2020-12-10-68d09243.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "ustream-ssl-2020-12-10-68d09243.tar.xz" "a620090dee08c0624d167c10e9e45d54aa2b953a1f356eff7325a8fe53c622e6" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf ustream-ssl-2020-12-10-68d09243 && [ \! -d ustream-ssl-2020-12-10-68d09243 ] && git clone  https://git.openwrt.org/project/ustream-ssl.git ustream-ssl-2020-12-10-68d09243 && (cd ustream-ssl-2020-12-10-68d09243 && git checkout 68d09243b6fd4473004b27ff6483352e76e6af1a ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd ustream-ssl-2020-12-10-68d09243 && git log -1 --format='\''@%ct'\''` && rm -rf ustream-ssl-2020-12-10-68d09243/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c ustream-ssl-2020-12-10-68d09243 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ustream-ssl-2020-12-10-68d09243.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ustream-ssl-2020-12-10-68d09243.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf ustream-ssl-2020-12-10-68d09243;  )    '
 echo "libustream-wolfssl" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/ustream-ssl.wolfssl.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/ustream-ssl'
-time: package/feeds/base/ustream-ssl/wolfssl/compile#0.26#0.12#0.35
-make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/ustream-ssl'
-mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.ustream-ssl-2020-12-10-68d09243.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "ustream-ssl-2020-12-10-68d09243.tar.xz" "a620090dee08c0624d167c10e9e45d54aa2b953a1f356eff7325a8fe53c622e6" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf ustream-ssl-2020-12-10-68d09243 && [ \! -d ustream-ssl-2020-12-10-68d09243 ] && git clone  https://git.openwrt.org/project/ustream-ssl.git ustream-ssl-2020-12-10-68d09243 && (cd ustream-ssl-2020-12-10-68d09243 && git checkout 68d09243b6fd4473004b27ff6483352e76e6af1a ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd ustream-ssl-2020-12-10-68d09243 && git log -1 --format='\''@%ct'\''` && rm -rf ustream-ssl-2020-12-10-68d09243/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c ustream-ssl-2020-12-10-68d09243 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ustream-ssl-2020-12-10-68d09243.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ustream-ssl-2020-12-10-68d09243.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf ustream-ssl-2020-12-10-68d09243;  )    '
-make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/ustream-ssl'
-time: package/feeds/base/ustream-ssl/openssl/compile#0.24#0.12#0.33
+time: package/feeds/base/ustream-ssl/wolfssl/compile#0.22#0.10#0.29
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/uclient'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.uclient-2020-12-10-2c843b2b.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "uclient-2020-12-10-2c843b2b.tar.xz" "532016a283722f21dd450e388060af0db765972956eee288c7cabf102c8303d0" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf uclient-2020-12-10-2c843b2b && [ \! -d uclient-2020-12-10-2c843b2b ] && git clone  https://git.openwrt.org/project/uclient.git uclient-2020-12-10-2c843b2b && (cd uclient-2020-12-10-2c843b2b && git checkout 2c843b2bc04c34403d9a6b4de025447e4b5d8aa4 ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd uclient-2020-12-10-2c843b2b && git log -1 --format='\''@%ct'\''` && rm -rf uclient-2020-12-10-2c843b2b/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c uclient-2020-12-10-2c843b2b | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/uclient-2020-12-10-2c843b2b.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/uclient-2020-12-10-2c843b2b.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf uclient-2020-12-10-2c843b2b;  )    '
 echo "libuclient" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/uclient.default.install
 echo "uclient-fetch" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/uclient.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/uclient'
-time: package/feeds/base/uclient/compile#0.25#0.11#0.32
+time: package/feeds/base/uclient/compile#0.25#0.08#0.30
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.openssl-1.1.1j.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "openssl-1.1.1j.tar.gz" "aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf" "" "http://ftp.fi.muni.cz/pub/openssl/source/" "http://ftp.linux.hr/pub/openssl/source/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/" "http://www.openssl.org/source/" "http://www.openssl.org/source/old/1.1.1/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+time: package/feeds/base/openssl/compile#0.30#0.14#0.36
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/uclibc++'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.uClibc++-0.2.5.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "uClibc++-0.2.5.tar.xz" "596fb9ed7295564ce4c70ae6076a18f92e72f70310d70c98520bbca85c77895a" "" "https://cxx.uclibc.org/src/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/uclibc++'
+time: package/feeds/base/uclibc++/compile#0.24#0.10#0.30
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/pcre'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.pcre-8.44.tar.bz2.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "pcre-8.44.tar.bz2" "19108658b23b3ec5058edc9f66ac545ea19f9537234be1ec62b714c84399366d" "" "@SF/pcre"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/pcre'
+time: package/feeds/base/pcre/compile#0.29#0.13#0.37
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.zlib-1.2.11.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "zlib-1.2.11.tar.xz" "4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066" "" "@SF/libpng" "http://www.zlib.net"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
+time: package/feeds/base/zlib/compile#0.26#0.12#0.33
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.wget-1.20.3.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "wget-1.20.3.tar.gz" "skip" "" "@GNU/wget"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+time: package/feeds/custom/wget/ssl/compile#0.24#0.08#0.28
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.wget-1.20.3.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "wget-1.20.3.tar.gz" "skip" "" "@GNU/wget"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+time: package/feeds/custom/wget/nossl/compile#0.25#0.08#0.29
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/phtunnel'
 rm -rf /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/phtunnel-1.0.0/.pkgdir/phtunnel.installed /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/phtunnel-1.0.0/.pkgdir/phtunnel
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/phtunnel-1.0.0/.pkgdir/phtunnel
@@ -254,8 +109,8 @@ install -m0755 files/usr/bin/arm64/phtunnel /home/runner/work/packages-compile/p
 install: cannot stat 'files/usr/bin/arm64/phtunnel': No such file or directory
 make[2]: *** [Makefile:93: /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/phtunnel-1.0.0/.pkgdir/phtunnel.installed] Error 1
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/phtunnel'
-time: package/feeds/custom/phtunnel/compile#0.23#0.08#0.27
+time: package/feeds/custom/phtunnel/compile#0.21#0.07#0.25
     ERROR: package/feeds/custom/phtunnel failed to build.
 make[1]: *** [package/Makefile:114: package/feeds/custom/phtunnel/compile] Error 1
 make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
-make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:223: package/luci-app-phtunnel/compile] Error 2
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/luci-app-phtunnel/compile] Error 2
