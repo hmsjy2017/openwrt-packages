@@ -976,14 +976,14 @@ SHA256sum: 5027b4ed7b1b33b79e81674524d41bb204864e3d0d5c9690bfeba608540dbbe1
 Description:  LuCI support for Kcptun
 
 Package: luci-app-kodexplorer
-Version: 13
-Depends: libc, nginx-ssl, unzip, zoneinfo-asia, php7, php7-fpm, php7-mod-curl, php7-mod-gd, php7-mod-iconv, php7-mod-json, php7-mod-mbstring, php7-mod-opcache, php7-mod-session, php7-mod-zip, php7-mod-sqlite3, php7-mod-pdo, php7-mod-pdo-sqlite, php7-mod-pdo-mysql
+Version: git-21.053.65366-5dff604
+Depends: libc, nginx-ssl, unzip, zoneinfo-asia, php7, php7-fastcgi, php7-fpm, php7-mod-curl, php7-mod-dom, php7-mod-gd, php7-mod-iconv, php7-mod-json, php7-mod-mbstring, php7-mod-opcache, php7-mod-session, php7-mod-zip, php7-mod-sqlite3, php7-mod-pdo, php7-mod-pdo-sqlite, php7-mod-pdo-mysql
 Section: luci
 Architecture: all
-Installed-Size: 7674
-Filename: luci-app-kodexplorer_13_all.ipk
-Size: 8619
-SHA256sum: 80ab0c311bf93c9572513169ea67d887b9308a03fb49f2f8ff56797947d2b522
+Installed-Size: 8195
+Filename: luci-app-kodexplorer_git-21.053.65366-5dff604_all.ipk
+Size: 9142
+SHA256sum: 1cb8781aad8ec8280ed2a439fb9350367d776b7c9c959ab670e657c094f3b44c
 Description:  LuCI support for KodExplorer
 
 Package: luci-app-koolproxyR

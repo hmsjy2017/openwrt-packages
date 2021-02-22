@@ -1,0 +1,5 @@
+/etc/config/bypass
+/etc/bypass/netflix.list
+/etc/bypass/oversea.list
+/etc/bypass/white.list
+/etc/bypass/black.list
