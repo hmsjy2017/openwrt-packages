@@ -939,6 +939,22 @@ Size: 10038
 SHA256sum: 1227096da1eed18449301ea7bf695636dc4996ef8e4fcef10c03f82d14f2a66a
 Description:  Luci Support for DNSFilter.
 
+Package: luci-app-dnsfilter
+Version: 1.0-6
+Depends: libc, curl, dnsmasq-full, ipset
+Source: feeds/custom/luci-app-dnsfilter
+SourceName: luci-app-dnsfilter
+License: GPLv2
+Section: LuCI
+SourceDateEpoch: 1613995869
+Maintainer: small_5 GaryPang
+Architecture: all
+Installed-Size: 9383
+Filename: luci-app-dnsfilter_1.0-6_all.ipk
+Size: 10029
+SHA256sum: 23e43bcf1fefa45c44beff699dd86f6e3735065538200d6b18292e94a663ff13
+Description:  Luci Support for DNSFilter.
+
 Package: luci-app-dnsforwarder
 Version: 3.0.0
 Depends: libc, dnsforwarder
