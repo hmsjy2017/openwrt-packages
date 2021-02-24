@@ -55,8 +55,8 @@ Maintainer: Imre Kaloz <kaloz@openwrt.org>, Hsing-Wang Liao <kuoruan@gmail.com>
 Architecture: x86_64
 Installed-Size: 661813
 Filename: aria2_1.35.0-3_x86_64.ipk
-Size: 662448
-SHA256sum: f60801c2a97ebc560188161ef18e0e5fc732912bad686cdb87aeaaa8fef27975
+Size: 662449
+SHA256sum: 55ab8c46113927f73cd059eca7a65310dc0453aeea0e0c51e911fafcc47b0547
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
@@ -102,10 +102,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 3228839
+Installed-Size: 3228837
 Filename: brook_20210101-2_x86_64.ipk
-Size: 3230217
-SHA256sum: 15c665c84dcfeb0d1064ce2f1faaa9247a89b15bffd28f48fb4ca3fa954de39e
+Size: 3230213
+SHA256sum: 81ab2d7b217e444781c89744c3cf5122090c0758d989dd20334ae8f084e2d3c4
 Description:  Brook is a cross-platform strong encryption and not detectable proxy.
  Zero-Configuration.
 
@@ -121,8 +121,8 @@ Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
 Installed-Size: 1863996
 Filename: cdnspeedtest_1.4.8-1_x86_64.ipk
-Size: 1865070
-SHA256sum: 9023aa2181ee31c09e916d673fe07e54fbd182930afe3ec698c768201c9d9715
+Size: 1865073
+SHA256sum: 99b1aee40739087cdc2491aa5a80501489e15dd99f7ebfcd0f9a4254f98b0e96
 Description:  Getting the fastest ips to your network of CDN
 
 Package: chinadns-ng
@@ -232,8 +232,8 @@ Maintainer: Dennis <openwrt@tossp.com>
 Architecture: x86_64
 Installed-Size: 85926
 Filename: dnsforwarder_6.1.15-11_x86_64.ipk
-Size: 86806
-SHA256sum: b258b544756e3311929cbeaabf0cd3d1e22b9c6078700d761868265adf1785a0
+Size: 86804
+SHA256sum: 1cb6abaa8f2f489a77c9c31c901cae2d478499e67a7ff53d9b186de54433473f
 Description:  Forwarding queries to customized domains (and their subdomains) to specified servers
  over a specified protocol (UDP or TCP). non-standard ports are supported.
 
@@ -269,8 +269,8 @@ Maintainer: Xingwang Liao <kuoruan@gmail.com>
 Architecture: x86_64
 Installed-Size: 2774174
 Filename: frpc_0.34.3-1_x86_64.ipk
-Size: 2775583
-SHA256sum: 3fc3e0e36cc3af7052b9f9572a3da3125872d74452c1e05d2f168776415a97cf
+Size: 2775586
+SHA256sum: 26cd3b1215c449ae472c1a80346aba0456984419972319fa5dbb0755861ccee1
 Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
  to the internet. As of now, it supports tcp & udp, as well as http and https protocols,
  where requests can be forwarded to internal services by domain name.
@@ -288,10 +288,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
 Architecture: x86_64
-Installed-Size: 3648649
+Installed-Size: 3648650
 Filename: frps_0.34.3-1_x86_64.ipk
-Size: 3650204
-SHA256sum: 01cb5760123739fe6f3f4a51bd5bd2a3968805522f8bc29e3acc1cb47d407c9c
+Size: 3650207
+SHA256sum: 4c9befcf936cdcc8e6575e458991420c3f3dddb3b6d0ce2db76b00446a32a91e
 Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
  to the internet. As of now, it supports tcp & udp, as well as http and https protocols,
  where requests can be forwarded to internal services by domain name.
@@ -308,10 +308,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 4368207
+Installed-Size: 4368215
 Filename: gost_2.11.1-1_x86_64.ipk
-Size: 4369693
-SHA256sum: 142c55f8e413ef92a2a250f72867fc4f041671a9e0c84982f0b20bd8d698d755
+Size: 4369701
+SHA256sum: 786e5c9f6c524bc522c6e11051950c3f0cf69298e47e02b4e28a26649d1fbf2b
 Description:  A simple security tunnel written in Golang
 
 Package: gowebdav
@@ -323,10 +323,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 1575670
+Installed-Size: 1575684
 Filename: gowebdav_0.0.1-1_x86_64.ipk
-Size: 1576779
-SHA256sum: 30c55f19db70d1c837c412dab76a523d0794e063cce47e2a0999db30acb6d15d
+Size: 1576784
+SHA256sum: 065801f2f1b68db0be3a50415b8528e5e6cfbf8f6655c9cd24f81e0e923284b4
 Description:  A simple WebDav server written in Golang.
 
 Package: https-dns-proxy
@@ -341,10 +341,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Stan Grishin <stangri@melmac.net>
 Architecture: x86_64
-Installed-Size: 13617
+Installed-Size: 13616
 Filename: https-dns-proxy_2021-01-17-2_x86_64.ipk
-Size: 14553
-SHA256sum: 303fc8b27468921a4b6234f8027e622f95e54ad3b67cce1f49903309a361bece
+Size: 14550
+SHA256sum: 4c4c8316ec48f055cc43dbdfc6153330d84be86884d382daa3e74ee71f7c08ed
 Description:  https-dns-proxy is a light-weight DNS<-->HTTPS, non-caching translation proxy for the RFC 8484 DoH standard.
  It receives regular (UDP) DNS requests and issues them via DoH.
  Please see https://docs.openwrt.melmac.net/https-dns-proxy/ for more information.
@@ -404,10 +404,10 @@ Section: lib
 SourceDateEpoch: 1614097684
 Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 236118
+Installed-Size: 236119
 Filename: libduktape_2.99.99-19cc8f5-1_x86_64.ipk
-Size: 235566
-SHA256sum: 5f456d679ef18b59af46d02f98baf658d65f6ac57253b738f39d93a8c7b8bd78
+Size: 235548
+SHA256sum: cbd385246c6c38382685b7ececf18363267096427a7859989b917fdc0378265c
 Description:  Duktape is easy to integrate into a C/C++ project: add duktape.c,
  duktape.h, and duk_config.h to your build, and use the Duktape API
  to call ECMAScript functions from C code and vice versa.
@@ -1436,10 +1436,10 @@ SourceName: luci-app-nginx-pingos
 Section: opt
 SourceDateEpoch: 1614097684
 Architecture: all
-Installed-Size: 477062
+Installed-Size: 477060
 Filename: luci-app-nginx-pingos_1.19.2-2_all.ipk
-Size: 477670
-SHA256sum: 7b3df7cc056570e6b7614b73680a267261ae975dbc31e306a6f9860bf6f61e1c
+Size: 477664
+SHA256sum: 2e8a2af9e7cf38f3112a20ab4549b1efc4fb1c335ae3ade777924031185e7b4b
 Description:  PingOS server
 
 Package: luci-app-ngrokc
@@ -3952,10 +3952,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: mleaf <mleaf90@gmail.com>
 Architecture: x86_64
-Installed-Size: 27347
+Installed-Size: 27345
 Filename: mwol_1.0.0-2_x86_64.ipk
-Size: 28182
-SHA256sum: 1bb15e42a0e30f5ab03136e032b346c9f5792b67dd019a0228e5d7879af12111
+Size: 28180
+SHA256sum: 49e0cf5e6c45a29e40c4d69b0ce67700a8d763a3a1f81570fddcd2247a3dd887
 Description:  mwol is a project that uses mqtt to implement reverse proxy and wake up the computer.
 
 Package: n2n-edge
@@ -3968,10 +3968,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Emanuele Faranda <faranda@ntop.org>
 Architecture: x86_64
-Installed-Size: 44339
+Installed-Size: 44338
 Filename: n2n-edge_2.8-1_x86_64.ipk
-Size: 45105
-SHA256sum: 434adf10812c394c5c920a3dfe3bacb3d22cc798e31a80bc08e53c45385546df
+Size: 45109
+SHA256sum: 9125e60736bd76a90f82bcffb5a6b109cb128c207f2377eadd1221a5df278f0d
 Description:  The client node for the N2N infrastructure
 
 Package: n2n-supernode
@@ -3986,8 +3986,8 @@ Maintainer: Emanuele Faranda <faranda@ntop.org>
 Architecture: x86_64
 Installed-Size: 19626
 Filename: n2n-supernode_2.8-1_x86_64.ipk
-Size: 20386
-SHA256sum: 1f415bfa4fedce271cf0f907020f020c189a9c4aacee095ea03e204458bf5afb
+Size: 20389
+SHA256sum: 119e6b6eb36b3c5435b1f4c09ca791b4bb29399dbe369134ca426b473a9c0dee
 Description:  The supernode for the N2N infrastructure
 
 Package: naiveproxy
@@ -4001,10 +4001,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 2391440
+Installed-Size: 2391443
 Filename: naiveproxy_88.0.4324.96-1-1_x86_64.ipk
-Size: 2389121
-SHA256sum: 20522bd4a8cf87f8e152a299287b3ea988ff3e472b12aa61d2bcb16a2ff9733b
+Size: 2389131
+SHA256sum: ad4a2864530fd3474ea65c71f0bf2df42fa9c4f3aedd6294d10d7e12c3a041bc
 Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with strong
  censorship resistance and low detectability. Reusing Chrome's stack also
  ensures best practices in performance and security.
@@ -4098,7 +4098,7 @@ Architecture: x86_64
 Installed-Size: 3518765
 Filename: npc_0.26.9-4_x86_64.ipk
 Size: 3520197
-SHA256sum: 3e35f193c15dce3b8a48c07ea48bf1f0c4c683c8ec04c95a0a165658612914cc
+SHA256sum: 8968441ac68df9037256063f8981e0ad8ddd3a94f6187ca63a7732457085b9ec
 Description:  NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
  with a powerful web management terminal.
 
@@ -4111,10 +4111,10 @@ License: Apache-2.0
 Section: net
 SourceDateEpoch: 1614097684
 Architecture: x86_64
-Installed-Size: 3588935
+Installed-Size: 3588934
 Filename: nps_0.26.9-4_x86_64.ipk
-Size: 3590317
-SHA256sum: cdb699c1b05a6a60f6a895fc658a3e9c22a99863e955de2917dc691a783fde09
+Size: 3590319
+SHA256sum: eb0bd4541e958e7cbf11fb854b6daa0c149edff204f457cfdc3a9232bbae3e4d
 Description:  NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
  with a powerful web management terminal.
 
@@ -4192,10 +4192,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Tomasz Maciej Nowak <tomek_n@o2.pl>
 Architecture: x86_64
-Installed-Size: 780356
+Installed-Size: 780357
 Filename: oscam_r11518-33e2d6-1_x86_64.ipk
-Size: 780557
-SHA256sum: dc04cc6ca41eda1c4fb97169809c5630b454709ffa2f59d86def098bca9948d6
+Size: 780554
+SHA256sum: b253395ded23905005d12b37a1233582703a5c244f1c1773a86551178eb798f1
 Description:  Open Source Conditional Access Modul
 
 Package: pandownload-fake-server
@@ -4325,10 +4325,10 @@ Section: utils
 SourceDateEpoch: 1614097684
 Maintainer: ElonH <elonhhuang@gmail.com>
 Architecture: x86_64
-Installed-Size: 12265538
+Installed-Size: 12265546
 Filename: rclone_1.53.0-1_x86_64.ipk
-Size: 12220042
-SHA256sum: c32e593629ac1e77aee5c469392ad5f0e6287c2edd35b86900edba2e88529dae
+Size: 12220452
+SHA256sum: 2d7b384d9af96501037fbc1f475766990a2c9be73970caa887c3503503147dcd
 Description:  Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.
  Cloud storage providers:
  1Fichier, Alibaba Cloud (Aliyun) Object Storage System (OSS), Amazon Drive, Amazon S3, 
@@ -4397,10 +4397,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Scutclient Project
 Architecture: x86_64
-Installed-Size: 15892
+Installed-Size: 15893
 Filename: scutclient_3.1.2-1_x86_64.ipk
-Size: 16615
-SHA256sum: 62373fa64c2de4a46006c03587e731b6ff94d5bc8db17f10e5d5aada1fbd7113
+Size: 16619
+SHA256sum: e7f536e606cb0491fafdee5afa99aee0b2cee2358b98e0f71fef81dfb1f6c868
 Description:  Support SCUT private authentication protocol.
 
 Package: shadowsocks-libev-ss-local
@@ -4596,10 +4596,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: CN_SZTL <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 7134077
+Installed-Size: 7134056
 Filename: simple-torrent_1.2.12-2_x86_64.ipk
-Size: 7135021
-SHA256sum: 8e0ba6eb87c0053126a25c1ab9b7979d593061f5e96a1827e9c8f308ed157889
+Size: 7134979
+SHA256sum: eca0221c5c22fc2ba2a7b8fde17228b137762240e1999affb02f476828246b45
 Description:  SimpleTorrent is a a self-hosted remote torrent client, written in Go (golang).
  Started torrents remotely, download sets of files on the local disk of the server,
  which are then retrievable or streamable via HTTP.
@@ -4615,10 +4615,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Nick Peng <pymumu@gmail.com>
 Architecture: x86_64
-Installed-Size: 80508
+Installed-Size: 80507
 Filename: smartdns_9.2020.10.15-2235_x86_64.ipk
-Size: 81466
-SHA256sum: 11e93b10cd94a511ae50254501889db7b905a95eb3d122224ecf91b42f5d98aa
+Size: 81470
+SHA256sum: a4f2baef94b7900f22b1d98c7935b7212d1b94367ab576814a553ffe9553c8c6
 Description:  SmartDNS is a local DNS server which accepts DNS query requests from local network clients,
  gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
  Unlike dnsmasq's all-servers, smartdns returns the fastest IP. 
@@ -4678,10 +4678,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
 Architecture: x86_64
-Installed-Size: 3521971
+Installed-Size: 3521970
 Filename: softethervpn5-libs_5.01.9671-1_x86_64.ipk
-Size: 3520623
-SHA256sum: 3809d4aa6843683126c2ae71419bff4ec3f9986542303f8c40c21da47c569ebb
+Size: 3520637
+SHA256sum: 3ee16cb64796e20e15cf22dbcb5ee0ad27121c0d9f95425f4ac50f80877bd6e9
 Description:  softethervpn5 v5.01.9671 libs
 
 Package: softethervpn5-server
@@ -4837,10 +4837,10 @@ SourceDateEpoch: 1614097684
 CPE-ID: cpe:/a:syncthing:syncthing
 Maintainer: Paul Spooren <mail@aparcar.org>
 Architecture: x86_64
-Installed-Size: 9414717
+Installed-Size: 9414721
 Filename: syncthing_1.12.1-0_x86_64.ipk
-Size: 9399168
-SHA256sum: 185f8a4601db0c3d6b2aa5ff1b86ae000facabb0683a82fc16773a7e2233bded
+Size: 9399184
+SHA256sum: c97ff451f3f8711a883cf63793c70e3975ed45957e86c180484b21ec1803a1c1
 Description:  Syncthing replaces proprietary sync and cloud services with something
  open, trustworthy and decentralized. Your data is your data alone and
  you deserve to choose where it is stored, if it is shared with some
@@ -4886,10 +4886,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Yu Wang
 Architecture: x86_64
-Installed-Size: 35786
+Installed-Size: 35785
 Filename: tinyPortMapper_20200818.0-2_x86_64.ipk
-Size: 36632
-SHA256sum: 2c01de2e83d0c8a11f1376929b1ec4703fa07bfd1fcd0af4c1e81d105cdd6f02
+Size: 36631
+SHA256sum: f26411ad1e9903373aaec73e3abe455d22aad2c9a5ebefb4b9744cbb9831078e
 Description:  A Lightweight High-Performance Port Mapping/Forwarding Utility
  using epoll/libev, supports IPv4 and IPv6 for both TCP and UDP.
 
@@ -4917,10 +4917,10 @@ SourceName: trojan-go
 Section: net
 SourceDateEpoch: 1614097684
 Architecture: x86_64
-Installed-Size: 3791840
+Installed-Size: 3791837
 Filename: trojan-go_0.8.2-2_x86_64.ipk
-Size: 3793262
-SHA256sum: 3cd8e3d1a47b3e6f46d0ca983ab7d50fd97cef29c409c6ec62e11a291080eb5a
+Size: 3793260
+SHA256sum: 157fcb1cec90c126e5702b08d6c15847f4d2d5d52da02333a3d581e3469d6dca
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
 Package: trojan-plus
@@ -4952,8 +4952,8 @@ Maintainer: Yu Wang
 Architecture: x86_64
 Installed-Size: 130991
 Filename: udp2raw-tunnel_20200818.0-1_x86_64.ipk
-Size: 131152
-SHA256sum: 4d66f2e7ee243f20526abc3b103829dffa5508832a22e87b39ecb82f8ea0edc7
+Size: 131158
+SHA256sum: e3871c607a5c17b9d158b9528c73d781f578302578bb31ddb8560b1a71837140
 Description:  udp2raw-tunnel is a tunnel which turns UDP Traffic into Encrypted FakeTCP/UDP/ICMP Traffic by using Raw Socket.
 
 Package: UnblockNeteaseMusic
@@ -4981,10 +4981,10 @@ Section: multimedia
 SourceDateEpoch: 1614097684
 Maintainer: Silvan <cnsilvan@gmail.com>
 Architecture: x86_64
-Installed-Size: 1808809
+Installed-Size: 1808706
 Filename: UnblockNeteaseMusic-Go_0.2.7-2_x86_64.ipk
-Size: 1809970
-SHA256sum: cdc041b7868fe79263566b7e1251eede130afa6905c750aab99e71182ceec2e9
+Size: 1809859
+SHA256sum: 79ce2d5b6540d72946e6dc2b0b8e00e6f2e29e63388bc5f8c0b4ca89999c5201
 Description:  Revive Netease Cloud Music (Golang)
 
 Package: uugamebooster
@@ -5012,10 +5012,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: madeye <max.c.lv@gmail.com>
 Architecture: x86_64
-Installed-Size: 3119342
+Installed-Size: 3119338
 Filename: v2ray-plugin_1.8.0-1_x86_64.ipk
-Size: 3120730
-SHA256sum: a50f0ead4e240a95d9fb4dfbe8bc2e25a9803607135a946bb0936f59103ab4ce
+Size: 3120723
+SHA256sum: 06d24a32a7a7fd2c6efc492f03751af2a94046963a3eb9342ae4c50874eae408
 Description:  Yet another SIP003 plugin for shadowsocks, based on v2ray
 
 Package: verysync
@@ -5043,10 +5043,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: fuyumi <280604399@qq.com>
 Architecture: x86_64
-Installed-Size: 23182
+Installed-Size: 23184
 Filename: vlmcsd_svn1113-3_x86_64.ipk
-Size: 24005
-SHA256sum: cccf51918b9e613853668b86774714ecd84a5df2702338b10ef60b5fe19ae23c
+Size: 24004
+SHA256sum: 4988726f5b007f9976c65c5c4e2a6f6fb10523d3efcb39b014bb12d755f1f3f2
 Description:  KMS Emulator in C (currently runs on Linux including Android, FreeBSD,
  Solaris, Minix, Mac OS, iOS, Windows with or without Cygwin)
 
@@ -5145,10 +5145,10 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 5050111
+Installed-Size: 5050112
 Filename: xray-core_1.3.0-1_x86_64.ipk
 Size: 5051839
-SHA256sum: f9cd5182604f3d58d0db6d080d4c288d0713df7936115297450fc04ac97e7da5
+SHA256sum: 66dd46235ad5d3d3d2645d256353fa9b9badb58bafbe1678f85ea47064f61597
 Description:  Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
  It secures your network connections and thus protects your privacy.
 
@@ -5183,9 +5183,9 @@ Section: net
 SourceDateEpoch: 1614097684
 Maintainer: Tianling Shen <cnsztl@project-openwrt.eu.org>
 Architecture: x86_64
-Installed-Size: 3316503
+Installed-Size: 3316505
 Filename: xray-plugin_1.3.0-1_x86_64.ipk
 Size: 3317889
-SHA256sum: 28b5fbadba788f08528bd4ba97272dc5331c5a2a493c2057bc2ee4ee31a9c1dc
+SHA256sum: 3405ce12a8a6995bc28ace5f82ac2c976eb84fca3db13417e178815f3b50de57
 Description:  Yet another SIP003 plugin for Shadowsocks, based on Xray.
 
