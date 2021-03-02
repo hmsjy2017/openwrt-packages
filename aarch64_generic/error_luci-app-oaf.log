@@ -1,0 +1,303 @@
+make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+time: package/feeds/base/lua/host-compile#0.23#0.07#0.27
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+Makefile:737: WARNING: skipping libgomp -- package has no install section
+echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+time: package/toolchain/compile#0.23#0.07#0.29
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.linux-firmware-20201118.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "linux-firmware-20201118.tar.xz" "863d5a31da725b856a917280d1e3014929b3bc3d4e6e5faecf530c13afb7e2b9" "" "@KERNEL/linux/kernel/firmware"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+time: package/feeds/base/linux-firmware/compile#1.10#0.61#1.30
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.2.13.0.0.a.13.14.arm.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "2.13.0.0.a.13.14.arm" "7fffaceb008b9beb5a1da4744c9a6d31c8d9eff54e3461cba925785f2ae1648d" "" "https://daemonizer.de/prism54/prism54-fw//stlc4560"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+time: package/feeds/base/prism54-firmware/compile#0.21#0.07#0.25
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+echo "kernel" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-crypto-hw-geode is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-hifn-795x is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-padlock is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-talitos is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-pcompress is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-wq is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-ads1015 is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-sch5627 is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-algo-pca is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-algo-pcf is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-pxa is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-smbus is not available in the kernel config - generating empty package
+echo "kmod-lib-crc-ccitt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-dm9000 is not available in the kernel config - generating empty package
+echo "kmod-nf-reject" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-reject6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-core" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-nf-conntrack6 is not available in the kernel config - generating empty package
+echo "kmod-nf-conntrack6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-flow" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-offload" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-ipt-ulog is not available in the kernel config - generating empty package
+echo "kmod-ip6tables" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-nft-nat6 is not available in the kernel config - generating empty package
+WARNING: kmod-isdn4linux is not available in the kernel config - generating empty package
+echo "kmod-slhc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ppp" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-pppox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-pppoe" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-bpf-test is not available in the kernel config - generating empty package
+WARNING: kmod-gpio-dev is not available in the kernel config - generating empty package
+WARNING: kmod-parport-pc is not available in the kernel config - generating empty package
+WARNING: kmod-softdog is not available in the kernel config - generating empty package
+WARNING: kmod-rtc-pt7c4338 is not available in the kernel config - generating empty package
+WARNING: kmod-w83627hf-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-itco-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-it87-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-core is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-realtek is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-cmedia is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-analog is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-idt is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-si3054 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-cirrus is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-ca0110 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-ca0132 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-conexant is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-via is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-hdmi is not available in the kernel config - generating empty package
+WARNING: kmod-fb-cfb-fillrect is not available in the kernel config - generating empty package
+WARNING: kmod-fb-cfb-copyarea is not available in the kernel config - generating empty package
+WARNING: kmod-fb-cfb-imgblt is not available in the kernel config - generating empty package
+WARNING: kmod-drm-ttm is not available in the kernel config - generating empty package
+WARNING: kmod-drm-kms-helper is not available in the kernel config - generating empty package
+WARNING: kmod-w1-slave-ds2760 is not available in the kernel config - generating empty package
+WARNING: kmod-net-prism54 is not available in the kernel config - generating empty package
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+time: package/kernel/linux/compile#2.25#0.27#2.50
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/oaf'
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.prepared_0a54a1221705cb338d5d7ac2584fd88d_6664517399ebbbc92a37c5bb081b5c53_check
+true
+[ ! -d ./src/ ] || cp -fpR ./src/. /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.prepared_0a54a1221705cb338d5d7ac2584fd88d_6664517399ebbbc92a37c5bb081b5c53
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.configured_*
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/stamp/.oaf_installed
+(cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/./; if [ -x ./configure ]; then find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ -name config.guess | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ -name config.guess | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.guess; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ -name config.sub | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ -name config.sub | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.sub; AR="aarch64-openwrt-linux-musl-gcc-ar" AS="ccache_cc -c -Os -pipe -mcpu=generic -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0=oaf-3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" LD=aarch64-openwrt-linux-musl-ld NM="aarch64-openwrt-linux-musl-gcc-nm" CC="ccache_cc" GCC="ccache_cc" CXX="ccache_cxx" RANLIB="aarch64-openwrt-linux-musl-gcc-ranlib" STRIP=aarch64-openwrt-linux-musl-strip OBJCOPY=aarch64-openwrt-linux-musl-objcopy OBJDUMP=aarch64-openwrt-linux-musl-objdump SIZE=aarch64-openwrt-linux-musl-size CFLAGS="-Os -pipe -mcpu=generic -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0=oaf-3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CXXFLAGS="-Os -pipe -mcpu=generic -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0=oaf-3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/include " LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/lib -znow -zrelro "   ./configure --target=aarch64-openwrt-linux --host=aarch64-openwrt-linux --build=x86_64-pc-linux-gnu --program-prefix="" --program-suffix="" --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/lib --sysconfdir=/etc --datadir=/usr/share --localstatedir=/var --mandir=/usr/man --infodir=/usr/info --disable-nls  ; fi; )
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.configured_68b329da9893e34099c7d8ad5cb9c940
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.built
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.built_check
+make -C "/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/linux-5.4.101" KCFLAGS="-ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl=target-aarch64_generic_musl" HOSTCFLAGS="-O2 -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/host/include -Wall -Wmissing-prototypes -Wstrict-prototypes" CROSS_COMPILE="aarch64-openwrt-linux-musl-" ARCH="arm64" KBUILD_HAVE_NLS=no KBUILD_BUILD_USER="builder" KBUILD_BUILD_HOST="buildhost" KBUILD_BUILD_TIMESTAMP="Tue Mar  2 11:36:36 2021" KBUILD_BUILD_VERSION="0" HOST_LOADLIBES="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/lib" KBUILD_HOSTLDLIBS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/lib" CONFIG_SHELL="bash" V=''  cmd_syscalls= KBUILD_EXTRA_SYMBOLS="" KERNELRELEASE=5.4.101 M="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0" EXTRA_CFLAGS=""  modules
+make[3]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/linux-5.4.101'
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.o
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c: In function '__af_update_client_app_info':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:742:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  int found = 0;
+  ^~~
+In file included from /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:23:
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:763:10: warning: format '%d' expects argument of type 'int', but argument 6 has type 'long unsigned int' [-Wformat=]
+  AF_INFO("[%d] %pI4 visit %s(%d), time=%d action=%s, %d/%d\n", index, &node->ip, flow->app_name, flow->app_id,
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   node->visit_info[index].latest_time, node->visit_info[index].latest_action ? "Drop" : "Accept",
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_log.h:7:16: note: in definition of macro 'LOG'
+         printk(fmt, ##__VA_ARGS__); \
+                ^~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:763:2: note: in expansion of macro 'AF_INFO'
+  AF_INFO("[%d] %pI4 visit %s(%d), time=%d action=%s, %d/%d\n", index, &node->ip, flow->app_name, flow->app_id,
+  ^~~~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:742:6: warning: unused variable 'found' [-Wunused-variable]
+  int found = 0;
+      ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:736:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c: In function 'af_update_client_app_info':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:773:6: warning: unused variable 'index' [-Wunused-variable]
+  int index = 0;
+      ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:772:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c: In function 'app_filter_hook':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:804:21: warning: unused variable 'total_packets' [-Wunused-variable]
+  unsigned long long total_packets = 0;
+                     ^~~~~~~~~~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:803:13: warning: unused variable 'bytes1' [-Wunused-variable]
+  static int bytes1 = 0;
+             ^~~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c: In function 'af_send_msg_to_user':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:996:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  char msg_buf[MAX_OAF_NL_MSG_LEN] = {0};
+  ^~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:1000:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  char *p_data = msg_buf + sizeof(struct af_msg_hdr);
+  ^~~~
+At top level:
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter.c:803:13: warning: 'bytes1' defined but not used [-Wunused-variable]
+  static int bytes1 = 0;
+             ^~~~~~
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_utils.o
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_utils.c: In function 'k_vsscanf':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_utils.c:209:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    base = 0;
+    ~~~~~^~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_utils.c:210:3: note: here
+   case 'd':
+   ^~~~
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/regexp.o
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/regexp.c:223:58: warning: missing braces around initializer [-Wmissing-braces]
+ static int (*matchfun[TYPENUM][2])(RE *, RE *, char *) = {
+                                                          ^
+  0, 0, 0, 0, 0, 0, 0, 0,
+  {   } {   } {   } {   }
+  matchstar, matchstar_l,
+  {                     }
+  matchplus, matchplus_l,
+  {                     }
+  matchques, matchques,
+  {
+ };
+ }
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/regexp.c: In function 'regexp_match':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/regexp.c:264:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(ret = matchhere(regexp, text))
+      ^~~
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.o
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c: In function 'parse_number':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:121:40: warning: unused variable 'signsubscale' [-Wunused-variable]
+  int n=0,sign=1,scale=0;int subscale=0,signsubscale=1;
+                                        ^~~~~~~~~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:121:29: warning: unused variable 'subscale' [-Wunused-variable]
+  int n=0,sign=1,scale=0;int subscale=0,signsubscale=1;
+                             ^~~~~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:121:17: warning: unused variable 'scale' [-Wunused-variable]
+  int n=0,sign=1,scale=0;int subscale=0,signsubscale=1;
+                 ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c: In function 'parse_string':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:173:49: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case 3: *--ptr2 =((uc | 0x80) & 0xBF); uc >>= 6;
+                                              ~~~^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:174:7: note: here
+       case 2: *--ptr2 =((uc | 0x80) & 0xBF); uc >>= 6;
+       ^~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:174:49: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case 2: *--ptr2 =((uc | 0x80) & 0xBF); uc >>= 6;
+                                              ~~~^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/cJSON.c:175:7: note: here
+       case 1: *--ptr2 =(uc | firstByteMark[len]);
+       ^~~~
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.o
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.c: In function 'af_change_app_status':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.c:81:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  cJSON *appid_arr = cJSON_GetObjectItem(data_obj, "apps");
+  ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.c: In function 'af_set_mac_list':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.c:226:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  cJSON *mac_arr = cJSON_GetObjectItem(data_obj, "mac_list");
+  ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.c:220:6: warning: unused variable 'type' [-Wunused-variable]
+  int type;
+      ^~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/app_filter_config.c:219:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^~
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_log.o
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client.o
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client.c: In function 'af_report_visit_info':
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client.c:201:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  cJSON *visit_info_array = cJSON_CreateArray();
+  ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client.c:209:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   cJSON *visit_obj = cJSON_CreateObject();
+   ^~~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client.c:225:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  char *out = cJSON_Print(root_obj);
+  ^~~~
+/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client.c:190:9: warning: unused variable 'j' [-Wunused-variable]
+  int i, j;
+         ^
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/af_client_fs.o
+  LD [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/oaf.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/oaf.mod.o
+  LD [M]  /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/oaf.ko
+make[3]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/linux-5.4.101'
+for subdir in .; do realdir=$(readlink -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0); grep -F /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0 /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/$subdir/Module.symvers >> /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/Module.symvers.tmp; [ "/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0" = "$realdir" ] || grep -F $realdir /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/$subdir/Module.symvers >> /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/Module.symvers.tmp; done; sort -u /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/Module.symvers.tmp > /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/Module.symvers; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/symvers; mv /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/Module.symvers /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/symvers/oaf.symvers
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.built
+rm -rf /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf.installed /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf/etc/modules.d; ( echo "oaf"; ) > /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf/etc/modules.d/oaf; 
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf.installed
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/root-rockchip/stamp
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.root-copy.flock -c 'cp -fpR /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/.pkgdir/kmod-oaf/. /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/root-rockchip/'
+touch /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/root-rockchip/stamp/.kmod-oaf_installed
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/bin/targets/rockchip/armv8/packages /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf/CONTROL /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf/etc/modules.d; ( echo "oaf"; ) > /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf/etc/modules.d/oaf; 
+find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf -name 'CVS' -o -name '.svn' -o -name '.#*' -o -name '*~'| xargs -r rm -rf
+: /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf
+(cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf/CONTROL; ( echo "$CONTROL"; printf "Description: "; echo "$DESCRIPTION" | sed -e 's,^[[:space:]]*, ,g'; ) > control; chmod 644 control; ( echo "#!/bin/sh"; echo "[ \"\${IPKG_NO_SCRIPT}\" = \"1\" ] && exit 0"; echo "[ -s "\${IPKG_INSTROOT}/lib/functions.sh" ] || exit 0"; echo ". \${IPKG_INSTROOT}/lib/functions.sh"; echo "default_postinst \$0 \$@"; ) > postinst; ( echo "#!/bin/sh"; echo "[ -s "\${IPKG_INSTROOT}/lib/functions.sh" ] || exit 0"; echo ". \${IPKG_INSTROOT}/lib/functions.sh"; echo "default_prerm \$0 \$@"; ) > prerm; chmod 0755 postinst prerm;  )
+install -d -m0755 /home/runner/work/packages-compile/packages-compile/openwrt/bin/targets/rockchip/armv8/packages
+/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/fakeroot /home/runner/work/packages-compile/packages-compile/openwrt/scripts/ipkg-build -m "" /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf /home/runner/work/packages-compile/packages-compile/openwrt/bin/targets/rockchip/armv8/packages
+Packaged contents of /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/linux-rockchip_armv8/oaf-3.0/ipkg-aarch64_generic/kmod-oaf into /home/runner/work/packages-compile/packages-compile/openwrt/bin/targets/rockchip/armv8/packages/kmod-oaf_5.4.101+3.0-1_aarch64_generic.ipk
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/oaf'
+time: package/feeds/custom/oaf/compile#5.86#1.29#7.31
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libjson-c'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.json-c-0.15-nodoc.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "json-c-0.15-nodoc.tar.gz" "99bca4f944b8ced8ae0bbc6310d6a3528ca715e69541793a1ef51f8c5b4b0878" "" "https://s3.amazonaws.com/json-c_releases/releases/"    '
+echo "libjson-c" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libjson-c.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libjson-c'
+time: package/feeds/base/libjson-c/compile#0.24#0.09#0.30
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+time: package/feeds/base/lua/compile#0.23#0.10#0.30
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libubox'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libubox-2020-12-12-35787769.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libubox-2020-12-12-35787769.tar.xz" "97dc4eba01cf2c5d6a6d0db3747e0cdc0d95cb87e51b3115272e7d3e69a8b255" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf libubox-2020-12-12-35787769 && [ \! -d libubox-2020-12-12-35787769 ] && git clone  https://git.openwrt.org/project/libubox.git libubox-2020-12-12-35787769 && (cd libubox-2020-12-12-35787769 && git checkout 357877693ca363b12e6e7e14d345639b2440cd07 ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd libubox-2020-12-12-35787769 && git log -1 --format='\''@%ct'\''` && rm -rf libubox-2020-12-12-35787769/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c libubox-2020-12-12-35787769 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2020-12-12-35787769.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2020-12-12-35787769.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf libubox-2020-12-12-35787769;  )    '
+echo "libubox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libubox.default.install
+echo "libblobmsg-json" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libubox.default.install
+echo "jshn" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libubox.default.install
+echo "libjson-script" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/libubox.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libubox'
+time: package/feeds/base/libubox/compile#0.27#0.08#0.31
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/system/uci'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.uci-2020-10-06-52bbc99f.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "uci-2020-10-06-52bbc99f.tar.xz" "39f2225d1b8f62d7133f708fc73f1f841b6113ae4634485fc0dfdf226041c3c4" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf uci-2020-10-06-52bbc99f && [ \! -d uci-2020-10-06-52bbc99f ] && git clone  https://git.openwrt.org/project/uci.git uci-2020-10-06-52bbc99f && (cd uci-2020-10-06-52bbc99f && git checkout 52bbc99f69ea6f67b6fe264f424dac91bde5016c ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd uci-2020-10-06-52bbc99f && git log -1 --format='\''@%ct'\''` && rm -rf uci-2020-10-06-52bbc99f/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c uci-2020-10-06-52bbc99f | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/uci-2020-10-06-52bbc99f.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/uci-2020-10-06-52bbc99f.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf uci-2020-10-06-52bbc99f;  )    '
+echo "libuci" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/uci.default.install
+echo "uci" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/uci.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/system/uci'
+time: package/feeds/base/uci/compile#0.21#0.07#0.25
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/open-app-filter'
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter/.built
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter/.built_check
+make -C /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter/ CC="aarch64-openwrt-linux-musl-gcc" CFLAGS="-Os -pipe -mcpu=generic -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter=appfilter -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" LIBS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-aarch64_generic_gcc-8.4.0_musl/lib -znow -zrelro -lm -lpthread -lubox -luci -lubus -ljson-c -lblobmsg_json" all
+make[3]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter'
+aarch64-openwrt-linux-musl-gcc -Os -pipe -mcpu=generic -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter=appfilter -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro   -c -o appfilter_user.o appfilter_user.c
+appfilter_user.c:27:10: fatal error: libubus.h: No such file or directory
+ #include <libubus.h>
+          ^~~~~~~~~~~
+compilation terminated.
+make[3]: *** [<builtin>: appfilter_user.o] Error 1
+make[3]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter'
+make[2]: *** [Makefile:61: /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-aarch64_generic_musl/appfilter/.built] Error 2
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/open-app-filter'
+time: package/feeds/custom/open-app-filter/compile#0.18#0.07#0.22
+    ERROR: package/feeds/custom/open-app-filter failed to build.
+make[1]: *** [package/Makefile:114: package/feeds/custom/open-app-filter/compile] Error 1
+make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/luci-app-oaf/compile] Error 2

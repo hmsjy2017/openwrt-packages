@@ -1,0 +1,45 @@
+make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.4-bootstrap-20171003.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.4-bootstrap-20171003.tar.gz" "f4ff5b5eb3a3cae1c993723f3eab519c5bae18866b5e5f96fe1102f0cb5c3e52" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.16.src.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.16.src.tar.gz" "7688063d55656105898f323d90a79a39c378d86fe89ae192eb3b7fc46347c95a" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
+time: package/feeds/packages/golang/host-compile#0.64#0.33#0.75
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+Makefile:737: WARNING: skipping libgomp -- package has no install section
+echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+time: package/toolchain/compile#0.29#0.10#0.36
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/simple-torrent'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.simple-torrent-1.2.12.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "simple-torrent-1.2.12.tar.gz" "skip" "" "https://codeload.github.com/boypt/simple-torrent/tar.gz/1.2.12?"    '
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12/.built
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12/.built_check
+CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE="" GO_BUILD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GO_MOD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GO_MOD_ARGS="-modcacherw" GO_PKG="cloud-torrent" GO_INSTALL_EXTRA="" GO_INSTALL_ALL="" GO_SOURCE_ONLY="" GO_BUILD_PKG="cloud-torrent/..." GO_EXCLUDES="" GO_GO_GENERATE="" GO_INSTALL_BIN_PATH="/usr/bin" BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12" GO_BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12/.go_work/build" GO_BUILD_BIN_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12/.go_work/build/bin" GO_BUILD_DEPENDS_PATH="/usr/share/gocode" GO_BUILD_DEPENDS_SRC="/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/gocode/src" GOOS="linux" GOARCH="amd64" GO386="" GOARM="" GOMIPS="" GOMIPS64="" CGO_ENABLED=1 CC="ccache_cc" CXX="ccache_cxx" CGO_CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12=simple-torrent-1.2.12 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include" CGO_CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12=simple-torrent-1.2.12 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro" GOPATH="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12/.go_work/build" GOCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GOMODCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GOENV=off /usr/bin/env bash /home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang//golang-build.sh build -v -trimpath -ldflags "all=-buildid '1614649354' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"        -ldflags "-s -w -X main.VERSION=1.2.12 -buildid '1614649354' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"  
+Finding targets
+
+Building targets
+../../../../../dl/go-mod-cache/github.com/boypt/scraper@v1.0.3/endpoint.go:10:2: missing go.sum entry for module providing package github.com/PuerkitoBio/goquery (imported by github.com/boypt/scraper); to add:
+	go get github.com/boypt/scraper@v1.0.3
+../../../../../dl/go-mod-cache/github.com/jpillora/requestlog@v1.0.0/wrap.go:11:2: no required module provides package github.com/andrew-d/go-termutil; to add it:
+	go get github.com/andrew-d/go-termutil
+../../../../../dl/go-mod-cache/github.com/jpillora/cookieauth@v1.0.0/cookieauth.go:15:2: no required module provides package github.com/elithrar/simple-scrypt; to add it:
+	go get github.com/elithrar/simple-scrypt
+../../../../../dl/go-mod-cache/github.com/jpillora/requestlog@v1.0.0/wrap.go:12:2: no required module provides package github.com/jpillora/ansi; to add it:
+	go get github.com/jpillora/ansi
+../../../../../dl/go-mod-cache/github.com/jpillora/requestlog@v1.0.0/wrap.go:13:2: no required module provides package github.com/jpillora/sizestr; to add it:
+	go get github.com/jpillora/sizestr
+../../../../../dl/go-mod-cache/github.com/jpillora/requestlog@v1.0.0/writer.go:13:2: no required module provides package github.com/tomasen/realip; to add it:
+	go get github.com/tomasen/realip
+
+make[2]: *** [Makefile:87: /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-torrent-1.2.12/.built] Error 1
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/simple-torrent'
+time: package/feeds/custom/simple-torrent/compile#1.35#0.49#1.18
+    ERROR: package/feeds/custom/simple-torrent failed to build.
+make[1]: *** [package/Makefile:114: package/feeds/custom/simple-torrent/compile] Error 1
+make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/simple-torrent/compile] Error 2

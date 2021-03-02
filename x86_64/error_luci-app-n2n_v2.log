@@ -1,0 +1,123 @@
+make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+time: package/feeds/base/lua/host-compile#0.30#0.10#0.35
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+Makefile:737: WARNING: skipping libgomp -- package has no install section
+echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+time: package/toolchain/compile#0.27#0.09#0.34
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.openssl-1.1.1j.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "openssl-1.1.1j.tar.gz" "aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf" "" "http://www.openssl.org/source/" "http://www.openssl.org/source/old/1.1.1/" "http://ftp.fi.muni.cz/pub/openssl/source/" "http://ftp.fi.muni.cz/pub/openssl/source/old/1.1.1/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/old/1.1.1/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+time: package/feeds/base/openssl/compile#0.29#0.15#0.36
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/libcap'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libcap-2.43.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libcap-2.43.tar.xz" "512a0e5fc4c1e06d472a20da26aa96a9b9bf2a26b23f094f77f1b8da56cc427f" "" "@KERNEL/linux/libs/security/linux-privs/libcap2"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/libcap'
+time: package/feeds/packages/libcap/compile#0.24#0.10#0.31
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.linux-firmware-20201118.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "linux-firmware-20201118.tar.xz" "863d5a31da725b856a917280d1e3014929b3bc3d4e6e5faecf530c13afb7e2b9" "" "@KERNEL/linux/kernel/firmware"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+time: package/feeds/base/linux-firmware/compile#1.18#0.62#1.38
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.2.13.0.0.a.13.14.arm.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "2.13.0.0.a.13.14.arm" "7fffaceb008b9beb5a1da4744c9a6d31c8d9eff54e3461cba925785f2ae1648d" "" "https://daemonizer.de/prism54/prism54-fw//stlc4560"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+time: package/feeds/base/prism54-firmware/compile#0.29#0.09#0.33
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+echo "kernel" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-block2mtd is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-geode is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-hifn-795x is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-talitos is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-pcompress is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-wq is not available in the kernel config - generating empty package
+echo "kmod-fs-vfat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-hwmon-ads1015 is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-gpiofan is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-pwmfan is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-pxa is not available in the kernel config - generating empty package
+echo "kmod-input-core" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-lib-crc-ccitt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-phylink is not available in the kernel config - generating empty package
+WARNING: kmod-dm9000 is not available in the kernel config - generating empty package
+WARNING: kmod-of-mdio is not available in the kernel config - generating empty package
+WARNING: kmod-sfp is not available in the kernel config - generating empty package
+echo "kmod-nf-reject" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nf-reject6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-ipt-core" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nf-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-nf-conntrack6 is not available in the kernel config - generating empty package
+echo "kmod-nf-conntrack6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nf-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nf-flow" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-ipt-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-ipt-offload" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-ipt-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-ipt-ulog is not available in the kernel config - generating empty package
+echo "kmod-ip6tables" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-nft-nat6 is not available in the kernel config - generating empty package
+WARNING: kmod-isdn4linux is not available in the kernel config - generating empty package
+echo "kmod-slhc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-ppp" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-pppox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-pppoe" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nls-base" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nls-cp437" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nls-iso8859-1" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+echo "kmod-nls-utf8" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/linux.default.install
+WARNING: kmod-gpio-dev is not available in the kernel config - generating empty package
+WARNING: kmod-gpio-nxp-74hc164 is not available in the kernel config - generating empty package
+WARNING: kmod-rtc-pt7c4338 is not available in the kernel config - generating empty package
+WARNING: kmod-mtdtests is not available in the kernel config - generating empty package
+WARNING: kmod-mtdoops is not available in the kernel config - generating empty package
+WARNING: kmod-mtdram is not available in the kernel config - generating empty package
+WARNING: kmod-backlight-pwm is not available in the kernel config - generating empty package
+WARNING: kmod-fb-tft is not available in the kernel config - generating empty package
+WARNING: kmod-fb-tft-ili9486 is not available in the kernel config - generating empty package
+WARNING: kmod-w1-slave-ds2760 is not available in the kernel config - generating empty package
+WARNING: kmod-net-prism54 is not available in the kernel config - generating empty package
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+time: package/kernel/linux/compile#2.24#0.26#2.48
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/n2n_v2'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.n2n-2.8.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "n2n-2.8.tar.gz" "skip" "" "https://codeload.github.com/ntop/n2n/tar.gz/2.8?"    '
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/n2n-2.8/.configured_*
+rm -f /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/stamp/.n2n_v2_installed
+(cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/n2n-2.8; rm -f aclocal.m4; if [ -f ./configure.ac ] || [ -f ./configure.in ]; then [ -d ./autom4te.cache ] && rm -rf autom4te.cache; [ -e ./config.rpath ] || ln -s /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.rpath ./config.rpath; touch NEWS AUTHORS COPYING ABOUT-NLS ChangeLog; AUTOM4TE=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autom4te AUTOCONF=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoconf AUTOMAKE=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/automake ACLOCAL=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/aclocal AUTOHEADER=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoheader LIBTOOLIZE=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/libtoolize LIBTOOL=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/libtool M4=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/m4 AUTOPOINT=true LIBTOOLIZE='/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/libtoolize --install' /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoreconf -v -f -i -s -B /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/host/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/aclocal -I m4 -I . . || true; fi; );
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/host/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/aclocal -I m4 -I . --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: running: /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoconf --include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/host/share/aclocal --include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/share/aclocal --include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/aclocal --include=m4 --include=. --prepend-include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/share/aclocal --force
+autoreconf: running: /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoheader --include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/host/share/aclocal --include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/share/aclocal --include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/aclocal --include=m4 --include=. --prepend-include=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/share/aclocal --force
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory `.'
+( cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/n2n-2.8; ./autogen.sh )
+Wait please...
+configure: loading site script /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/config.site
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... configure: error: in `/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/n2n-2.8':
+configure: error: cannot run C compiled programs.
+If you meant to cross compile, use `--host'.
+See `config.log' for more details
+make[2]: *** [Makefile:91: /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/n2n-2.8/.configured_68b329da9893e34099c7d8ad5cb9c940] Error 1
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/n2n_v2'
+time: package/feeds/custom/n2n_v2/compile#3.22#0.55#5.65
+    ERROR: package/feeds/custom/n2n_v2 failed to build.
+make[1]: *** [package/Makefile:114: package/feeds/custom/n2n_v2/compile] Error 1
+make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/luci-app-n2n_v2/compile] Error 2
