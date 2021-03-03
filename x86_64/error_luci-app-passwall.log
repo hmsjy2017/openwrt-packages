@@ -6,39 +6,39 @@ echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/sta
 echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
 echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/toolchain.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
-time: package/toolchain/compile#0.26#0.10#0.34
+time: package/toolchain/compile#0.26#0.08#0.32
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/mbedtls'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.mbedtls-2.16.9.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "mbedtls-2.16.9.tar.gz" "fc17ff7d8c11d08f23ae2800a18269408ad2c24ea6bb8b9363e41a01c2425697" "" "https://codeload.github.com/ARMmbed/mbedtls/tar.gz/v2.16.9?"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/mbedtls'
-time: package/feeds/base/mbedtls/compile#0.26#0.12#0.33
+time: package/feeds/base/mbedtls/compile#0.27#0.08#0.31
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libjson-c'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.json-c-0.15-nodoc.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "json-c-0.15-nodoc.tar.gz" "99bca4f944b8ced8ae0bbc6310d6a3528ca715e69541793a1ef51f8c5b4b0878" "" "https://s3.amazonaws.com/json-c_releases/releases/"    '
 echo "libjson-c" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/libjson-c.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libjson-c'
-time: package/feeds/base/libjson-c/compile#0.31#0.10#0.37
+time: package/feeds/base/libjson-c/compile#0.30#0.09#0.34
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
-time: package/feeds/base/lua/compile#0.27#0.13#0.36
+time: package/feeds/base/lua/compile#0.27#0.12#0.34
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libubox'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
-SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libubox-2020-12-12-35787769.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libubox-2020-12-12-35787769.tar.xz" "97dc4eba01cf2c5d6a6d0db3747e0cdc0d95cb87e51b3115272e7d3e69a8b255" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf libubox-2020-12-12-35787769 && [ \! -d libubox-2020-12-12-35787769 ] && git clone  https://git.openwrt.org/project/libubox.git libubox-2020-12-12-35787769 && (cd libubox-2020-12-12-35787769 && git checkout 357877693ca363b12e6e7e14d345639b2440cd07 ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd libubox-2020-12-12-35787769 && git log -1 --format='\''@%ct'\''` && rm -rf libubox-2020-12-12-35787769/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c libubox-2020-12-12-35787769 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2020-12-12-35787769.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2020-12-12-35787769.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf libubox-2020-12-12-35787769;  )    '
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libubox-2021-03-02-2e52c7e9.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libubox-2021-03-02-2e52c7e9.tar.xz" "042398d1295ac892e09c6d2e8f68861c6f859fc6752e809a114f451834e7a05e" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf libubox-2021-03-02-2e52c7e9 && [ \! -d libubox-2021-03-02-2e52c7e9 ] && git clone  https://git.openwrt.org/project/libubox.git libubox-2021-03-02-2e52c7e9 && (cd libubox-2021-03-02-2e52c7e9 && git checkout 2e52c7e9a90ab7ba1cf9d2986d1505ca5d184698 ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd libubox-2021-03-02-2e52c7e9 && git log -1 --format='\''@%ct'\''` && rm -rf libubox-2021-03-02-2e52c7e9/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c libubox-2021-03-02-2e52c7e9 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2021-03-02-2e52c7e9.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/libubox-2021-03-02-2e52c7e9.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf libubox-2021-03-02-2e52c7e9;  )    '
 echo "libubox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/libubox.default.install
 echo "libblobmsg-json" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/libubox.default.install
 echo "jshn" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/libubox.default.install
 echo "libjson-script" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/libubox.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libubox'
-time: package/feeds/base/libubox/compile#0.32#0.10#0.38
+time: package/feeds/base/libubox/compile#0.31#0.07#0.34
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/system/uci'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.uci-2020-10-06-52bbc99f.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "uci-2020-10-06-52bbc99f.tar.xz" "39f2225d1b8f62d7133f708fc73f1f841b6113ae4634485fc0dfdf226041c3c4" "" || (  	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf uci-2020-10-06-52bbc99f && [ \! -d uci-2020-10-06-52bbc99f ] && git clone  https://git.openwrt.org/project/uci.git uci-2020-10-06-52bbc99f && (cd uci-2020-10-06-52bbc99f && git checkout 52bbc99f69ea6f67b6fe264f424dac91bde5016c ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd uci-2020-10-06-52bbc99f && git log -1 --format='\''@%ct'\''` && rm -rf uci-2020-10-06-52bbc99f/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c uci-2020-10-06-52bbc99f | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/uci-2020-10-06-52bbc99f.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/uci-2020-10-06-52bbc99f.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf uci-2020-10-06-52bbc99f;  )    '
 echo "libuci" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/uci.default.install
 echo "uci" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/uci.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/system/uci'
-time: package/feeds/base/uci/compile#0.27#0.09#0.32
+time: package/feeds/base/uci/compile#0.25#0.05#0.27
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/ipt2socks'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.ipt2socks-1.1.3-HEAD.tar.gz.flock -c '  	 /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/zfl9/ipt2socks.git" --version="HEAD" --subdir="ipt2socks-1.1.3-HEAD" --source="ipt2socks-1.1.3-HEAD.tar.gz" --hash="x" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf ipt2socks-1.1.3-HEAD && [ \! -d ipt2socks-1.1.3-HEAD ] && git clone  https://github.com/zfl9/ipt2socks.git ipt2socks-1.1.3-HEAD && (cd ipt2socks-1.1.3-HEAD && git checkout HEAD ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd ipt2socks-1.1.3-HEAD && git log -1 --format='\''@%ct'\''` && rm -rf ipt2socks-1.1.3-HEAD/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c ipt2socks-1.1.3-HEAD | 	gzip -nc > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ipt2socks-1.1.3-HEAD.tar.gz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/ipt2socks-1.1.3-HEAD.tar.gz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf ipt2socks-1.1.3-HEAD; );     '
@@ -48,10 +48,10 @@ Checking out files from the git repository...
 Cloning into 'ipt2socks-1.1.3-HEAD'...
 Your branch is up to date with 'origin/master'.
 Packing checkout...
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/.prepared_188ab01d30e1152b0f8f7aebce5bff94_6664517399ebbbc92a37c5bb081b5c53_check
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/.prepared_0523cf97340217ac63396358a6d63246_6664517399ebbbc92a37c5bb081b5c53_check
 . /home/runner/work/packages-compile/packages-compile/openwrt/include/shell.sh; gzip -dc /home/runner/work/packages-compile/packages-compile/openwrt/dl/ipt2socks-1.1.3-HEAD.tar.gz | tar -C /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/.. -xf -
 [ ! -d ./src/ ] || cp -fpR ./src/. /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/.prepared_188ab01d30e1152b0f8f7aebce5bff94_6664517399ebbbc92a37c5bb081b5c53
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/.prepared_0523cf97340217ac63396358a6d63246_6664517399ebbbc92a37c5bb081b5c53
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/.configured_*
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/stamp/.ipt2socks_installed
 (cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/./; if [ -x ./configure ]; then find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/ -name config.guess | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/ -name config.guess | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.guess; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/ -name config.sub | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/ -name config.sub | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.sub; AR="x86_64-openwrt-linux-musl-gcc-ar" AS="ccache_cc -c -Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD=ipt2socks-1.1.3-HEAD -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" LD=x86_64-openwrt-linux-musl-ld NM="x86_64-openwrt-linux-musl-gcc-nm" CC="ccache_cc" GCC="ccache_cc" CXX="ccache_cxx" RANLIB="x86_64-openwrt-linux-musl-gcc-ranlib" STRIP=x86_64-openwrt-linux-musl-strip OBJCOPY=x86_64-openwrt-linux-musl-objcopy OBJDUMP=x86_64-openwrt-linux-musl-objdump SIZE=x86_64-openwrt-linux-musl-size CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD=ipt2socks-1.1.3-HEAD -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD=ipt2socks-1.1.3-HEAD -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include " LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro "   ./configure --target=x86_64-openwrt-linux --host=x86_64-openwrt-linux --build=x86_64-pc-linux-gnu --program-prefix="" --program-suffix="" --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/lib --sysconfdir=/etc --datadir=/usr/share --localstatedir=/var --mandir=/usr/man --infodir=/usr/info --disable-nls  ; fi; )
@@ -93,17 +93,17 @@ install -d -m0755 /home/runner/work/packages-compile/packages-compile/openwrt/bi
 /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/fakeroot /home/runner/work/packages-compile/packages-compile/openwrt/scripts/ipkg-build -m "" /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/ipkg-x86_64/ipt2socks /home/runner/work/packages-compile/packages-compile/openwrt/bin/packages/x86_64/custom
 Packaged contents of /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/ipt2socks/ipt2socks-1.1.3-HEAD/ipkg-x86_64/ipt2socks into /home/runner/work/packages-compile/packages-compile/openwrt/bin/packages/x86_64/custom/ipt2socks_1.1.3-2_x86_64.ipk
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/ipt2socks'
-time: package/feeds/custom/ipt2socks/compile#0.74#0.25#1.18
+time: package/feeds/custom/ipt2socks/compile#0.67#0.25#1.12
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/microsocks'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.microsocks-1.0.2.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "microsocks-1.0.2.tar.gz" "skip" "" "https://codeload.github.com/rofl0r/microsocks/tar.gz/v1.0.2?"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/microsocks'
-time: package/feeds/custom/microsocks/compile#0.22#0.10#0.30
+time: package/feeds/custom/microsocks/compile#0.22#0.06#0.27
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/pdnsd-alt'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.pdnsd-1.2.9b-par.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "pdnsd-1.2.9b-par.tar.xz" "e3e9c56cf91b12d8db73def2c247be2f726a052bed012f7a1e48946375f8e478" "" || (  /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/shadowsocks/pdnsd.git" --version="a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d" --subdir="pdnsd-1.2.9b-par" --source="pdnsd-1.2.9b-par.tar.xz" --hash="e3e9c56cf91b12d8db73def2c247be2f726a052bed012f7a1e48946375f8e478" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf pdnsd-1.2.9b-par && [ \! -d pdnsd-1.2.9b-par ] && git clone  https://github.com/shadowsocks/pdnsd.git pdnsd-1.2.9b-par && (cd pdnsd-1.2.9b-par && git checkout a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd pdnsd-1.2.9b-par && git log -1 --format='\''@%ct'\''` && rm -rf pdnsd-1.2.9b-par/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c pdnsd-1.2.9b-par | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/pdnsd-1.2.9b-par.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/pdnsd-1.2.9b-par.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf pdnsd-1.2.9b-par; );  )    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/pdnsd-alt'
-time: package/feeds/custom/pdnsd-alt/compile#0.24#0.09#0.30
+time: package/feeds/custom/pdnsd-alt/compile#0.23#0.07#0.27
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/tcping'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.tcping-0.3-0739ed3b2ab6a344a2e309f004455a2fa0fad1fe.tar.gz.flock -c '  	 /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/Mattraks/tcping" --version="0739ed3b2ab6a344a2e309f004455a2fa0fad1fe" --subdir="tcping-0.3" --source="tcping-0.3-0739ed3b2ab6a344a2e309f004455a2fa0fad1fe.tar.gz" --hash="x" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf tcping-0.3 && [ \! -d tcping-0.3 ] && git clone  https://github.com/Mattraks/tcping tcping-0.3 && (cd tcping-0.3 && git checkout 0739ed3b2ab6a344a2e309f004455a2fa0fad1fe ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd tcping-0.3 && git log -1 --format='\''@%ct'\''` && rm -rf tcping-0.3/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c tcping-0.3 | 	gzip -nc > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/tcping-0.3-0739ed3b2ab6a344a2e309f004455a2fa0fad1fe.tar.gz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/tcping-0.3-0739ed3b2ab6a344a2e309f004455a2fa0fad1fe.tar.gz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf tcping-0.3; );     '
@@ -130,10 +130,10 @@ Turn off this advice by setting config variable advice.detachedHead to false
 
 HEAD is now at 0739ed3 0.3 Increase connection timeout
 Packing checkout...
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/.prepared_8f2de6ffa2cfff42f7927f5f270e3baa_6664517399ebbbc92a37c5bb081b5c53_check
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/.prepared_db9e4dfdc56bd8e42a2869297d6d8cb9_6664517399ebbbc92a37c5bb081b5c53_check
 . /home/runner/work/packages-compile/packages-compile/openwrt/include/shell.sh; gzip -dc /home/runner/work/packages-compile/packages-compile/openwrt/dl/tcping-0.3-0739ed3b2ab6a344a2e309f004455a2fa0fad1fe.tar.gz | tar -C /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/.. -xf -
 [ ! -d ./src/ ] || cp -fpR ./src/. /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/.prepared_8f2de6ffa2cfff42f7927f5f270e3baa_6664517399ebbbc92a37c5bb081b5c53
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/.prepared_db9e4dfdc56bd8e42a2869297d6d8cb9_6664517399ebbbc92a37c5bb081b5c53
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/.configured_*
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/stamp/.tcping_installed
 (cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/./; if [ -x ./configure ]; then find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/ -name config.guess | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/ -name config.guess | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.guess; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/ -name config.sub | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/ -name config.sub | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.sub; AR="x86_64-openwrt-linux-musl-gcc-ar" AS="ccache_cc -c -Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3=tcping-0.3 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" LD=x86_64-openwrt-linux-musl-ld NM="x86_64-openwrt-linux-musl-gcc-nm" CC="ccache_cc" GCC="ccache_cc" CXX="ccache_cxx" RANLIB="x86_64-openwrt-linux-musl-gcc-ranlib" STRIP=x86_64-openwrt-linux-musl-strip OBJCOPY=x86_64-openwrt-linux-musl-objcopy OBJDUMP=x86_64-openwrt-linux-musl-objdump SIZE=x86_64-openwrt-linux-musl-size CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3=tcping-0.3 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3=tcping-0.3 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include " LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro "   ./configure --target=x86_64-openwrt-linux --host=x86_64-openwrt-linux --build=x86_64-pc-linux-gnu --program-prefix="" --program-suffix="" --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/lib --sysconfdir=/etc --datadir=/usr/share --localstatedir=/var --mandir=/usr/man --infodir=/usr/info --disable-nls  ; fi; )
@@ -169,107 +169,107 @@ install -d -m0755 /home/runner/work/packages-compile/packages-compile/openwrt/bi
 /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/fakeroot /home/runner/work/packages-compile/packages-compile/openwrt/scripts/ipkg-build -m "" /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/ipkg-x86_64/tcping /home/runner/work/packages-compile/packages-compile/openwrt/bin/packages/x86_64/custom
 Packaged contents of /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/tcping-0.3/ipkg-x86_64/tcping into /home/runner/work/packages-compile/packages-compile/openwrt/bin/packages/x86_64/custom/tcping_0.3-1_x86_64.ipk
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/tcping'
-time: package/feeds/custom/tcping/compile#0.64#0.26#1.10
+time: package/feeds/custom/tcping/compile#0.58#0.23#1.00
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/gettext'
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/gettext'
-time: package/feeds/base/gettext/compile#0.27#0.08#0.31
+time: package/feeds/base/gettext/compile#0.24#0.08#0.29
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libiconv'
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libiconv'
-time: package/feeds/base/libiconv/compile#0.24#0.11#0.32
+time: package/feeds/base/libiconv/compile#0.24#0.10#0.29
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libtool'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libtool-2.4.6.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libtool-2.4.6.tar.xz" "7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f" "" "@GNU/libtool"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libtool'
-time: package/feeds/base/libtool/compile#0.26#0.08#0.30
+time: package/feeds/base/libtool/compile#0.24#0.08#0.29
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/wolfssl'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.wolfssl-4.7.0-stable.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "wolfssl-4.7.0-stable.tar.gz" "b0e740b31d4d877d540ad50cc539a8873fc41af02bd3091c4357b403f7106e31" "" "https://github.com/wolfSSL/wolfssl/archive/v4.7.0-stable"    '
 echo "libwolfssl" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/pkginfo/wolfssl.default.install
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/wolfssl'
-time: package/feeds/base/wolfssl/compile#0.32#0.15#0.42
+time: package/feeds/base/wolfssl/compile#0.30#0.13#0.36
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/net/curl'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.curl-7.75.0.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "curl-7.75.0.tar.xz" "fe0c49d8468249000bda75bcfdf9e30ff7e9a86d35f1a21f428d79c389d55675" "" "https://dl.uxnr.de/mirror/curl/" "https://curl.mirror.anstey.ca/" "https://curl.askapache.com/download/" "https://curl.haxx.se/download/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/net/curl'
-time: package/feeds/packages/curl/compile#0.31#0.10#0.36
+time: package/feeds/packages/curl/compile#0.27#0.11#0.33
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/pcre'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.pcre-8.44.tar.bz2.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "pcre-8.44.tar.bz2" "19108658b23b3ec5058edc9f66ac545ea19f9537234be1ec62b714c84399366d" "" "@SF/pcre"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/pcre'
-time: package/feeds/base/pcre/compile#0.32#0.10#0.37
+time: package/feeds/base/pcre/compile#0.32#0.08#0.36
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/c-ares'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.c-ares-1.17.1.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "c-ares-1.17.1.tar.gz" "d73dd0f6de824afd407ce10750ea081af47eba52b8a6cb307d220131ad93fc40" "" "https://c-ares.haxx.se/download"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/c-ares'
-time: package/feeds/packages/c-ares/compile#0.25#0.10#0.31
+time: package/feeds/packages/c-ares/compile#0.24#0.07#0.28
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/libev'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libev-4.31.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libev-4.31.tar.gz" "ed855d2b52118e32c0c1a6a32bd18c97f9e6711ca511f5ee12de3b9eccc66e5a" "" "http://dist.schmorp.de/libev/Attic/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/libev'
-time: package/feeds/packages/libev/compile#0.24#0.09#0.30
+time: package/feeds/packages/libev/compile#0.23#0.06#0.26
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/libsodium'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libsodium-1.0.18.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libsodium-1.0.18.tar.gz" "6f504490b342a4f8a4c4a02fc9b866cbef8622d5df4e5452b46be121e46636c1" "" "https://download.libsodium.org/libsodium/releases" "https://github.com/jedisct1/libsodium/releases/download/1.0.18"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/libsodium'
-time: package/feeds/packages/libsodium/compile#0.25#0.11#0.33
+time: package/feeds/packages/libsodium/compile#0.23#0.09#0.28
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/shadowsocks-libev'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.shadowsocks-libev-3.3.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "shadowsocks-libev-3.3.5.tar.gz" "skip" "" "https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/shadowsocks-libev'
-time: package/feeds/custom/shadowsocks-libev/compile#0.26#0.09#0.31
+time: package/feeds/custom/shadowsocks-libev/compile#0.22#0.06#0.25
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.openssl-1.1.1j.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "openssl-1.1.1j.tar.gz" "aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf" "" "http://www.openssl.org/source/" "http://www.openssl.org/source/old/1.1.1/" "http://ftp.fi.muni.cz/pub/openssl/source/" "http://ftp.fi.muni.cz/pub/openssl/source/old/1.1.1/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/old/1.1.1/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
-time: package/feeds/base/openssl/compile#0.34#0.13#0.39
+time: package/feeds/base/openssl/compile#0.25#0.15#0.34
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.zlib-1.2.11.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "zlib-1.2.11.tar.xz" "4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066" "" "@SF/libpng" "http://www.zlib.net"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
-time: package/feeds/base/zlib/compile#0.23#0.10#0.29
+time: package/feeds/base/zlib/compile#0.21#0.10#0.29
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/udns'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.udns-0.4.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "udns-0.4.tar.gz" "115108dc791a2f9e99e150012bcb459d9095da2dd7d80699b584ac0ac3768710" "" "http://www.corpit.ru/mjt/udns"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/udns'
-time: package/feeds/packages/udns/compile#0.26#0.07#0.30
+time: package/feeds/packages/udns/compile#0.23#0.08#0.28
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/shadowsocksr-libev'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.shadowsocksr-libev-2.5.6.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "shadowsocksr-libev-2.5.6.tar.xz" "34308ed827a5dd4f4e35619914102d55b00604faa44fda051d1d25fb4a319325" "" || (  /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/shadowsocksrr/shadowsocksr-libev" --version="d63ff863800a5645aca4309d5dd5962bd1e95543" --subdir="shadowsocksr-libev-2.5.6" --source="shadowsocksr-libev-2.5.6.tar.xz" --hash="34308ed827a5dd4f4e35619914102d55b00604faa44fda051d1d25fb4a319325" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf shadowsocksr-libev-2.5.6 && [ \! -d shadowsocksr-libev-2.5.6 ] && git clone  https://github.com/shadowsocksrr/shadowsocksr-libev shadowsocksr-libev-2.5.6 && (cd shadowsocksr-libev-2.5.6 && git checkout d63ff863800a5645aca4309d5dd5962bd1e95543 ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd shadowsocksr-libev-2.5.6 && git log -1 --format='\''@%ct'\''` && rm -rf shadowsocksr-libev-2.5.6/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c shadowsocksr-libev-2.5.6 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/shadowsocksr-libev-2.5.6.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/shadowsocksr-libev-2.5.6.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf shadowsocksr-libev-2.5.6; );  )    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/shadowsocksr-libev'
-time: package/feeds/custom/shadowsocksr-libev/compile#0.26#0.11#0.33
+time: package/feeds/custom/shadowsocksr-libev/compile#0.24#0.12#0.32
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.4-bootstrap-20171003.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.4-bootstrap-20171003.tar.gz" "f4ff5b5eb3a3cae1c993723f3eab519c5bae18866b5e5f96fe1102f0cb5c3e52" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.16.src.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.16.src.tar.gz" "7688063d55656105898f323d90a79a39c378d86fe89ae192eb3b7fc46347c95a" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
-time: package/feeds/packages/golang/host-compile#0.63#0.34#0.75
+time: package/feeds/packages/golang/host-compile#0.57#0.35#0.71
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/trojan-go'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.trojan-go-0.8.2.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "trojan-go-0.8.2.tar.gz" "skip" "" "https://codeload.github.com/p4gefau1t/trojan-go/tar.gz/v0.8.2?"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/trojan-go'
-time: package/feeds/custom/trojan-go/compile#0.20#0.12#0.28
+time: package/feeds/custom/trojan-go/compile#0.21#0.07#0.25
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/boost'
 Selected Boost API sysv for architecture x86_64 and cpu type " " 
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.boost_1_75_0.tar.bz2.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "boost_1_75_0.tar.bz2" "953db31e016db7bb207f11432bef7df100516eeb746843fa0486a222e3fd49cb" "" "@SF/boost/boost/1.75.0" "https://dl.bintray.com/boostorg/release/1.75.0/source/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/boost'
-time: package/feeds/packages/boost/host-compile#1.43#1.07#1.76
+time: package/feeds/packages/boost/host-compile#1.38#0.80#1.51
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/boost'
 Selected Boost API sysv for architecture x86_64 and cpu type " " 
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.boost_1_75_0.tar.bz2.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "boost_1_75_0.tar.bz2" "953db31e016db7bb207f11432bef7df100516eeb746843fa0486a222e3fd49cb" "" "@SF/boost/boost/1.75.0" "https://dl.bintray.com/boostorg/release/1.75.0/source/"    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/boost'
-time: package/feeds/packages/boost/compile#1.73#0.95#1.93
+time: package/feeds/packages/boost/compile#1.54#0.84#1.71
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/trojan-plus'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.trojan-plus-10.0.3.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "trojan-plus-10.0.3.tar.xz" "2d37d09fe6d39d7981116ad387706f58f2b30b74a34e27fc5608f267dacc9208" "" || (  /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/peter-tank/trojan-plus.git" --version="HEAD" --subdir="trojan-plus-10.0.3" --source="trojan-plus-10.0.3.tar.xz" --hash="2d37d09fe6d39d7981116ad387706f58f2b30b74a34e27fc5608f267dacc9208" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf trojan-plus-10.0.3 && [ \! -d trojan-plus-10.0.3 ] && git clone  https://github.com/peter-tank/trojan-plus.git trojan-plus-10.0.3 && (cd trojan-plus-10.0.3 && git checkout HEAD ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd trojan-plus-10.0.3 && git log -1 --format='\''@%ct'\''` && rm -rf trojan-plus-10.0.3/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c trojan-plus-10.0.3 | 	xz -zc -7e > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/trojan-plus-10.0.3.tar.xz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/trojan-plus-10.0.3.tar.xz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf trojan-plus-10.0.3; );  )    '
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/trojan-plus'
-time: package/feeds/custom/trojan-plus/compile#0.24#0.09#0.30
+time: package/feeds/custom/trojan-plus/compile#0.21#0.10#0.28
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/xray-core'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.xray-core-1.3.0.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "xray-core-1.3.0.tar.gz" "skip" "" "https://codeload.github.com/XTLS/xray-core/tar.gz/v1.3.0?"    '
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.prepared_06c69d5a2d3e00f73c896f06b52f74bf_6664517399ebbbc92a37c5bb081b5c53_check
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.prepared_ba48194af1d8d9c1c913418c214340ca_6664517399ebbbc92a37c5bb081b5c53_check
 . /home/runner/work/packages-compile/packages-compile/openwrt/include/shell.sh; gzip -dc /home/runner/work/packages-compile/packages-compile/openwrt/dl/xray-core-1.3.0.tar.gz | tar -C /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.. -xf -
 [ ! -d ./src/ ] || cp -fpR ./src/. /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.configured_*
@@ -1002,15 +1002,15 @@ transport/pipe/writer.go
 
 Symlinking directories from /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/gocode/src into /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build/src
 .../ehang.io
+.../github.com/p4gefau1t
 .../github.com/txthinking
 .../github.com/ginuerzh
 .../github.com/fatedier
-.../github.com/p4gefau1t
 
 touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.configured_fe53a26257a1bf656f8ab807fb61341e
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.built
 touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.built_check
-CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE="" GO_BUILD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GO_MOD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GO_MOD_ARGS="-modcacherw" GO_PKG="github.com/xtls/xray-core" GO_INSTALL_EXTRA="" GO_INSTALL_ALL="" GO_SOURCE_ONLY="" GO_BUILD_PKG="github.com/xtls/xray-core/main" GO_EXCLUDES="" GO_GO_GENERATE="" GO_INSTALL_BIN_PATH="/usr/bin" BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0" GO_BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build" GO_BUILD_BIN_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build/bin" GO_BUILD_DEPENDS_PATH="/usr/share/gocode" GO_BUILD_DEPENDS_SRC="/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/gocode/src" GOOS="linux" GOARCH="amd64" GO386="" GOARM="" GOMIPS="" GOMIPS64="" CGO_ENABLED=1 CC="ccache_cc" CXX="ccache_cxx" CGO_CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0=Xray-core-1.3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include" CGO_CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0=Xray-core-1.3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro" GOPATH="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build" GOCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GOMODCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GOENV=off /usr/bin/env bash /home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang//golang-build.sh build -v -trimpath -ldflags "all=-buildid '1614649354' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"        -ldflags "-s -w -X github.com/xtls/xray-core/core.build=OpenWrt -X github.com/xtls/xray-core/core.version=1.3.0 -buildid '1614649354' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"  
+CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE="" GO_BUILD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GO_MOD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GO_MOD_ARGS="-modcacherw" GO_PKG="github.com/xtls/xray-core" GO_INSTALL_EXTRA="" GO_INSTALL_ALL="" GO_SOURCE_ONLY="" GO_BUILD_PKG="github.com/xtls/xray-core/main" GO_EXCLUDES="" GO_GO_GENERATE="" GO_INSTALL_BIN_PATH="/usr/bin" BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0" GO_BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build" GO_BUILD_BIN_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build/bin" GO_BUILD_DEPENDS_PATH="/usr/share/gocode" GO_BUILD_DEPENDS_SRC="/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/gocode/src" GOOS="linux" GOARCH="amd64" GO386="" GOARM="" GOMIPS="" GOMIPS64="" CGO_ENABLED=1 CC="ccache_cc" CXX="ccache_cxx" CGO_CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0=Xray-core-1.3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include" CGO_CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0=Xray-core-1.3.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro" GOPATH="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.go_work/build" GOCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GOMODCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GOENV=off /usr/bin/env bash /home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang//golang-build.sh build -v -trimpath -ldflags "all=-buildid '1614733223' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"        -ldflags "-s -w -X github.com/xtls/xray-core/core.build=OpenWrt -X github.com/xtls/xray-core/core.version=1.3.0 -buildid '1614733223' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"  
 Finding targets
 
 Building targets
@@ -1022,7 +1022,7 @@ UPX 3.95        Markus Oberhumer, Laszlo Molnar & John Reiser   Aug 26th 2018
 
         File size         Ratio      Format      Name
    --------------------   ------   -----------   -----------
-  18227744 ->   4746060   26.04%   linux/amd64   main
+  18227744 ->   4746068   26.04%   linux/amd64   main
 
 Packed 1 file.
 CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE="" GO_BUILD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GO_MOD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GO_MOD_ARGS="-modcacherw" /usr/bin/env bash /home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang//golang-build.sh cache_cleanup
@@ -1081,7 +1081,7 @@ mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.root-copy.flock -c 'cp -fpR /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/Xray-core-1.3.0/.pkgdir/xray-geodata/. /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/root-x86/'
 touch /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/root-x86/stamp/.xray-geodata_installed
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/xray-core'
-time: package/feeds/custom/xray-core/compile#17.14#2.38#18.54
+time: package/feeds/custom/xray-core/compile#15.33#2.03#16.42
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/dns2socks'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.dns2socks-2.1.tar.gz.flock -c '  	 /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/kongfl888/dns2socks.git" --version="HEAD" --subdir="dns2socks-2.1" --source="dns2socks-2.1.tar.gz" --hash="x" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf dns2socks-2.1 && [ \! -d dns2socks-2.1 ] && git clone  https://github.com/kongfl888/dns2socks.git dns2socks-2.1 && (cd dns2socks-2.1 && git checkout HEAD ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd dns2socks-2.1 && git log -1 --format='\''@%ct'\''` && rm -rf dns2socks-2.1/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c dns2socks-2.1 | 	gzip -nc > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/dns2socks-2.1.tar.gz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/dns2socks-2.1.tar.gz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf dns2socks-2.1; );     '
@@ -1091,10 +1091,10 @@ Checking out files from the git repository...
 Cloning into 'dns2socks-2.1'...
 Your branch is up to date with 'origin/master'.
 Packing checkout...
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/.prepared_1299af7f10a208d547834134db40ef79_6664517399ebbbc92a37c5bb081b5c53_check
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/.prepared_61e605569fef6bcfe83732577016b490_6664517399ebbbc92a37c5bb081b5c53_check
 . /home/runner/work/packages-compile/packages-compile/openwrt/include/shell.sh; gzip -dc /home/runner/work/packages-compile/packages-compile/openwrt/dl/dns2socks-2.1.tar.gz | tar -C /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/.. -xf -
 [ ! -d ./src/ ] || cp -fpR ./src/. /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/.prepared_1299af7f10a208d547834134db40ef79_6664517399ebbbc92a37c5bb081b5c53
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/.prepared_61e605569fef6bcfe83732577016b490_6664517399ebbbc92a37c5bb081b5c53
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/.configured_*
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/stamp/.dns2socks_installed
 (cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/./; if [ -x ./configure ]; then find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/ -name config.guess | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/ -name config.guess | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.guess; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/ -name config.sub | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/ -name config.sub | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.sub; AR="x86_64-openwrt-linux-musl-gcc-ar" AS="ccache_cc -c -Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1=dns2socks-2.1 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" LD=x86_64-openwrt-linux-musl-ld NM="x86_64-openwrt-linux-musl-gcc-nm" CC="ccache_cc" GCC="ccache_cc" CXX="ccache_cxx" RANLIB="x86_64-openwrt-linux-musl-gcc-ranlib" STRIP=x86_64-openwrt-linux-musl-strip OBJCOPY=x86_64-openwrt-linux-musl-objcopy OBJDUMP=x86_64-openwrt-linux-musl-objdump SIZE=x86_64-openwrt-linux-musl-size CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1=dns2socks-2.1 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1=dns2socks-2.1 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include " LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro "   ./configure --target=x86_64-openwrt-linux --host=x86_64-openwrt-linux --build=x86_64-pc-linux-gnu --program-prefix="" --program-suffix="" --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/lib --sysconfdir=/etc --datadir=/usr/share --localstatedir=/var --mandir=/usr/man --infodir=/usr/info --disable-nls  ; fi; )
@@ -1123,7 +1123,7 @@ install -d -m0755 /home/runner/work/packages-compile/packages-compile/openwrt/bi
 /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/fakeroot /home/runner/work/packages-compile/packages-compile/openwrt/scripts/ipkg-build -m "" /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/ipkg-x86_64/dns2socks /home/runner/work/packages-compile/packages-compile/openwrt/bin/packages/x86_64/custom
 Packaged contents of /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/dns2socks-2.1/ipkg-x86_64/dns2socks into /home/runner/work/packages-compile/packages-compile/openwrt/bin/packages/x86_64/custom/dns2socks_2.1-1_x86_64.ipk
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/dns2socks'
-time: package/feeds/custom/dns2socks/compile#0.95#0.22#1.33
+time: package/feeds/custom/dns2socks/compile#0.81#0.28#1.26
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/simple-obfs'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.simple-obfs-0.0.5-HEAD.tar.gz.flock -c '  	 /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/shadowsocks/simple-obfs.git" --version="HEAD" --subdir="simple-obfs-0.0.5-HEAD" --source="simple-obfs-0.0.5-HEAD.tar.gz" --hash="x" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf simple-obfs-0.0.5-HEAD && [ \! -d simple-obfs-0.0.5-HEAD ] && git clone  https://github.com/shadowsocks/simple-obfs.git simple-obfs-0.0.5-HEAD && (cd simple-obfs-0.0.5-HEAD && git checkout HEAD ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd simple-obfs-0.0.5-HEAD && git log -1 --format='\''@%ct'\''` && rm -rf simple-obfs-0.0.5-HEAD/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c simple-obfs-0.0.5-HEAD | 	gzip -nc > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/simple-obfs-0.0.5-HEAD.tar.gz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/simple-obfs-0.0.5-HEAD.tar.gz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf simple-obfs-0.0.5-HEAD; );     '
@@ -1136,10 +1136,10 @@ Submodule 'libcork' (https://github.com/shadowsocks/libcork.git) registered for 
 Cloning into '/home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/simple-obfs-0.0.5-HEAD/libcork'...
 Submodule path 'libcork': checked out 'f02984545061c924808e4b9ea7cc6749a41f1979'
 Packing checkout...
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.prepared_efde8912a1a5947229100bfa33debbb7_6664517399ebbbc92a37c5bb081b5c53_check
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.prepared_1cf0fc9d23246329e9c7cec8acda1de0_6664517399ebbbc92a37c5bb081b5c53_check
 . /home/runner/work/packages-compile/packages-compile/openwrt/include/shell.sh; gzip -dc /home/runner/work/packages-compile/packages-compile/openwrt/dl/simple-obfs-0.0.5-HEAD.tar.gz | tar -C /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.. -xf -
 [ ! -d ./src/ ] || cp -fpR ./src/. /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD
-touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.prepared_efde8912a1a5947229100bfa33debbb7_6664517399ebbbc92a37c5bb081b5c53
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.prepared_1cf0fc9d23246329e9c7cec8acda1de0_6664517399ebbbc92a37c5bb081b5c53
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.configured_*
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/stamp/.simple-obfs_installed
 (cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD; rm -f aclocal.m4; if [ -f ./configure.ac ] || [ -f ./configure.in ]; then [ -d ./autom4te.cache ] && rm -rf autom4te.cache; [ -e ./config.rpath ] || ln -s /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.rpath ./config.rpath; touch NEWS AUTHORS COPYING ABOUT-NLS ChangeLog; AUTOM4TE=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autom4te AUTOCONF=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoconf AUTOMAKE=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/automake ACLOCAL=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/aclocal AUTOHEADER=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoheader LIBTOOLIZE=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/libtoolize LIBTOOL=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/libtool M4=/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/m4 AUTOPOINT=true LIBTOOLIZE='/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/libtoolize --install' /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/autoreconf -v -f -i -s -B /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/host/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/share/aclocal -I /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/aclocal -I m4 -I . . || true; fi; );
@@ -1170,45 +1170,45 @@ libcork/Makefile.am: installing 'auto/depcomp'
 autoreconf: Leaving directory `.'
 (cd /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/./; if [ -x ./configure ]; then find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/ -name config.guess | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/ -name config.guess | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.guess; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/ -name config.sub | xargs -r chmod u+w; find /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/ -name config.sub | xargs -r -n1 cp --remove-destination /home/runner/work/packages-compile/packages-compile/openwrt/scripts/config.sub; AR="x86_64-openwrt-linux-musl-gcc-ar" AS="ccache_cc -c -Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD=simple-obfs-0.0.5-HEAD -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" LD=x86_64-openwrt-linux-musl-ld NM="x86_64-openwrt-linux-musl-gcc-nm" CC="ccache_cc" GCC="ccache_cc" CXX="ccache_cxx" RANLIB="x86_64-openwrt-linux-musl-gcc-ranlib" STRIP=x86_64-openwrt-linux-musl-strip OBJCOPY=x86_64-openwrt-linux-musl-objcopy OBJDUMP=x86_64-openwrt-linux-musl-objdump SIZE=x86_64-openwrt-linux-musl-size CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD=simple-obfs-0.0.5-HEAD -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD=simple-obfs-0.0.5-HEAD -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include " LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro "   ./configure --target=x86_64-openwrt-linux --host=x86_64-openwrt-linux --build=x86_64-pc-linux-gnu --program-prefix="" --program-suffix="" --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/lib --sysconfdir=/etc --datadir=/usr/share --localstatedir=/var --mandir=/usr/man --infodir=/usr/info --disable-nls  --disable-ssp --disable-documentation --disable-assert ; fi; )
 configure: WARNING: unrecognized options: --disable-nls
-configure: loading site script /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/config.site
-checking for x86_64-openwrt-linux-gcc... (cached) x86_64-openwrt-linux-musl-gcc
+configure: loading site script /home/runner/work/packages-compile/packages-compile/openwrt/include/site/x86_64
+checking for x86_64-openwrt-linux-gcc... ccache_cc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
 checking for suffix of executables... 
 checking whether we are cross compiling... yes
-checking for suffix of object files... (cached) o
-checking whether we are using the GNU C compiler... (cached) yes
-checking whether x86_64-openwrt-linux-musl-gcc accepts -g... (cached) yes
-checking for x86_64-openwrt-linux-musl-gcc option to accept ISO C89... (cached) none needed
-checking whether x86_64-openwrt-linux-musl-gcc understands -c and -o together... (cached) yes
-checking how to run the C preprocessor... (cached) x86_64-openwrt-linux-musl-gcc -E
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether ccache_cc accepts -g... yes
+checking for ccache_cc option to accept ISO C89... none needed
+checking whether ccache_cc understands -c and -o together... yes
+checking how to run the C preprocessor... ccache_cc -E
 checking for grep that handles long lines and -e... /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/grep
 checking for egrep... /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/grep -E
-checking for ANSI C header files... (cached) yes
-checking for sys/types.h... (cached) yes
-checking for sys/stat.h... (cached) yes
-checking for stdlib.h... (cached) yes
-checking for string.h... (cached) yes
-checking for memory.h... (cached) yes
-checking for strings.h... (cached) yes
-checking for inttypes.h... (cached) yes
-checking for stdint.h... (cached) yes
-checking for unistd.h... (cached) yes
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
 checking minix/config.h usability... no
 checking minix/config.h presence... no
 checking for minix/config.h... no
 checking whether it is safe to define __EXTENSIONS__... yes
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
-checking for x86_64-openwrt-linux-strip... (cached) x86_64-openwrt-linux-musl-strip
+checking for x86_64-openwrt-linux-strip... x86_64-openwrt-linux-musl-strip
 checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
-checking for gawk... (cached) gawk
-checking whether make sets $(MAKE)... (cached) yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
 checking for style of include used by make... GNU
-checking whether make supports nested variables... (cached) yes
-checking dependency style of x86_64-openwrt-linux-musl-gcc... (cached) gcc3
-checking for x86_64-openwrt-linux-ar... (cached) x86_64-openwrt-linux-musl-gcc-ar
-checking the archiver (x86_64-openwrt-linux-musl-gcc-ar) interface... (cached) ar
+checking whether make supports nested variables... yes
+checking dependency style of ccache_cc... gcc3
+checking for x86_64-openwrt-linux-ar... x86_64-openwrt-linux-musl-gcc-ar
+checking the archiver (x86_64-openwrt-linux-musl-gcc-ar) interface... ar
 checking whether make supports nested variables... (cached) yes
 checking whether to enable maintainer-specific portions of Makefiles... no
 checking build system type... x86_64-pc-linux-gnu
@@ -1216,7 +1216,7 @@ checking host system type... x86_64-openwrt-linux-gnu
 checking how to print strings... printf
 checking for a sed that does not truncate output... /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/sed
 checking for fgrep... /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/host/bin/grep -F
-checking for ld used by x86_64-openwrt-linux-musl-gcc... x86_64-openwrt-linux-musl-ld
+checking for ld used by ccache_cc... x86_64-openwrt-linux-musl-ld
 checking if the linker (x86_64-openwrt-linux-musl-ld) is GNU ld... yes
 checking for BSD- or MS-compatible name lister (nm)... x86_64-openwrt-linux-musl-gcc-nm
 checking the name lister (x86_64-openwrt-linux-musl-gcc-nm) interface... BSD nm
@@ -1235,98 +1235,119 @@ checking how to associate runtime and link libraries... printf %s\n
 checking for x86_64-openwrt-linux-ar... (cached) x86_64-openwrt-linux-musl-gcc-ar
 checking for archiver @FILE support... @
 checking for x86_64-openwrt-linux-strip... (cached) x86_64-openwrt-linux-musl-strip
-checking for x86_64-openwrt-linux-ranlib... (cached) x86_64-openwrt-linux-musl-gcc-ranlib
-checking command to parse x86_64-openwrt-linux-musl-gcc-nm output from x86_64-openwrt-linux-musl-gcc object... ok
+checking for x86_64-openwrt-linux-ranlib... x86_64-openwrt-linux-musl-gcc-ranlib
+checking command to parse x86_64-openwrt-linux-musl-gcc-nm output from ccache_cc object... ok
 checking for sysroot... no
 checking for x86_64-openwrt-linux-mt... no
 checking for mt... mt
 configure: WARNING: using cross tools not prefixed with host triplet
 checking if mt is a manifest tool... no
-checking for dlfcn.h... (cached) yes
+checking for dlfcn.h... yes
 checking for objdir... .libs
-checking if x86_64-openwrt-linux-musl-gcc supports -fno-rtti -fno-exceptions... no
-checking for x86_64-openwrt-linux-musl-gcc option to produce PIC... -fPIC -DPIC
-checking if x86_64-openwrt-linux-musl-gcc PIC flag -fPIC -DPIC works... yes
-checking if x86_64-openwrt-linux-musl-gcc static flag -static works... yes
-checking if x86_64-openwrt-linux-musl-gcc supports -c -o file.o... yes
-checking if x86_64-openwrt-linux-musl-gcc supports -c -o file.o... (cached) yes
-checking whether the x86_64-openwrt-linux-musl-gcc linker (x86_64-openwrt-linux-musl-ld -m elf_x86_64) supports shared libraries... yes
+checking if ccache_cc supports -fno-rtti -fno-exceptions... no
+checking for ccache_cc option to produce PIC... -fPIC -DPIC
+checking if ccache_cc PIC flag -fPIC -DPIC works... yes
+checking if ccache_cc static flag -static works... yes
+checking if ccache_cc supports -c -o file.o... yes
+checking if ccache_cc supports -c -o file.o... (cached) yes
+checking whether the ccache_cc linker (x86_64-openwrt-linux-musl-ld -m elf_x86_64) supports shared libraries... yes
 checking dynamic linker characteristics... GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
 checking for shl_load... no
 checking for shl_load in -ldld... no
-checking for dlopen... (cached) yes
+checking for dlopen... yes
 checking whether a program can dlopen itself... cross
 checking whether stripping libraries is possible... yes
 checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... no
 checking whether to build static libraries... yes
-checking for x86_64-openwrt-linux-gcc... (cached) x86_64-openwrt-linux-musl-gcc
+checking for x86_64-openwrt-linux-gcc... (cached) ccache_cc
 checking whether we are using the GNU C compiler... (cached) yes
-checking whether x86_64-openwrt-linux-musl-gcc accepts -g... (cached) yes
-checking for x86_64-openwrt-linux-musl-gcc option to accept ISO C89... (cached) none needed
-checking whether x86_64-openwrt-linux-musl-gcc understands -c and -o together... (cached) yes
+checking whether ccache_cc accepts -g... (cached) yes
+checking for ccache_cc option to accept ISO C89... (cached) none needed
+checking whether ccache_cc understands -c and -o together... (cached) yes
 checking whether ln -s works... yes
 checking whether make sets $(MAKE)... (cached) yes
 checking for thread local storage (TLS) class... __thread
-checking for C/C++ restrict keyword... (cached) __restrict
-checking for netdb.h... (cached) yes
+checking for C/C++ restrict keyword... __restrict
+checking for netdb.h... yes
 checking for library containing inet_ntop... none required
 checking whether inet_ntop is declared... yes
 checking for what kind of host... Linux
 checking if -fstack-protector and -fstack-protector-all are supported.... yes
-checking for limits.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
 checking for stdint.h... (cached) yes
 checking for inttypes.h... (cached) yes
-checking for arpa/inet.h... (cached) yes
-checking for fcntl.h... (cached) yes
-checking for langinfo.h... (cached) yes
-checking for locale.h... (cached) yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
 checking for netdb.h... (cached) yes
-checking for netinet/in.h... (cached) yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
 checking for stdlib.h... (cached) yes
 checking for string.h... (cached) yes
 checking for strings.h... (cached) yes
 checking for unistd.h... (cached) yes
-checking for sys/ioctl.h... (cached) yes
-checking for sys/socket.h... (cached) yes
-checking for net/if.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for net/if.h... yes
 checking for linux/if.h... yes
 checking for linux/netfilter_ipv4.h... yes
 checking for linux/netfilter_ipv6/ip6_tables.h... yes
 checking whether byte ordering is bigendian... (cached) no
-checking for inline... (cached) inline
-checking for ssize_t... (cached) yes
+checking for inline... inline
+checking for ssize_t... yes
 checking whether to enable assertions... no
 checking for ANSI C header files... (cached) yes
-checking for sys/wait.h that is POSIX.1 compatible... (cached) yes
-checking for an ANSI C-conforming const... (cached) yes
-checking for pid_t... (cached) yes
-checking for size_t... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for an ANSI C-conforming const... yes
+checking for pid_t... yes
+checking for size_t... yes
 checking for ssize_t... (cached) yes
-checking for uint16_t... (cached) yes
-checking for uint8_t... (cached) yes
-checking whether time.h and sys/time.h may both be included... (cached) yes
-checking for vfork.h... (cached) no
-checking for fork... (cached) yes
-checking for vfork... (cached) yes
-checking for working fork... (cached) yes
+checking for uint16_t... yes
+checking for uint8_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... cross
+configure: WARNING: result yes guessed because of cross compilation
 checking for working vfork... (cached) yes
-checking for sys/select.h... (cached) yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
 checking for sys/socket.h... (cached) yes
-checking types of arguments for select... (cached) int,fd_set *,struct timeval *
+checking types of arguments for select... int,fd_set *,struct timeval *
 checking return type of signal handlers... void
-checking for memset... (cached) yes
-checking for select... (cached) yes
+checking for memset... yes
+checking for select... yes
 checking for setresuid... (cached) no
-checking for setreuid... (cached) yes
+checking for setreuid... yes
 checking for strerror... (cached) yes
-checking for getpwnam_r... (cached) yes
-checking for setrlimit... (cached) yes
+checking for getpwnam_r... yes
+checking for setrlimit... yes
 checking for connect in -lsocket... no
-checking for malloc... (cached) yes
+checking for malloc... yes
 checking for memset... (cached) yes
-checking for socket... (cached) yes
+checking for socket... yes
 checking for ev_loop_destroy in -lev... yes
 checking that generated files are newer than configure... done
 configure: creating ./config.status
@@ -1535,13 +1556,13 @@ mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.root-copy.flock -c 'cp -fpR /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/simple-obfs//simple-obfs-0.0.5-HEAD/.pkgdir/simple-obfs-server/. /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/root-x86/'
 touch /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/root-x86/stamp/.simple-obfs-server_installed
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/simple-obfs'
-time: package/feeds/custom/simple-obfs/compile#16.76#2.85#20.29
+time: package/feeds/custom/simple-obfs/compile#16.02#3.11#19.88
 make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/v2ray-plugin'
 mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
 SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.v2ray-plugin-1.8.0.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "v2ray-plugin-1.8.0.tar.gz" "skip" "" "https://codeload.github.com/teddysun/v2ray-plugin/tar.gz/v1.8.0?"    '
 rm -f /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.built
 touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.built_check
-CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE="" GO_BUILD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GO_MOD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GO_MOD_ARGS="-modcacherw" GO_PKG="github.com/shadowsocks/v2ray-plugin" GO_INSTALL_EXTRA="" GO_INSTALL_ALL="" GO_SOURCE_ONLY="" GO_BUILD_PKG="github.com/shadowsocks/v2ray-plugin/..." GO_EXCLUDES="" GO_GO_GENERATE="" GO_INSTALL_BIN_PATH="/usr/bin" BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0" GO_BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.go_work/build" GO_BUILD_BIN_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.go_work/build/bin" GO_BUILD_DEPENDS_PATH="/usr/share/gocode" GO_BUILD_DEPENDS_SRC="/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/gocode/src" GOOS="linux" GOARCH="amd64" GO386="" GOARM="" GOMIPS="" GOMIPS64="" CGO_ENABLED=1 CC="ccache_cc" CXX="ccache_cxx" CGO_CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0=v2ray-plugin-1.8.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include" CGO_CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0=v2ray-plugin-1.8.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro" GOPATH="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.go_work/build" GOCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GOMODCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GOENV=off /usr/bin/env bash /home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang//golang-build.sh build -v -trimpath -ldflags "all=-buildid '1614649354' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"        -ldflags "-s -w  -buildid '1614649354' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"  
+CONFIG_GOLANG_MOD_CACHE_WORLD_READABLE="" GO_BUILD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GO_MOD_CACHE_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GO_MOD_ARGS="-modcacherw" GO_PKG="github.com/shadowsocks/v2ray-plugin" GO_INSTALL_EXTRA="" GO_INSTALL_ALL="" GO_SOURCE_ONLY="" GO_BUILD_PKG="github.com/shadowsocks/v2ray-plugin/..." GO_EXCLUDES="" GO_GO_GENERATE="" GO_INSTALL_BIN_PATH="/usr/bin" BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0" GO_BUILD_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.go_work/build" GO_BUILD_BIN_DIR="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.go_work/build/bin" GO_BUILD_DEPENDS_PATH="/usr/share/gocode" GO_BUILD_DEPENDS_SRC="/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-x86_64_musl/usr/share/gocode/src" GOOS="linux" GOARCH="amd64" GO386="" GOARM="" GOMIPS="" GOMIPS64="" CGO_ENABLED=1 CC="ccache_cc" CXX="ccache_cxx" CGO_CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0=v2ray-plugin-1.8.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_CPPFLAGS="-I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/include -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include/fortify -I/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/include" CGO_CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -ffile-prefix-map=/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0=v2ray-plugin-1.8.0 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro" CGO_LDFLAGS="-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -znow -zrelro" GOPATH="/home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.go_work/build" GOCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/tmp/go-build" GOMODCACHE="/home/runner/work/packages-compile/packages-compile/openwrt/dl/go-mod-cache" GOENV=off /usr/bin/env bash /home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang//golang-build.sh build -v -trimpath -ldflags "all=-buildid '1614733223' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"        -ldflags "-s -w  -buildid '1614733223' -linkmode external -extldflags '-L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/usr/lib -L/home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/toolchain-x86_64_gcc-8.4.0_musl/lib -Wl,-z,now -Wl,-z,relro'"  
 Finding targets
 go: v2ray.com/core@v4.19.1+incompatible (replaced by github.com/v2fly/v2ray-core@v0.0.0-20210104111944-a6efb4d60b86): missing go.sum entry; to add it:
 	go mod download v2ray.com/core
@@ -1552,7 +1573,7 @@ go: v2ray.com/core@v4.19.1+incompatible (replaced by github.com/v2fly/v2ray-core
 
 make[2]: *** [Makefile:77: /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/target-x86_64_musl/v2ray-plugin-1.8.0/.built] Error 1
 make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/v2ray-plugin'
-time: package/feeds/custom/v2ray-plugin/compile#0.27#0.15#0.38
+time: package/feeds/custom/v2ray-plugin/compile#0.24#0.11#0.33
     ERROR: package/feeds/custom/v2ray-plugin failed to build.
 make[1]: *** [package/Makefile:114: package/feeds/custom/v2ray-plugin/compile] Error 1
 make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
