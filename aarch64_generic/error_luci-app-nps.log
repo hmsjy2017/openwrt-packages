@@ -1,0 +1,76 @@
+make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+time: package/feeds/base/lua/host-compile#0.28#0.15#0.38
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.4-bootstrap-20171003.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.4-bootstrap-20171003.tar.gz" "f4ff5b5eb3a3cae1c993723f3eab519c5bae18866b5e5f96fe1102f0cb5c3e52" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.16.src.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.16.src.tar.gz" "7688063d55656105898f323d90a79a39c378d86fe89ae192eb3b7fc46347c95a" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
+time: package/feeds/packages/golang/host-compile#0.69#0.37#0.83
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+Makefile:737: WARNING: skipping libgomp -- package has no install section
+echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+time: package/toolchain/compile#0.29#0.12#0.37
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/nps'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.nps-0.26.9.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "nps-0.26.9.tar.gz" "skip" "" "https://codeload.github.com/ehang-io/nps/tar.gz/v0.26.9?"    '
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://codeload.github.com/ehang-io/nps/tar.gz/v0.26.9?/nps-0.26.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 1 seconds. 5 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 2 seconds. 4 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 4 seconds. 3 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 8 seconds. 2 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 16 seconds. 1 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://sources.cdn.openwrt.org/nps-0.26.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://sources.openwrt.org/nps-0.26.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 Not Found
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://mirror2.openwrt.org/sources/nps-0.26.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 Not Found
+Download failed.
+No more mirrors to try - giving up.
+make[2]: *** [Makefile:97: /home/runner/work/packages-compile/packages-compile/openwrt/dl/nps-0.26.9.tar.gz] Error 2
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/nps'
+time: package/feeds/custom/nps/compile#0.33#0.12#68.33
+    ERROR: package/feeds/custom/nps failed to build.
+make[1]: *** [package/Makefile:114: package/feeds/custom/nps/compile] Error 1
+make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/luci-app-nps/compile] Error 2

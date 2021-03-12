@@ -1,0 +1,206 @@
+make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.lua-5.1.5.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "lua-5.1.5.tar.gz" "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333" "" "http://www.lua.org/ftp/" "http://www.tecgraf.puc-rio.br/lua/ftp/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/utils/lua'
+time: package/feeds/base/lua/host-compile#0.32#0.12#0.39
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+Makefile:737: WARNING: skipping libgomp -- package has no install section
+echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+echo "librt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+time: package/toolchain/compile#0.29#0.09#0.35
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.linux-firmware-20201118.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "linux-firmware-20201118.tar.xz" "863d5a31da725b856a917280d1e3014929b3bc3d4e6e5faecf530c13afb7e2b9" "" "@KERNEL/linux/kernel/firmware"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+time: package/feeds/base/linux-firmware/compile#1.21#0.62#1.43
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.2.13.0.0.a.13.14.arm.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "2.13.0.0.a.13.14.arm" "7fffaceb008b9beb5a1da4744c9a6d31c8d9eff54e3461cba925785f2ae1648d" "" "https://daemonizer.de/prism54/prism54-fw//stlc4560"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+time: package/feeds/base/prism54-firmware/compile#0.29#0.11#0.35
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+echo "kernel" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-crypto-hw-geode is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-hifn-795x is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-padlock is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-talitos is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-pcompress is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-wq is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-ads1015 is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-sch5627 is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-algo-pca is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-algo-pcf is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-pxa is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-smbus is not available in the kernel config - generating empty package
+echo "kmod-lib-crc-ccitt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-dm9000 is not available in the kernel config - generating empty package
+echo "kmod-nf-reject" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-reject6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-core" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-nf-conntrack6 is not available in the kernel config - generating empty package
+echo "kmod-nf-conntrack6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-nf-flow" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-offload" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ipt-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-ipt-ulog is not available in the kernel config - generating empty package
+echo "kmod-ip6tables" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-nft-nat6 is not available in the kernel config - generating empty package
+WARNING: kmod-isdn4linux is not available in the kernel config - generating empty package
+echo "kmod-slhc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-ppp" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-pppox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+echo "kmod-pppoe" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-aarch64_generic_musl/pkginfo/linux.default.install
+WARNING: kmod-bpf-test is not available in the kernel config - generating empty package
+WARNING: kmod-gpio-dev is not available in the kernel config - generating empty package
+WARNING: kmod-parport-pc is not available in the kernel config - generating empty package
+WARNING: kmod-softdog is not available in the kernel config - generating empty package
+WARNING: kmod-rtc-pt7c4338 is not available in the kernel config - generating empty package
+WARNING: kmod-w83627hf-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-itco-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-it87-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-core is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-realtek is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-cmedia is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-analog is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-idt is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-si3054 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-cirrus is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-ca0110 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-ca0132 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-conexant is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-via is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-hdmi is not available in the kernel config - generating empty package
+WARNING: kmod-fb-cfb-fillrect is not available in the kernel config - generating empty package
+WARNING: kmod-fb-cfb-copyarea is not available in the kernel config - generating empty package
+WARNING: kmod-fb-cfb-imgblt is not available in the kernel config - generating empty package
+WARNING: kmod-drm-ttm is not available in the kernel config - generating empty package
+WARNING: kmod-drm-kms-helper is not available in the kernel config - generating empty package
+WARNING: kmod-w1-slave-ds2760 is not available in the kernel config - generating empty package
+WARNING: kmod-net-prism54 is not available in the kernel config - generating empty package
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+time: package/kernel/linux/compile#2.33#0.32#2.62
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/kernel/cryptodev-linux'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.cryptodev-linux-1.11.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "cryptodev-linux-1.11.tar.gz" "d71fd8dafc40147586f5bc6acca8fce5088d9c576d1142fe5aeb7b0813186a11" "" "https://codeload.github.com/cryptodev-linux/cryptodev-linux/tar.gz/cryptodev-linux-1.11?"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/kernel/cryptodev-linux'
+time: package/feeds/base/cryptodev-linux/compile#0.24#0.13#0.33
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.openssl-1.1.1j.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "openssl-1.1.1j.tar.gz" "aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf" "" "http://www.openssl.org/source/" "http://www.openssl.org/source/old/1.1.1/" "http://ftp.fi.muni.cz/pub/openssl/source/" "http://ftp.fi.muni.cz/pub/openssl/source/old/1.1.1/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/old/1.1.1/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+time: package/feeds/base/openssl/compile#0.32#0.15#0.39
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/pcre'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.pcre-8.44.tar.bz2.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "pcre-8.44.tar.bz2" "19108658b23b3ec5058edc9f66ac545ea19f9537234be1ec62b714c84399366d" "" "@SF/pcre"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/pcre'
+time: package/feeds/base/pcre/compile#0.32#0.14#0.40
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.zlib-1.2.11.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "zlib-1.2.11.tar.xz" "4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066" "" "@SF/libpng" "http://www.zlib.net"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
+time: package/feeds/base/zlib/compile#0.23#0.12#0.31
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.wget-1.20.3.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "wget-1.20.3.tar.gz" "skip" "" "@GNU/wget"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+time: package/feeds/custom/wget/ssl/compile#0.25#0.11#0.33
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.wget-1.20.3.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "wget-1.20.3.tar.gz" "skip" "" "@GNU/wget"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/wget'
+time: package/feeds/custom/wget/nossl/compile#0.26#0.10#0.32
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/luci/modules/luci-base'
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/hostpkg/luci-base/.prepared225f0662ef3ce0a9b8abde352195dfcd_6664517399ebbbc92a37c5bb081b5c53
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/hostpkg/luci-base/.configured
+make -C src/ clean po2lmo jsmin
+make[3]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/luci/modules/luci-base/src'
+rm -f contrib/lemon po2lmo parser.so version.lua plural_formula.c plural_formula.h *.o
+cc    -DNDEBUG -c -o po2lmo.o po2lmo.c
+cc -o contrib/lemon contrib/lemon.c
+./contrib/lemon -q plural_formula.y
+cc    -DNDEBUG -c -o template_lmo.o template_lmo.c
+cc    -DNDEBUG -c -o plural_formula.o plural_formula.c
+cc  -o po2lmo po2lmo.o template_lmo.o plural_formula.o
+cc    -DNDEBUG -c -o jsmin.o jsmin.c
+cc  -o jsmin jsmin.o
+make[3]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/luci/modules/luci-base/src'
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/hostpkg/luci-base/.built
+install -d -m0755 /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/bin
+install -m0755 src/po2lmo /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/bin/po2lmo
+install -m0755 src/jsmin /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/bin/jsmin
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/stamp
+touch /home/runner/work/packages-compile/packages-compile/openwrt/build_dir/hostpkg/luci-base/.built
+touch /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/hostpkg/stamp/.luci-base_installed
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/luci/modules/luci-base'
+time: package/feeds/luci/luci-base/host-compile#1.02#0.32#1.27
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.4-bootstrap-20171003.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.4-bootstrap-20171003.tar.gz" "f4ff5b5eb3a3cae1c993723f3eab519c5bae18866b5e5f96fe1102f0cb5c3e52" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.go1.16.src.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "go1.16.src.tar.gz" "7688063d55656105898f323d90a79a39c378d86fe89ae192eb3b7fc46347c95a" "" "https://dl.google.com/go/" "https://mirrors.ustc.edu.cn/golang/" "https://mirrors.nju.edu.cn/golang/" "https://golang.org/dl/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/lang/golang/golang'
+time: package/feeds/packages/golang/host-compile#0.72#0.29#0.79
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/UnblockNeteaseMusic-Go'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.UnblockNeteaseMusic-Go-0.2.7.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "UnblockNeteaseMusic-Go-0.2.7.tar.gz" "skip" "" "https://codeload.github.com/cnsilvan/UnblockNeteaseMusic/tar.gz/0.2.7?"    '
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://codeload.github.com/cnsilvan/UnblockNeteaseMusic/tar.gz/0.2.7?/UnblockNeteaseMusic-Go-0.2.7.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 1 seconds. 5 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 2 seconds. 4 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 4 seconds. 3 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 8 seconds. 2 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 16 seconds. 1 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://sources.cdn.openwrt.org/UnblockNeteaseMusic-Go-0.2.7.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://sources.openwrt.org/UnblockNeteaseMusic-Go-0.2.7.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 Not Found
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://mirror2.openwrt.org/sources/UnblockNeteaseMusic-Go-0.2.7.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 Not Found
+Download failed.
+No more mirrors to try - giving up.
+make[2]: *** [Makefile:86: /home/runner/work/packages-compile/packages-compile/openwrt/dl/UnblockNeteaseMusic-Go-0.2.7.tar.gz] Error 2
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/UnblockNeteaseMusic-Go'
+time: package/feeds/custom/UnblockNeteaseMusic-Go/compile#0.31#0.12#68.30
+    ERROR: package/feeds/custom/UnblockNeteaseMusic-Go failed to build.
+make[1]: *** [package/Makefile:114: package/feeds/custom/UnblockNeteaseMusic-Go/compile] Error 1
+make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/luci-app-unblockmusic/compile] Error 2

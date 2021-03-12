@@ -1,0 +1,162 @@
+make[1]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+Makefile:737: WARNING: skipping libgomp -- package has no install section
+echo "libc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/toolchain.default.install
+echo "libgcc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/toolchain.default.install
+echo "libpthread" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/toolchain.default.install
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/toolchain'
+time: package/toolchain/compile#0.23#0.08#0.29
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.linux-firmware-20201118.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "linux-firmware-20201118.tar.xz" "863d5a31da725b856a917280d1e3014929b3bc3d4e6e5faecf530c13afb7e2b9" "" "@KERNEL/linux/kernel/firmware"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/linux-firmware'
+time: package/feeds/base/linux-firmware/compile#1.15#0.52#1.30
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.2.13.0.0.a.13.14.arm.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "2.13.0.0.a.13.14.arm" "7fffaceb008b9beb5a1da4744c9a6d31c8d9eff54e3461cba925785f2ae1648d" "" "https://daemonizer.de/prism54/prism54-fw//stlc4560"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/firmware/prism54-firmware'
+time: package/feeds/base/prism54-firmware/compile#0.20#0.08#0.26
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+echo "kernel" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+WARNING: kmod-crypto-hw-ccp is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-geode is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-padlock is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-hw-talitos is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-pcompress is not available in the kernel config - generating empty package
+WARNING: kmod-crypto-wq is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-ads1015 is not available in the kernel config - generating empty package
+WARNING: kmod-hwmon-pwmfan is not available in the kernel config - generating empty package
+WARNING: kmod-i2c-pxa is not available in the kernel config - generating empty package
+echo "kmod-leds-gpio" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-lib-crc-ccitt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+WARNING: kmod-ixgbevf is not available in the kernel config - generating empty package
+WARNING: kmod-iavf is not available in the kernel config - generating empty package
+echo "kmod-nf-reject" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-nf-reject6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-nf-ipt6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-ipt-core" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-nf-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+WARNING: kmod-nf-conntrack6 is not available in the kernel config - generating empty package
+echo "kmod-nf-conntrack6" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-nf-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-nf-flow" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-ipt-conntrack" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-ipt-offload" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-ipt-nat" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+WARNING: kmod-ipt-ulog is not available in the kernel config - generating empty package
+echo "kmod-ip6tables" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+WARNING: kmod-nft-nat6 is not available in the kernel config - generating empty package
+WARNING: kmod-isdn4linux is not available in the kernel config - generating empty package
+echo "kmod-slhc" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-ppp" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-pppox" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+echo "kmod-pppoe" >> /home/runner/work/packages-compile/packages-compile/openwrt/staging_dir/target-mipsel_24kc_musl/pkginfo/linux.default.install
+WARNING: kmod-gpio-dev is not available in the kernel config - generating empty package
+WARNING: kmod-parport-pc is not available in the kernel config - generating empty package
+WARNING: kmod-rtc-pt7c4338 is not available in the kernel config - generating empty package
+WARNING: kmod-w83627hf-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-itco-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-it87-wdt is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-core is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-realtek is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-cmedia is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-analog is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-idt is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-si3054 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-cirrus is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-ca0110 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-ca0132 is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-conexant is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-via is not available in the kernel config - generating empty package
+WARNING: kmod-sound-hda-codec-hdmi is not available in the kernel config - generating empty package
+WARNING: kmod-w1-slave-ds2760 is not available in the kernel config - generating empty package
+WARNING: kmod-net-prism54 is not available in the kernel config - generating empty package
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/package/kernel/linux'
+time: package/kernel/linux/compile#2.10#0.24#2.33
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/kernel/cryptodev-linux'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.cryptodev-linux-1.11.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "cryptodev-linux-1.11.tar.gz" "d71fd8dafc40147586f5bc6acca8fce5088d9c576d1142fe5aeb7b0813186a11" "" "https://codeload.github.com/cryptodev-linux/cryptodev-linux/tar.gz/cryptodev-linux-1.11?"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/kernel/cryptodev-linux'
+time: package/feeds/base/cryptodev-linux/compile#0.19#0.05#0.23
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.openssl-1.1.1j.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "openssl-1.1.1j.tar.gz" "aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf" "" "http://www.openssl.org/source/" "http://www.openssl.org/source/old/1.1.1/" "http://ftp.fi.muni.cz/pub/openssl/source/" "http://ftp.fi.muni.cz/pub/openssl/source/old/1.1.1/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/" "ftp://ftp.pca.dfn.de/pub/tools/net/openssl/source/old/1.1.1/"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/openssl'
+time: package/feeds/base/openssl/compile#0.25#0.12#0.31
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libevent2'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.libevent-2.1.12-stable.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "libevent-2.1.12-stable.tar.gz" "92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb" "" "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/libevent2'
+time: package/feeds/base/libevent2/compile#0.20#0.06#0.24
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.zlib-1.2.11.tar.xz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "zlib-1.2.11.tar.xz" "4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066" "" "@SF/libpng" "http://www.zlib.net"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/base/package/libs/zlib'
+time: package/feeds/base/zlib/compile#0.21#0.03#0.23
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/duktape'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.duktape-2.99.99-19cc8f5-19cc8f5bb855791ff55cbf60d2cea72df485e86f.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "duktape-2.99.99-19cc8f5-19cc8f5bb855791ff55cbf60d2cea72df485e86f.tar.gz" "7e9caaf9c7e82bc01f859019359b3a13fa038f0e5e82a6541687a30c1ccfa604" "" || (  /home/runner/work/packages-compile/packages-compile/openwrt/scripts/dl_github_archive.py --dl-dir="/home/runner/work/packages-compile/packages-compile/openwrt/dl" --url="https://github.com/svaarala/duktape.git" --version="19cc8f5bb855791ff55cbf60d2cea72df485e86f" --subdir="duktape-2.99.99-19cc8f5" --source="duktape-2.99.99-19cc8f5-19cc8f5bb855791ff55cbf60d2cea72df485e86f.tar.gz" --hash="7e9caaf9c7e82bc01f859019359b3a13fa038f0e5e82a6541687a30c1ccfa604" || ( 	echo "Checking out files from the git repository..."; mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && cd /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl && rm -rf duktape-2.99.99-19cc8f5 && [ \! -d duktape-2.99.99-19cc8f5 ] && git clone  https://github.com/svaarala/duktape.git duktape-2.99.99-19cc8f5 && (cd duktape-2.99.99-19cc8f5 && git checkout 19cc8f5bb855791ff55cbf60d2cea72df485e86f ; git submodule update --init --recursive) && echo "Packing checkout..." && export TAR_TIMESTAMP=`cd duktape-2.99.99-19cc8f5 && git log -1 --format='\''@%ct'\''` && rm -rf duktape-2.99.99-19cc8f5/.git && 	tar --numeric-owner --owner=0 --group=0 --mode=a-s --sort=name ${TAR_TIMESTAMP:+--mtime="$TAR_TIMESTAMP"} -c duktape-2.99.99-19cc8f5 | 	gzip -nc > /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/duktape-2.99.99-19cc8f5-19cc8f5bb855791ff55cbf60d2cea72df485e86f.tar.gz && mv /home/runner/work/packages-compile/packages-compile/openwrt/tmp/dl/duktape-2.99.99-19cc8f5-19cc8f5bb855791ff55cbf60d2cea72df485e86f.tar.gz /home/runner/work/packages-compile/packages-compile/openwrt/dl/ && rm -rf duktape-2.99.99-19cc8f5; );  )    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/duktape'
+time: package/feeds/custom/duktape/compile#0.34#0.19#0.40
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/pcre2'
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.pcre2-10.36.tar.bz2.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "pcre2-10.36.tar.bz2" "a9ef39278113542968c7c73a31cfcb81aca1faa64690f400b907e8ab6b4a665c" "" "@SF/pcre/pcre2/10.36"    '
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/packages/libs/pcre2'
+time: package/feeds/packages/pcre2/compile#0.20#0.07#0.25
+make[2]: Entering directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/jpcre2'
+Makefile:45: WARNING: skipping jpcre2 -- package has no install section
+mkdir -p /home/runner/work/packages-compile/packages-compile/openwrt/dl
+SHELL= flock /home/runner/work/packages-compile/packages-compile/openwrt/tmp/.jpcre2-10.32.01.tar.gz.flock -c '  	/home/runner/work/packages-compile/packages-compile/openwrt/scripts/download.pl "/home/runner/work/packages-compile/packages-compile/openwrt/dl" "jpcre2-10.32.01.tar.gz" "skip" "" "https://codeload.github.com/jpcre2/jpcre2/tar.gz/10.32.01?"    '
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://codeload.github.com/jpcre2/jpcre2/tar.gz/10.32.01?/jpcre2-10.32.01.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 1 seconds. 5 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 2 seconds. 4 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 4 seconds. 3 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 8 seconds. 2 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Warning: Transient problem: HTTP error Will retry in 16 seconds. 1 retries 
+Warning: left.
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
+curl: (22) The requested URL returned error: 500 
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://sources.cdn.openwrt.org/jpcre2-10.32.01.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://sources.openwrt.org/jpcre2-10.32.01.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 Not Found
+Download failed.
++ curl -f --connect-timeout 20 --retry 5 --location --insecure https://mirror2.openwrt.org/sources/jpcre2-10.32.01.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404 Not Found
+Download failed.
+No more mirrors to try - giving up.
+make[2]: *** [Makefile:46: /home/runner/work/packages-compile/packages-compile/openwrt/dl/jpcre2-10.32.01.tar.gz] Error 2
+make[2]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt/feeds/custom/jpcre2'
+time: package/feeds/custom/jpcre2/compile#0.28#0.07#68.27
+    ERROR: package/feeds/custom/jpcre2 failed to build.
+make[1]: *** [package/Makefile:114: package/feeds/custom/jpcre2/compile] Error 1
+make[1]: Leaving directory '/home/runner/work/packages-compile/packages-compile/openwrt'
+make: *** [/home/runner/work/packages-compile/packages-compile/openwrt/include/toplevel.mk:222: package/sub-web/compile] Error 2
